@@ -6,7 +6,8 @@ Uses the SM-2 algorithm. History stored in neetcode_sr.json (same folder as this
 
 """
 python3 neetcode_sr.py        # start your session
-python3 neetcode_sr.py --list-due   # just peek at today's problems
+python3 neetcode_sr.py --list-due      # just peek at today's problems
+python3 neetcode_sr.py --list-tomorrow # preview tomorrow's problems
 python3 neetcode_sr.py --stats      # see your progress
 python3 neetcode_sr.py --config     # change problems per day (2-10)
 python3 neetcode_sr.py --reset      # wipe history and start fresh
@@ -158,13 +159,13 @@ PROBLEMS = [
     (90,  "Number of Connected Components",       "Graphs",           "Medium", 323),
     (91,  "Redundant Connection",                 "Graphs",           "Medium", 684),
     # Advanced Graphs (disabled — uncomment when ready)
-    # (92,  "Word Ladder",                          "Graphs",           "Hard",   127),
-    # (93,  "Reconstruct Itinerary",                "Graphs",           "Hard",   332),
-    # (94,  "Min Cost to Connect All Points",       "Graphs",           "Medium", 1584),
-    # (95,  "Network Delay Time",                   "Graphs",           "Medium", 743),
-    # (96,  "Swim in Rising Water",                 "Graphs",           "Hard",   778),
-    # (97,  "Alien Dictionary",                     "Graphs",           "Hard",   269),
-    # (98,  "Cheapest Flights Within K Stops",      "Graphs",           "Medium", 787),
+    (92,  "Word Ladder",                          "Graphs",           "Hard",   127),
+    (93,  "Reconstruct Itinerary",                "Graphs",           "Hard",   332),
+    (94,  "Min Cost to Connect All Points",       "Graphs",           "Medium", 1584),
+    (95,  "Network Delay Time",                   "Graphs",           "Medium", 743),
+    (96,  "Swim in Rising Water",                 "Graphs",           "Hard",   778),
+    (97,  "Alien Dictionary",                     "Graphs",           "Hard",   269),
+    (98,  "Cheapest Flights Within K Stops",      "Graphs",           "Medium", 787),
     # 1-D Dynamic Programming
     (99,  "Climbing Stairs",                      "1D DP",            "Easy",   70),
     (100, "Min Cost Climbing Stairs",             "1D DP",            "Easy",   746),
@@ -292,10 +293,19 @@ def sm2_update(card, quality):
     card["next_review"] = str(next_dt)
     return card
 
-def is_due(card):
+def is_due(card, as_of=None):
+    as_of = as_of or date.today()
     if card["next_review"] is None:
         return True
-    return date.fromisoformat(card["next_review"]) <= date.today()
+    return date.fromisoformat(card["next_review"]) <= as_of
+
+def last_recall_rating(card):
+    ratings = card.get("recall_ratings", [])
+    return ratings[-1] if ratings else None
+
+def struggled_recently(card):
+    rating = last_recall_rating(card)
+    return rating is not None and rating <= 2
 
 # ── Persistence ───────────────────────────────────────────────────────────────
 
@@ -389,14 +399,20 @@ def get_card(data, pid):
         data["cards"][name] = sm2_new(topic, diff)
     return data["cards"][name]
 
-def _urgency_key(p, data):
+def _urgency_key(p, data, as_of=None):
     """Lower = more urgent (due sooner / fewer successful reps)."""
     card = get_card(data, p[0])
-    due = 0 if is_due(card) else 1
-    return (due, card.get("repetitions", 0), card.get("next_review", "9999-99-99"))
+    due = 0 if is_due(card, as_of) else 1
+    struggle = 0 if struggled_recently(card) else 1
+    return (
+        due,
+        struggle,
+        card.get("repetitions", 0),
+        card.get("next_review", "9999-99-99"),
+    )
 
 
-def pick_diverse_random(pool, n, data):
+def pick_diverse_random(pool, n, data, as_of=None):
     """
     Pick up to n problems with random topic order (round-robin across topics).
     Within each topic, prefer the most urgent due cards first.
@@ -409,7 +425,7 @@ def pick_diverse_random(pool, n, data):
         by_topic[p[2]].append(p)
 
     for topic in by_topic:
-        by_topic[topic].sort(key=lambda p: _urgency_key(p, data))
+        by_topic[topic].sort(key=lambda p: _urgency_key(p, data, as_of))
 
     topics = list(by_topic.keys())
     random.shuffle(topics)
@@ -433,30 +449,57 @@ def pick_diverse_random(pool, n, data):
     return selected[:n]
 
 
-def pick_today(data):
+def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
+    as_of = as_of or date.today()
     n = data["settings"].get("problems_per_day", PROBLEMS_PER_DAY)
-    today = str(date.today())
+    day_str = str(as_of)
 
-    if data.get("today_date") == today and data.get("today_list"):
+    if save and use_cache and data.get("today_date") == day_str and data.get("today_list"):
         cached = [pid for pid in data["today_list"] if pid in ACTIVE_IDS]
         if len(cached) == len(data["today_list"]):
             return cached
         data["today_list"] = []
         data["today_date"] = None
 
-    due = [p for p in PROBLEMS if is_due(get_card(data, p[0]))]
-    due_ids = {p[0] for p in due}
-    not_due = [p for p in PROBLEMS if p[0] not in due_ids]
+    rng_state = random.getstate()
+    random.seed(day_str)
+    try:
+        due = [p for p in PROBLEMS if is_due(get_card(data, p[0]), as_of)]
+        due_struggled = [p for p in due if struggled_recently(get_card(data, p[0]))]
+        due_ids = {p[0] for p in due}
+        not_due = [p for p in PROBLEMS if p[0] not in due_ids]
 
-    selected = pick_diverse_random(due, n, data)
-    if len(selected) < n:
-        selected.extend(pick_diverse_random(not_due, n - len(selected), data))
+        # Always include all due problems you recently struggled with (rating <= 2),
+        # even if this exceeds the daily cap.
+        selected = pick_diverse_random(due_struggled, len(due_struggled), data, as_of)
+        selected_ids = set(selected)
+        remaining_due = [p for p in due if p[0] not in selected_ids]
+        target_total = max(n, len(selected))
+        if len(selected) < target_total:
+            selected.extend(
+                pick_diverse_random(remaining_due, target_total - len(selected), data, as_of)
+            )
+        if len(selected) < target_total:
+            selected.extend(
+                pick_diverse_random(not_due, target_total - len(selected), data, as_of)
+            )
+    finally:
+        random.setstate(rng_state)
 
-    data["today_list"] = selected
-    data["today_date"] = today
-    data["today_done"] = []
-    save_data(data)
+    if save:
+        data["today_list"] = selected
+        data["today_date"] = day_str
+        data["today_done"] = []
+        save_data(data)
     return selected
+
+
+def pick_today(data):
+    return pick_for_date(data, date.today(), save=True, use_cache=True)
+
+
+def pick_tomorrow(data):
+    return pick_for_date(data, date.today() + timedelta(days=1), save=False, use_cache=False)
 
 # ── Display helpers ───────────────────────────────────────────────────────────
 
@@ -466,15 +509,33 @@ def lc_url(lc_num, name):
     slug = "-".join(slug.split())
     return f"https://leetcode.com/problems/{slug}/"
 
-def print_header(data):
-    today_str = date.today().strftime("%A, %B %d %Y")
+def print_header(data, when=None):
+    when = when or date.today()
+    day_str = when.strftime("%A, %B %d %Y")
     streak = data.get("streak", 0)
-    streak_txt = f"  🔥 {streak} day streak" if streak else ""
+    streak_txt = f"  🔥 {streak} day streak" if streak and when == date.today() else ""
     print()
     print(bold(cyan("╔══════════════════════════════════════════════════════╗")))
     print(bold(cyan("║")) + bold("   Neetcode 150 — Spaced Repetition Review         ") + bold(cyan("║")))
     print(bold(cyan("╚══════════════════════════════════════════════════════╝")))
-    print(f"  {dim(today_str)}{yellow(streak_txt)}")
+    print(f"  {dim(day_str)}{yellow(streak_txt)}")
+    print()
+
+
+def print_problem_list(data, problem_ids, *, when=None, done_set=None):
+    when = when or date.today()
+    done_set = done_set or set()
+    print_header(data, when=when)
+    total = len(problem_ids)
+    n = data["settings"].get("problems_per_day", PROBLEMS_PER_DAY)
+    if total > n:
+        print(f"  {bold(str(total))} problems scheduled  "
+              f"{dim('(includes all due struggles above your ' + str(n) + '/day cap)')}")
+    else:
+        print(f"  {bold(str(total))} problems scheduled")
+    print()
+    for idx, pid in enumerate(problem_ids, 1):
+        print_problem(idx, total, pid, done=pid in done_set)
     print()
 
 def print_problem(idx, total, pid, done=False):
@@ -733,6 +794,7 @@ def main():
     parser.add_argument("--config",   action="store_true", help="Change settings")
     parser.add_argument("--reset",    action="store_true", help="Reset all history (dangerous!)")
     parser.add_argument("--list-due", action="store_true", help="List today's problems and exit")
+    parser.add_argument("--list-tomorrow", action="store_true", help="Preview tomorrow's problems and exit")
     args = parser.parse_args()
 
     data = load_data()
@@ -757,10 +819,19 @@ def main():
 
     if args.list_due:
         today_ids = pick_today(data)
-        print_header(data)
-        for idx, pid in enumerate(today_ids, 1):
-            done = pid in set(data.get("today_done", []))
-            print_problem(idx, len(today_ids), pid, done=done)
+        print_problem_list(
+            data,
+            today_ids,
+            when=date.today(),
+            done_set=set(data.get("today_done", [])),
+        )
+        return
+
+    if args.list_tomorrow:
+        tomorrow = date.today() + timedelta(days=1)
+        tomorrow_ids = pick_tomorrow(data)
+        print_problem_list(data, tomorrow_ids, when=tomorrow)
+        print(dim("  Preview based on current schedule. Finishing today's reviews may change this."))
         print()
         return
 
