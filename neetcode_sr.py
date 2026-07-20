@@ -29,9 +29,13 @@ _SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_FILE   = _SCRIPT_DIR / "neetcode_sr.json"
 _LEGACY_DATA_FILE = Path.home() / ".neetcode_sr.json"
 PROBLEMS_PER_DAY = 5       # default; overridable in saved settings
+NEW_PER_DAY = 1            # guaranteed brand-new problems reserved each day
+MAX_STRUGGLED_PER_DAY = 2  # cap on struggled repeats force-included each day
 MIN_EASINESS = 1.3
 DEFAULT_EASINESS = 2.5
-SELECTION_VERSION = 2      # bump when daily selection logic changes
+FIRST_INTERVAL = 3         # days until re-show after 1st successful recall (was 1)
+SECOND_INTERVAL = 7        # days until re-show after 2nd successful recall (was 6)
+SELECTION_VERSION = 4      # bump when daily selection logic changes
 CARD_FORMAT_VERSION = 2    # cards keyed by name with topic + difficulty + recall_ratings
 
 # ── ANSI colors ───────────────────────────────────────────────────────────────
@@ -276,9 +280,9 @@ def sm2_update(card, quality):
         card["interval"]    = 1
     else:
         if card["repetitions"] == 0:
-            card["interval"] = 1
+            card["interval"] = FIRST_INTERVAL
         elif card["repetitions"] == 1:
-            card["interval"] = 6
+            card["interval"] = SECOND_INTERVAL
         else:
             card["interval"] = math.ceil(card["interval"] * card["easiness"])
         card["repetitions"] += 1
@@ -461,28 +465,56 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
         data["today_list"] = []
         data["today_date"] = None
 
+    new_per_day    = data["settings"].get("new_per_day", NEW_PER_DAY)
+    max_struggled  = data["settings"].get("max_struggled_per_day", MAX_STRUGGLED_PER_DAY)
+
     rng_state = random.getstate()
     random.seed(day_str)
     try:
-        due = [p for p in PROBLEMS if is_due(get_card(data, p[0]), as_of)]
-        due_struggled = [p for p in due if struggled_recently(get_card(data, p[0]))]
-        due_ids = {p[0] for p in due}
-        not_due = [p for p in PROBLEMS if p[0] not in due_ids]
+        def card_of(p):
+            return get_card(data, p[0])
 
-        # Always include all due problems you recently struggled with (rating <= 2),
-        # even if this exceeds the daily cap.
-        selected = pick_diverse_random(due_struggled, len(due_struggled), data, as_of)
-        selected_ids = set(selected)
-        remaining_due = [p for p in due if p[0] not in selected_ids]
-        target_total = max(n, len(selected))
-        if len(selected) < target_total:
-            selected.extend(
-                pick_diverse_random(remaining_due, target_total - len(selected), data, as_of)
-            )
-        if len(selected) < target_total:
-            selected.extend(
-                pick_diverse_random(not_due, target_total - len(selected), data, as_of)
-            )
+        def is_new(p):
+            # never attempted — no review has ever been logged
+            return card_of(p).get("last_review") is None
+
+        due      = [p for p in PROBLEMS if is_due(card_of(p), as_of)]
+        due_ids  = {p[0] for p in due}
+        not_due  = [p for p in PROBLEMS if p[0] not in due_ids]
+
+        new_due    = [p for p in due if is_new(p)]
+        seen_due   = [p for p in due if not is_new(p)]
+        struggled  = [p for p in seen_due if struggled_recently(card_of(p))]
+        review_due = [p for p in seen_due if not struggled_recently(card_of(p))]
+
+        selected = []
+        selected_ids = set()
+
+        def take(pool, count):
+            if count <= 0:
+                return
+            avail = [p for p in pool if p[0] not in selected_ids]
+            for pid in pick_diverse_random(avail, count, data, as_of):
+                if pid not in selected_ids:
+                    selected.append(pid)
+                    selected_ids.add(pid)
+
+        # 1. Guarantee at least a floor of fresh problems every day, no matter
+        #    how big the review backlog is.
+        take(new_due, min(new_per_day, n))
+        # 2. Repeat problems you struggled with (last rating <= 2), capped so a
+        #    backlog of hard problems can't crowd out everything else.
+        take(struggled, min(max_struggled, n - len(selected)))
+        # 3. Keep filling with NEW problems — when you're keeping up (few/no
+        #    struggles) the whole day becomes fresh material.
+        take(new_due, n - len(selected))
+        # 4. Only once new problems run out do well-known reviews (rated >= 3)
+        #    come back, spaced by SM-2.
+        take(review_due, n - len(selected))
+        # 5. Struggled repeats beyond the cap, if room still remains.
+        take(struggled, n - len(selected))
+        # 6. Finally, pull ahead from not-yet-due if still short.
+        take(not_due, n - len(selected))
     finally:
         random.setstate(rng_state)
 
@@ -522,7 +554,14 @@ def print_header(data, when=None):
     print()
 
 
-def print_problem_list(data, problem_ids, *, when=None, done_set=None):
+def latest_score(card):
+    history = card.get("recall_ratings", [])
+    if history:
+        return history[-1]
+    return None
+
+
+def print_problem_list(data, problem_ids, *, when=None, done_set=None, show_latest_score=False):
     when = when or date.today()
     done_set = done_set or set()
     print_header(data, when=when)
@@ -535,17 +574,29 @@ def print_problem_list(data, problem_ids, *, when=None, done_set=None):
         print(f"  {bold(str(total))} problems scheduled")
     print()
     for idx, pid in enumerate(problem_ids, 1):
-        print_problem(idx, total, pid, done=pid in done_set)
+        print_problem(
+            data,
+            idx,
+            total,
+            pid,
+            done=pid in done_set,
+            show_latest_score=show_latest_score,
+        )
     print()
 
-def print_problem(idx, total, pid, done=False):
+def print_problem(data, idx, total, pid, done=False, show_latest_score=False):
     prob = PROBLEMS_BY_ID[pid]
     _, name, topic, diff, lc_num = prob
     diff_fn = DIFF_COLOR.get(diff, lambda x: x)
     status = green("✓") if done else dim("○")
     url = lc_url(lc_num, name)
+    score_text = ""
+    if show_latest_score:
+        card = get_card(data, pid)
+        score = latest_score(card)
+        score_text = f"  ·  {dim('Last score: ' + str(score))}" if score is not None else f"  ·  {dim('Last score: —')}"
     print(f"  {status}  {bold(str(idx))}/{total}  {bold(name)}")
-    print(f"      {diff_fn(diff)}  ·  {dim(topic)}  ·  LC #{lc_num}")
+    print(f"      {diff_fn(diff)}  ·  {dim(topic)}  ·  LC #{lc_num}{score_text}")
     print(f"      {blue(url)}")
 
 def print_separator():
@@ -824,13 +875,14 @@ def main():
             today_ids,
             when=date.today(),
             done_set=set(data.get("today_done", [])),
+            show_latest_score=True,
         )
         return
 
     if args.list_tomorrow:
         tomorrow = date.today() + timedelta(days=1)
         tomorrow_ids = pick_tomorrow(data)
-        print_problem_list(data, tomorrow_ids, when=tomorrow)
+        print_problem_list(data, tomorrow_ids, when=tomorrow, show_latest_score=True)
         print(dim("  Preview based on current schedule. Finishing today's reviews may change this."))
         print()
         return
