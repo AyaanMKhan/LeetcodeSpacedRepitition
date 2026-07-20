@@ -311,6 +311,18 @@ def struggled_recently(card):
     rating = last_recall_rating(card)
     return rating is not None and rating <= 2
 
+
+def recall_bucket(card):
+    """Lower = more urgent to revisit. 0/1 scores get pulled back immediately."""
+    rating = last_recall_rating(card)
+    if rating is None:
+        return 2
+    if rating <= 1:
+        return 0
+    if rating == 2:
+        return 1
+    return 2
+
 # ── Persistence ───────────────────────────────────────────────────────────────
 
 def migrate_cards_format(data):
@@ -404,13 +416,13 @@ def get_card(data, pid):
     return data["cards"][name]
 
 def _urgency_key(p, data, as_of=None):
-    """Lower = more urgent (due sooner / fewer successful reps)."""
+    """Lower = more urgent (due sooner / more struggling / fewer successful reps)."""
     card = get_card(data, p[0])
     due = 0 if is_due(card, as_of) else 1
-    struggle = 0 if struggled_recently(card) else 1
+    urgency = recall_bucket(card)
     return (
         due,
-        struggle,
+        urgency,
         card.get("repetitions", 0),
         card.get("next_review", "9999-99-99"),
     )
@@ -484,8 +496,9 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
 
         new_due    = [p for p in due if is_new(p)]
         seen_due   = [p for p in due if not is_new(p)]
-        struggled  = [p for p in seen_due if struggled_recently(card_of(p))]
-        review_due = [p for p in seen_due if not struggled_recently(card_of(p))]
+        critical   = [p for p in seen_due if recall_bucket(card_of(p)) == 0]
+        struggled  = [p for p in seen_due if recall_bucket(card_of(p)) == 1]
+        review_due = [p for p in seen_due if recall_bucket(card_of(p)) == 2]
 
         selected = []
         selected_ids = set()
@@ -502,18 +515,22 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
         # 1. Guarantee at least a floor of fresh problems every day, no matter
         #    how big the review backlog is.
         take(new_due, min(new_per_day, n))
-        # 2. Repeat problems you struggled with (last rating <= 2), capped so a
+        # 2. Pull back problems you rated 0/1 immediately, since they need the
+        #    most reinforcement.
+        take(critical, min(max_struggled * 2, n - len(selected)))
+        # 3. Repeat problems you struggled with (last rating == 2), capped so a
         #    backlog of hard problems can't crowd out everything else.
         take(struggled, min(max_struggled, n - len(selected)))
-        # 3. Keep filling with NEW problems — when you're keeping up (few/no
+        # 4. Keep filling with NEW problems — when you're keeping up (few/no
         #    struggles) the whole day becomes fresh material.
         take(new_due, n - len(selected))
-        # 4. Only once new problems run out do well-known reviews (rated >= 3)
+        # 5. Only once new problems run out do well-known reviews (rated >= 3)
         #    come back, spaced by SM-2.
         take(review_due, n - len(selected))
-        # 5. Struggled repeats beyond the cap, if room still remains.
+        # 6. If room remains, keep pushing those 0/1 and 2-rated repeats back in.
+        take(critical, n - len(selected))
         take(struggled, n - len(selected))
-        # 6. Finally, pull ahead from not-yet-due if still short.
+        # 7. Finally, pull ahead from not-yet-due if still short.
         take(not_due, n - len(selected))
     finally:
         random.setstate(rng_state)
