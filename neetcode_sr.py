@@ -662,7 +662,7 @@ def run_session(data):
 
     for idx, pid in enumerate(today_ids, 1):
         done = pid in done_set
-        print_problem(idx, total, pid, done=done)
+        print_problem(data, idx, total, pid, done=done)
 
     print_separator()
     print()
