@@ -1,0 +1,2326 @@
+{
+  "cards": {
+    "Contains Duplicate": {
+      "easiness": 2.6,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 1,
+      "next_review": "2026-05-25",
+      "last_review": "2026-05-24",
+      "recall_ratings": []
+    },
+    "Valid Anagram": {
+      "easiness": 2.6,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 1,
+      "next_review": "2026-05-25",
+      "last_review": "2026-05-24",
+      "recall_ratings": []
+    },
+    "Two Sum": {
+      "easiness": 2.6,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 1,
+      "next_review": "2026-05-25",
+      "last_review": "2026-05-24",
+      "recall_ratings": []
+    },
+    "Group Anagrams": {
+      "easiness": 2.33,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-09-25",
+      "last_review": "2026-09-22",
+      "recall_ratings": [
+        3
+      ]
+    },
+    "Top K Frequent Elements": {
+      "easiness": 1.7,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-25",
+      "last_review": "2026-05-24",
+      "recall_ratings": []
+    },
+    "Product of Array Except Self": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Valid Sudoku": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Encode and Decode Strings": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Consecutive Sequence": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Valid Palindrome": {
+      "easiness": 2.65,
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-09-25",
+      "last_review": "2026-09-22",
+      "recall_ratings": [
+        3
+      ]
+    },
+    "Two Sum II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "3Sum": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Container With Most Water": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Trapping Rain Water": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Best Time to Buy and Sell Stock": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Substring Without Repeating": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Repeating Char Replacement": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Permutation in String": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Window Substring": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sliding Window Maximum": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Valid Parentheses": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Min Stack": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Evaluate Reverse Polish Notation": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Generate Parentheses": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Daily Temperatures": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Car Fleet": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Implement Queue using Stacks": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Largest Rectangle in Histogram": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Search": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Search a 2D Matrix": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Koko Eating Bananas": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find Min in Rotated Sorted Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Search in Rotated Sorted Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Time Based Key-Value Store": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Median of Two Sorted Arrays": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reverse Linked List": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Merge Two Sorted Lists": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reorder List": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Remove Nth Node From End": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Copy List with Random Pointer": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Add Two Numbers": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "LRU Cache": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Merge K Sorted Lists": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reverse Nodes in k-Group": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Invert Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Depth of Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Diameter of Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Balanced Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Same Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Subtree of Another Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Lowest Common Ancestor of BST": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Level Order Traversal": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Right Side View": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Count Good Nodes in Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Validate Binary Search Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Kth Smallest Element in BST": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Construct Binary Tree from Preorder": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Max Path Sum": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Serialize and Deserialize Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Search Tree Iterator": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Implement Trie (Prefix Tree)": {
+      "easiness": 2.65,
+      "difficulty": "Medium",
+      "topic": "Tries",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-09-25",
+      "last_review": "2026-09-22",
+      "recall_ratings": [
+        3
+      ]
+    },
+    "Design Add and Search Words": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Word Search II": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Kth Largest Element in a Stream": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Last Stone Weight": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "K Closest Points to Origin": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Kth Largest Element in an Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Task Scheduler": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Design Twitter": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find Median from Data Stream": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Subsets": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Combination Sum": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Permutations": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Subsets II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Combination Sum II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Word Search": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Palindrome Partitioning": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Letter Combinations Phone Number": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "N-Queens": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Number of Islands": {
+      "easiness": 2.65,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-09-25",
+      "last_review": "2026-09-22",
+      "recall_ratings": [
+        3
+      ]
+    },
+    "Max Area of Island": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Clone Graph": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Walls and Gates": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Rotting Oranges": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Pacific Atlantic Water Flow": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Surrounded Regions": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Course Schedule": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Course Schedule II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Graph Valid Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Number of Connected Components": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Redundant Connection": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Word Ladder": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reconstruct Itinerary": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Min Cost to Connect All Points": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Network Delay Time": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Swim in Rising Water": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Alien Dictionary": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Cheapest Flights Within K Stops": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Climbing Stairs": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Min Cost Climbing Stairs": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "House Robber": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "House Robber II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Palindromic Substring": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Palindromic Substrings": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Decode Ways": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Coin Change": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Product Subarray": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Word Break": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Increasing Subsequence": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Partition Equal Subset Sum": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Unique Paths": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Common Subsequence": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Best Time to Buy Stock w/ Cooldown": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Coin Change II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Target Sum": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Interleaving String": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Increasing Path in Matrix": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Distinct Subsequences": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Edit Distance": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Burst Balloons": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Regular Expression Matching": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "2D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Subarray": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Jump Game": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Jump Game II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Gas Station": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Hand of Straights": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Merge Triplets to Form Target": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Partition Labels": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Valid Parenthesis String": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Greedy",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Insert Interval": {
+      "easiness": 2.35,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-23",
+      "last_review": "2026-09-22",
+      "recall_ratings": [
+        2
+      ]
+    },
+    "Merge Intervals": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Non-overlapping Intervals": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Meeting Rooms": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Meeting Rooms II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Interval to Include Query": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Rotate Image": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Spiral Matrix": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Set Matrix Zeroes": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Happy Number": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Plus One": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Pow(x, n)": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Multiply Strings": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Detect Squares": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Single Number": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Number of 1 Bits": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Counting Bits": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reverse Bits": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Missing Number": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sum of Two Integers": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reverse Integer": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Bit Manipulation",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-05-24",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Linked List Cycle": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find the Duplicate Number": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "First Missing Positive": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Majority Element": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Range Sum Query - Immutable": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find All Duplicates in an Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find All Numbers Disappeared in an Array": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Arrays & Hashing",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "3Sum Closest": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sort Colors": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Rotate Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Move Zeroes": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Is Subsequence": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Backspace String Compare": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Squares of a Sorted Array": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Substring with Concatenation of All Words": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Size Subarray Sum": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sliding Window Median": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Average Subarray I": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Subarray Product Less Than K": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Fruit Into Baskets": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Sliding Window",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Frequency Stack": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Stack",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Search in Rotated Sorted Array II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find Peak Element": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Search a 2D Matrix II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Count of Range Sum": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find K Closest Elements": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find Smallest Letter Greater Than Target": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Peak Index in a Mountain Array": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Binary Search",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Swap Nodes in Pairs": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Rotate List": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Remove Duplicates from Sorted List": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reverse Linked List II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Linked List Cycle II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sort List": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Remove Linked List Elements": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Palindrome Linked List": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Odd Even Linked List": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Middle of the Linked List": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Linked List",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Zigzag Level Order Traversal": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Level Order Traversal II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Depth of Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Path Sum": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Path Sum II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Lowest Common Ancestor of a Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Binary Tree Paths": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Path Sum III": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Merge Two Binary Trees": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Average of Levels in Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Maximum Width of Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "All Nodes Distance K in Binary Tree": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Trees",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Design Search Autocomplete System": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Longest Word in Dictionary": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Prefix and Suffix Search": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Index Pairs of a String": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Tries",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Rearrange String k Distance Apart": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Find K Pairs with Smallest Sums": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Kth Smallest Element in a Sorted Matrix": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sort Characters By Frequency": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Smallest Range Covering Elements from K Lists": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Reorganize String": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Heap",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Sudoku Solver": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Permutations II": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Combinations": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Combination Sum III": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Factor Combinations": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Generalized Abbreviation": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Word Squares": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Partition to K Equal Sum Subsets": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Letter Case Permutation": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Backtracking",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Height Trees": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Graphs",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Combination Sum IV": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Concatenated Words": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Number of Longest Increasing Subsequence": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Count Unique Characters of All Substrings of a Given String": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "1D DP",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Minimum Number of Arrows to Burst Balloons": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Employee Free Time": {
+      "easiness": 2.5,
+      "difficulty": "Hard",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Interval List Intersections": {
+      "easiness": 2.5,
+      "difficulty": "Medium",
+      "topic": "Intervals",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    },
+    "Convert 1D Array Into 2D Array": {
+      "easiness": 2.5,
+      "difficulty": "Easy",
+      "topic": "Math & Geometry",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-09-22",
+      "last_review": null,
+      "recall_ratings": []
+    }
+  },
+  "settings": {
+    "problems_per_day": 5,
+    "selection_version": 4,
+    "card_format_version": 2
+  },
+  "streak": 1,
+  "last_session": "2026-09-22",
+  "today_list": [
+    130,
+    4,
+    61,
+    10,
+    80
+  ],
+  "today_date": "2026-09-22",
+  "today_done": [
+    130,
+    4,
+    61,
+    10,
+    80
+  ]
+}

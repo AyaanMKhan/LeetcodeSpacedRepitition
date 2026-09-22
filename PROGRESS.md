@@ -1,30 +1,30 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-09-22 12:50_  
-_Current streak: 🔥 0 day(s)_
+_Last updated: 2026-09-22 17:36_  
+_Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 0 / 229 problems
-- **Mastered:** 0
-- **Still struggling:** 0
-- **Not yet attempted:** 229
+- **Attempted:** 7 / 229 problems
+- **Mastered:** 4
+- **Still struggling:** 3
+- **Not yet attempted:** 222
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 0/14 | 0 | 14 |
-| Two Pointers | 0/12 | 0 | 12 |
+| Arrays & Hashing | 4/14 | 1 | 14 |
+| Two Pointers | 1/12 | 1 | 12 |
 | Sliding Window | 0/12 | 0 | 12 |
 | Stack | 0/9 | 0 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
 | Linked List | 0/21 | 0 | 21 |
 | Trees | 0/29 | 0 | 29 |
-| Tries | 0/7 | 0 | 7 |
+| Tries | 1/7 | 1 | 7 |
 | Heap | 0/13 | 0 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
-| Graphs | 0/20 | 0 | 20 |
+| Graphs | 1/20 | 1 | 20 |
 | 1D DP | 0/16 | 0 | 16 |
 | 2D DP | 0/11 | 0 | 11 |
 | Greedy | 0/8 | 0 | 8 |
@@ -39,7 +39,7 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Contains Duplicate
 - [ ] Valid Anagram
 - [ ] Two Sum
-- [ ] Group Anagrams
+- [x] Group Anagrams
 - [ ] Top K Frequent Elements
 - [ ] Product of Array Except Self
 - [ ] Valid Sudoku
@@ -53,7 +53,7 @@ _Current streak: 🔥 0 day(s)_
 
 ### Two Pointers
 
-- [ ] Valid Palindrome
+- [x] Valid Palindrome
 - [ ] Two Sum II
 - [ ] 3Sum
 - [ ] Container With Most Water
@@ -168,7 +168,7 @@ _Current streak: 🔥 0 day(s)_
 
 ### Tries
 
-- [ ] Implement Trie (Prefix Tree)
+- [x] Implement Trie (Prefix Tree)
 - [ ] Design Add and Search Words
 - [ ] Word Search II
 - [ ] Design Search Autocomplete System
@@ -215,7 +215,7 @@ _Current streak: 🔥 0 day(s)_
 
 ### Graphs
 
-- [ ] Number of Islands
+- [x] Number of Islands
 - [ ] Max Area of Island
 - [ ] Clone Graph
 - [ ] Walls and Gates
