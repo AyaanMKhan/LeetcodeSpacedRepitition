@@ -267,18 +267,25 @@ def normalize_card(card, topic, difficulty):
 
 def sm2_update(card, quality):
     """
-    quality: 0-5
-      5 = perfect recall
-      4 = correct with slight hesitation
-      3 = correct with difficulty
-      2 = wrong but remembered once shown
-      1 = wrong, hint barely helped
-      0 = total blank
+    quality: 1-3
+      3 = solved it without any help (full, independent success)
+      2 = got some of it, but needed help to reach the solution (partial credit)
+      1 = no idea how to solve this (total blank)
+
+    Only quality == 3 counts as a genuine "recall" for SM-2 purposes. Both
+    1 and 2 mean the problem isn't yet retained, so they behave identically
+    for scheduling: reset repetitions and resurface the card tomorrow. This
+    mirrors the old 0-5 scale's `quality < 3` fail branch, just remapped so
+    the sole passing value is the top of a 1-3 range instead of the top half
+    of a 0-5 range.
     """
     if quality < 3:
+        # quality == 1 ("no idea") or quality == 2 ("needed help") — neither
+        # is real, independent recall. Reset and show it again tomorrow.
         card["repetitions"] = 0
         card["interval"]    = 1
     else:
+        # quality == 3 ("solved independently") — normal SM-2 progression.
         if card["repetitions"] == 0:
             card["interval"] = FIRST_INTERVAL
         elif card["repetitions"] == 1:
@@ -287,9 +294,14 @@ def sm2_update(card, quality):
             card["interval"] = math.ceil(card["interval"] * card["easiness"])
         card["repetitions"] += 1
 
+    # Easiness delta calibrated for the 1-3 scale: a full success nudges
+    # easiness up, a partial success nudges it down, and a total blank
+    # penalizes it more heavily — repeated 3s grow the interval over time,
+    # repeated 1s/2s decay easiness toward the MIN_EASINESS floor.
+    EASINESS_DELTA = {3: 0.15, 2: -0.15, 1: -0.35}
     card["easiness"] = round(max(
         MIN_EASINESS,
-        card["easiness"] + 0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02)
+        card["easiness"] + EASINESS_DELTA[quality]
     ), 2)
 
     card["last_review"] = str(date.today())
@@ -313,7 +325,9 @@ def struggled_recently(card):
 
 
 def recall_bucket(card):
-    """Lower = more urgent to revisit. 0/1 scores get pulled back immediately."""
+    """Lower = more urgent to revisit. A rating of 1 (no idea) gets pulled
+    back immediately; 2 (needed help) is next; 3 (solved independently) is
+    the normal, least-urgent bucket."""
     rating = last_recall_rating(card)
     if rating is None:
         return 2
@@ -515,7 +529,7 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
         # 1. Guarantee at least a floor of fresh problems every day, no matter
         #    how big the review backlog is.
         take(new_due, min(new_per_day, n))
-        # 2. Pull back problems you rated 0/1 immediately, since they need the
+        # 2. Pull back problems you rated 1 (no idea) immediately, since they need the
         #    most reinforcement.
         take(critical, min(max_struggled * 2, n - len(selected)))
         # 3. Repeat problems you struggled with (last rating == 2), capped so a
@@ -524,10 +538,10 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
         # 4. Keep filling with NEW problems — when you're keeping up (few/no
         #    struggles) the whole day becomes fresh material.
         take(new_due, n - len(selected))
-        # 5. Only once new problems run out do well-known reviews (rated >= 3)
-        #    come back, spaced by SM-2.
+        # 5. Only once new problems run out do well-known reviews (rated 3,
+        #    solved independently) come back, spaced by SM-2.
         take(review_due, n - len(selected))
-        # 6. If room remains, keep pushing those 0/1 and 2-rated repeats back in.
+        # 6. If room remains, keep pushing those rated-1 and rated-2 repeats back in.
         take(critical, n - len(selected))
         take(struggled, n - len(selected))
         # 7. Finally, pull ahead from not-yet-due if still short.
@@ -622,28 +636,25 @@ def print_separator():
 # ── Interactive session ───────────────────────────────────────────────────────
 
 QUALITY_LABELS = {
-    "5": ("5", "Perfect recall"),
-    "4": ("4", "Hesitated slightly"),
-    "3": ("3", "Correct but hard"),
-    "2": ("2", "Wrong, remembered after"),
-    "1": ("1", "Wrong, hint barely helped"),
-    "0": ("0", "Total blank"),
+    "1": ("1", "No idea how to solve this"),
+    "2": ("2", "Got some of it, needed help to get the solution"),
+    "3": ("3", "Solved it without any help"),
 }
 
 def ask_quality():
     print()
     print("  " + bold("How well did you recall this?"))
     for k, (num, label) in QUALITY_LABELS.items():
-        bar = "█" * (int(k) + 1)
-        q_fn = [red, red, yellow, yellow, green, green][int(k)]
+        bar = "█" * int(k)
+        q_fn = [red, yellow, green][int(k) - 1]
         print(f"    {q_fn(num)} — {label}")
     print()
     while True:
         try:
-            ans = input("  Enter rating (0-5): ").strip()
+            ans = input("  Enter rating (1-3): ").strip()
             if ans in QUALITY_LABELS:
                 return int(ans)
-            print("  Please enter a number from 0 to 5.")
+            print("  Please enter a number from 1 to 3.")
         except (KeyboardInterrupt, EOFError):
             print()
             return None
