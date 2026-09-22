@@ -28,6 +28,10 @@ from collections import defaultdict, namedtuple
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        _stream.reconfigure(encoding="utf-8")
+
 # ── Config ────────────────────────────────────────────────────────────────────
 _SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_FILE   = _SCRIPT_DIR / "neetcode_sr.json"
@@ -616,7 +620,7 @@ def generate_progress_report(data):
             lines.append(f"- [{box}] {p.name}")
         lines.append("")
 
-    PROGRESS_FILE.write_text("\n".join(lines).rstrip() + "\n")
+    PROGRESS_FILE.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 # ── Problem selection ─────────────────────────────────────────────────────────
 
