@@ -11,12 +11,16 @@ python3 neetcode_sr.py --list-tomorrow # preview tomorrow's problems
 python3 neetcode_sr.py --stats      # see your progress
 python3 neetcode_sr.py --config     # change problems per day (2-10)
 python3 neetcode_sr.py --reset      # wipe history and start fresh
+python3 neetcode_sr.py --sync       # save progress + commit it locally to git
+                                     # (run `git push` yourself afterward to
+                                     # publish, so it shows up on another machine)
 
 """
 
 import json
 import os
 import shutil
+import subprocess
 import sys
 import math
 import random
@@ -27,6 +31,12 @@ from pathlib import Path
 # ── Config ────────────────────────────────────────────────────────────────────
 _SCRIPT_DIR = Path(__file__).resolve().parent
 DATA_FILE   = _SCRIPT_DIR / "neetcode_sr.json"
+# PROGRESS.md is a human-readable snapshot regenerated on every save_data()
+# call. Together, neetcode_sr.json (raw progress data) and PROGRESS.md
+# (readable report) are the sync mechanism for this app: both are tracked in
+# git, so `git add/commit/push` on one machine and `git pull` on another is
+# how progress moves between machines — no server/database required.
+PROGRESS_FILE = _SCRIPT_DIR / "PROGRESS.md"
 _LEGACY_DATA_FILE = Path.home() / ".neetcode_sr.json"
 PROBLEMS_PER_DAY = 5       # default; overridable in saved settings
 NEW_PER_DAY = 1            # guaranteed brand-new problems reserved each day
@@ -414,6 +424,80 @@ def save_data(data):
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
+    generate_progress_report(data)
+
+def generate_progress_report(data):
+    """Regenerate PROGRESS.md — a git-diffable, GitHub-readable snapshot of
+    review progress. Called at the end of every save_data() so it's always
+    current. "Mastered" = last recall rating equals the highest quality value
+    in QUALITY_LABELS; computed here (not at import time) so it stays correct
+    whichever quality scale is in effect.
+    """
+    mastery_quality = max(int(k) for k in QUALITY_LABELS)
+    cards = data.get("cards", {})
+
+    # topic -> [(Problem, status), ...], status in {"mastered","struggling","not_attempted"}
+    by_topic = defaultdict(list)
+    topics = []  # preserve first-appearance order
+    mastered_n = struggling_n = not_attempted_n = 0
+
+    for p in PROBLEMS:
+        if p.primary_topic not in topics:
+            topics.append(p.primary_topic)
+        card = cards.get(p.name)
+        if not card or card.get("repetitions", 0) == 0:
+            status = "not_attempted"
+            not_attempted_n += 1
+        else:
+            last = last_recall_rating(card)
+            if last is not None and last >= mastery_quality:
+                status = "mastered"
+                mastered_n += 1
+            else:
+                status = "struggling"
+                struggling_n += 1
+        by_topic[p.primary_topic].append((p, status))
+
+    total = len(PROBLEMS)
+    attempted_n = mastered_n + struggling_n
+    streak = data.get("streak", 0)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+
+    lines = [
+        "# Neetcode 150 — Progress Report",
+        "",
+        f"_Last updated: {now}_  ",
+        f"_Current streak: 🔥 {streak} day(s)_",
+        "",
+        "## Overview",
+        "",
+        f"- **Attempted:** {attempted_n} / {total} problems",
+        f"- **Mastered:** {mastered_n}",
+        f"- **Still struggling:** {struggling_n}",
+        f"- **Not yet attempted:** {not_attempted_n}",
+        "",
+        "## Progress by Topic",
+        "",
+        "| Topic | Attempted | Mastered | Total |",
+        "|---|---|---|---|",
+    ]
+    for topic in topics:
+        entries = by_topic[topic]
+        t_total = len(entries)
+        t_mastered = sum(1 for _, s in entries if s == "mastered")
+        t_attempted = sum(1 for _, s in entries if s != "not_attempted")
+        lines.append(f"| {topic} | {t_attempted}/{t_total} | {t_mastered} | {t_total} |")
+
+    lines += ["", "## Checklist", ""]
+    for topic in topics:
+        lines.append(f"### {topic}")
+        lines.append("")
+        for p, status in by_topic[topic]:
+            box = "x" if status == "mastered" else " "
+            lines.append(f"- [{box}] {p.name}")
+        lines.append("")
+
+    PROGRESS_FILE.write_text("\n".join(lines).rstrip() + "\n")
 
 # ── Problem selection ─────────────────────────────────────────────────────────
 
@@ -870,6 +954,55 @@ def configure(data):
     except (ValueError, KeyboardInterrupt, EOFError):
         print(dim("  Unchanged."))
 
+# ── Sync ──────────────────────────────────────────────────────────────────────
+
+def sync_progress(data):
+    """Save progress (neetcode_sr.json + PROGRESS.md) and create a local git
+    commit so it can be carried to another machine via git. Never pushes —
+    publishing is a separate, deliberate step left to the user.
+    """
+    save_data(data)  # writes neetcode_sr.json and regenerates PROGRESS.md
+
+    repo_root = _SCRIPT_DIR
+    try:
+        subprocess.run(
+            ["git", "-C", str(repo_root), "add", "neetcode_sr.json", "PROGRESS.md"],
+            check=True, capture_output=True, text=True,
+        )
+    except (subprocess.SubprocessError, OSError) as e:
+        print(red("  Could not stage progress files for sync (is git installed?)."))
+        detail = getattr(e, "stderr", None) or str(e)
+        print(dim(f"  {detail}".strip()))
+        return
+
+    try:
+        staged = subprocess.run(
+            ["git", "-C", str(repo_root), "diff", "--cached", "--quiet"],
+        )
+    except (subprocess.SubprocessError, OSError) as e:
+        print(red("  Could not check git status for sync."))
+        print(dim(f"  {e}"))
+        return
+
+    if staged.returncode == 0:
+        print(dim("  Nothing to sync."))
+        return
+
+    commit_msg = f"Sync progress: {date.today()}"
+    try:
+        subprocess.run(
+            ["git", "-C", str(repo_root), "commit", "-m", commit_msg],
+            check=True, capture_output=True, text=True,
+        )
+    except (subprocess.SubprocessError, OSError) as e:
+        print(red("  Could not create local commit."))
+        detail = getattr(e, "stderr", None) or str(e)
+        print(dim(f"  {detail}".strip()))
+        return
+
+    print(green(f"  Committed locally: \"{commit_msg}\""))
+    print(dim("  Run 'git push' yourself when you're ready to publish this to GitHub."))
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 
 def main():
@@ -880,6 +1013,9 @@ def main():
     parser.add_argument("--reset",    action="store_true", help="Reset all history (dangerous!)")
     parser.add_argument("--list-due", action="store_true", help="List today's problems and exit")
     parser.add_argument("--list-tomorrow", action="store_true", help="Preview tomorrow's problems and exit")
+    parser.add_argument("--sync", action="store_true",
+                         help="Save progress and commit neetcode_sr.json + PROGRESS.md locally "
+                              "(push yourself afterward to publish)")
     args = parser.parse_args()
 
     data = load_data()
@@ -895,6 +1031,10 @@ def main():
 
     if args.config:
         configure(data)
+        return
+
+    if args.sync:
+        sync_progress(data)
         return
 
     if args.stats:
