@@ -201,18 +201,18 @@ PROBLEMS = [
     Problem(108, "Word Break", "1D DP", "Medium", 139, ("Hash Table", "Dynamic Programming", "Trie", "Memoization", "Brute-Force Search")),
     Problem(109, "Longest Increasing Subsequence", "1D DP", "Medium", 300, ("Binary Search", "Dynamic Programming", "Longest Increasing Subsequence")),
     Problem(110, "Partition Equal Subset Sum", "1D DP", "Medium", 416, ("Dynamic Programming", "Knapsack Problem", "0-1 Knapsack")),
-    # 2-D Dynamic Programming (disabled — uncomment when ready)
-    # (111, "Unique Paths",                         "2D DP",            "Medium", 62),
-    # (112, "Longest Common Subsequence",           "2D DP",            "Medium", 1143),
-    # (113, "Best Time to Buy Stock w/ Cooldown",   "2D DP",            "Medium", 309),
-    # (114, "Coin Change II",                       "2D DP",            "Medium", 518),
-    # (115, "Target Sum",                           "2D DP",            "Medium", 494),
-    # (116, "Interleaving String",                  "2D DP",            "Medium", 97),
-    # (117, "Longest Increasing Path in Matrix",    "2D DP",            "Hard",   329),
-    # (118, "Distinct Subsequences",                "2D DP",            "Hard",   115),
-    # (119, "Edit Distance",                        "2D DP",            "Medium", 72),
-    # (120, "Burst Balloons",                       "2D DP",            "Hard",   312),
-    # (121, "Regular Expression Matching",          "2D DP",            "Hard",   10),
+    # 2-D Dynamic Programming
+    Problem(111, "Unique Paths", "2D DP", "Medium", 62, ("Math", "Dynamic Programming", "Combinatorics")),
+    Problem(112, "Longest Common Subsequence", "2D DP", "Medium", 1143, ("Dynamic Programming", "Longest Common Subsequence")),
+    Problem(113, "Best Time to Buy Stock w/ Cooldown", "2D DP", "Medium", 309, ("Dynamic Programming",)),
+    Problem(114, "Coin Change II", "2D DP", "Medium", 518, ()),
+    Problem(115, "Target Sum", "2D DP", "Medium", 494, ("Dynamic Programming", "Backtracking", "Knapsack Problem", "0-1 Knapsack")),
+    Problem(116, "Interleaving String", "2D DP", "Medium", 97, ()),
+    Problem(117, "Longest Increasing Path in Matrix", "2D DP", "Hard", 329, ()),
+    Problem(118, "Distinct Subsequences", "2D DP", "Hard", 115, ()),
+    Problem(119, "Edit Distance", "2D DP", "Medium", 72, ()),
+    Problem(120, "Burst Balloons", "2D DP", "Hard", 312, ()),
+    Problem(121, "Regular Expression Matching", "2D DP", "Hard", 10, ()),
     # Greedy
     Problem(122, "Maximum Subarray", "Greedy", "Medium", 53, ("Divide and Conquer", "Dynamic Programming")),
     Problem(123, "Jump Game", "Greedy", "Medium", 55, ("Dynamic Programming", "Greedy")),
@@ -229,23 +229,127 @@ PROBLEMS = [
     Problem(133, "Meeting Rooms", "Intervals", "Easy", 252, ("Sorting", "Quicksort")),
     Problem(134, "Meeting Rooms II", "Intervals", "Medium", 253, ("Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)", "Prefix Sum")),
     Problem(135, "Minimum Interval to Include Query", "Intervals", "Hard", 1851, ()),
-    # Math & Geometry (disabled — uncomment when ready)
-    # (136, "Rotate Image",                         "Math & Geometry",  "Medium", 48),
-    # (137, "Spiral Matrix",                        "Math & Geometry",  "Medium", 54),
-    # (138, "Set Matrix Zeroes",                    "Math & Geometry",  "Medium", 73),
-    # (139, "Happy Number",                         "Math & Geometry",  "Easy",   202),
-    # (140, "Plus One",                             "Math & Geometry",  "Easy",   66),
-    # (141, "Pow(x, n)",                            "Math & Geometry",  "Medium", 50),
-    # (142, "Multiply Strings",                     "Math & Geometry",  "Medium", 43),
-    # (143, "Detect Squares",                       "Math & Geometry",  "Medium", 2013),
-    # Bit Manipulation (disabled — uncomment when ready)
-    # (144, "Single Number",                        "Bit Manipulation", "Easy",   136),
-    # (145, "Number of 1 Bits",                     "Bit Manipulation", "Easy",   191),
-    # (146, "Counting Bits",                        "Bit Manipulation", "Easy",   338),
-    # (147, "Reverse Bits",                         "Bit Manipulation", "Easy",   190),
-    # (148, "Missing Number",                       "Bit Manipulation", "Easy",   268),
-    # (149, "Sum of Two Integers",                  "Bit Manipulation", "Medium", 371),
-    # (150, "Reverse Integer",                      "Bit Manipulation", "Medium", 7),
+    # Math & Geometry
+    Problem(136, "Rotate Image", "Math & Geometry", "Medium", 48, ("Math",)),
+    Problem(137, "Spiral Matrix", "Math & Geometry", "Medium", 54, ("Simulation",)),
+    Problem(138, "Set Matrix Zeroes", "Math & Geometry", "Medium", 73, ("Hash Table",)),
+    Problem(139, "Happy Number", "Math & Geometry", "Easy", 202, ()),
+    Problem(140, "Plus One", "Math & Geometry", "Easy", 66, ()),
+    Problem(141, "Pow(x, n)", "Math & Geometry", "Medium", 50, ()),
+    Problem(142, "Multiply Strings", "Math & Geometry", "Medium", 43, ()),
+    Problem(143, "Detect Squares", "Math & Geometry", "Medium", 2013, ()),
+    # Bit Manipulation
+    Problem(144, "Single Number", "Bit Manipulation", "Easy", 136, ("Bit Manipulation",)),
+    Problem(145, "Number of 1 Bits", "Bit Manipulation", "Easy", 191, ("Divide and Conquer", "Bit Manipulation")),
+    Problem(146, "Counting Bits", "Bit Manipulation", "Easy", 338, ("Dynamic Programming", "Bit Manipulation")),
+    Problem(147, "Reverse Bits", "Bit Manipulation", "Easy", 190, ("Divide and Conquer", "Bit Manipulation")),
+    Problem(148, "Missing Number", "Bit Manipulation", "Easy", 268, ("Hash Table", "Math", "Binary Search", "Bit Manipulation", "Sorting")),
+    Problem(149, "Sum of Two Integers", "Bit Manipulation", "Medium", 371, ("Math", "Bit Manipulation")),
+    Problem(150, "Reverse Integer", "Bit Manipulation", "Medium", 7, ()),
+    # NeetCode 150 completion — found missing from the file during full-list
+    # verification against multiple NeetCode 150 mirrors (crackedprep.com,
+    # crackr.dev); grouped under Linked List to match those sources.
+    Problem(151, "Linked List Cycle", "Linked List", "Easy", 141, ("Hash Table", "Linked List", "Two Pointers", "Floyd's Cycle Finding Algorithm")),
+    Problem(152, "Find the Duplicate Number", "Linked List", "Medium", 287, ("Two Pointers", "Binary Search", "Bit Manipulation", "Pigeonhole Principle", "Floyd's Cycle Finding Algorithm")),
+
+    # ── Sean Prashad Patterns (additional, not in NeetCode 150) ───────────────
+    # Sourced from https://seanprashad.com/leetcode-patterns/ (questions.json).
+    # Every problem in that dataset not already covered above, matched by LC
+    # problem number (verified via LeetCode's own problems API, cross-checked
+    # by slug since the dataset's own "id" field is not reliably the LC
+    # number). Grouped by primary_topic like the rest of the file; category
+    # picked from the problem's dominant pattern tag(s).
+    # Arrays & Hashing
+    Problem(153, "First Missing Positive", "Arrays & Hashing", "Hard", 41, ("Hash Table",)),
+    Problem(154, "Majority Element", "Arrays & Hashing", "Easy", 169, ("Hash Table", "Divide and Conquer", "Sorting", "Counting", "Boyer–Moore Majority Vote Algorithm")),
+    Problem(155, "Range Sum Query - Immutable", "Arrays & Hashing", "Easy", 303, ("Design", "Prefix Sum")),
+    Problem(156, "Find All Duplicates in an Array", "Arrays & Hashing", "Medium", 442, ("Hash Table", "Sorting")),
+    Problem(157, "Find All Numbers Disappeared in an Array", "Arrays & Hashing", "Easy", 448, ("Hash Table",)),
+    # Two Pointers
+    Problem(158, "3Sum Closest", "Two Pointers", "Medium", 16, ("Two Pointers", "Sorting")),
+    Problem(159, "Sort Colors", "Two Pointers", "Medium", 75, ("Two Pointers", "Sorting", "Quicksort", "Bubble Sort")),
+    Problem(160, "Rotate Array", "Two Pointers", "Medium", 189, ("Math", "Two Pointers")),
+    Problem(161, "Move Zeroes", "Two Pointers", "Easy", 283, ("Two Pointers",)),
+    Problem(162, "Is Subsequence", "Two Pointers", "Easy", 392, ("Two Pointers", "Dynamic Programming")),
+    Problem(163, "Backspace String Compare", "Two Pointers", "Easy", 844, ("Two Pointers", "Stack", "Simulation")),
+    Problem(164, "Squares of a Sorted Array", "Two Pointers", "Easy", 977, ("Two Pointers", "Sorting")),
+    # Sliding Window
+    Problem(165, "Substring with Concatenation of All Words", "Sliding Window", "Hard", 30, ("Hash Table", "Sliding Window")),
+    Problem(166, "Minimum Size Subarray Sum", "Sliding Window", "Medium", 209, ("Binary Search", "Sliding Window", "Prefix Sum")),
+    Problem(167, "Sliding Window Median", "Sliding Window", "Hard", 480, ("Hash Table", "Sliding Window", "Heap (Priority Queue)", "Treap")),
+    Problem(168, "Maximum Average Subarray I", "Sliding Window", "Easy", 643, ("Sliding Window",)),
+    Problem(169, "Subarray Product Less Than K", "Sliding Window", "Medium", 713, ("Binary Search", "Sliding Window", "Prefix Sum")),
+    Problem(170, "Fruit Into Baskets", "Sliding Window", "Medium", 904, ("Hash Table", "Sliding Window")),
+    # Stack
+    Problem(171, "Maximum Frequency Stack", "Stack", "Hard", 895, ("Hash Table", "Stack", "Design", "Ordered Set")),
+    # Binary Search
+    Problem(172, "Search in Rotated Sorted Array II", "Binary Search", "Medium", 81, ("Binary Search",)),
+    Problem(173, "Find Peak Element", "Binary Search", "Medium", 162, ("Binary Search",)),
+    Problem(174, "Search a 2D Matrix II", "Binary Search", "Medium", 240, ("Binary Search", "Divide and Conquer")),
+    Problem(175, "Count of Range Sum", "Binary Search", "Hard", 327, ("Binary Search", "Divide and Conquer", "Binary Indexed Tree", "Segment Tree", "Merge Sort", "Ordered Set", "Treap")),
+    Problem(176, "Find K Closest Elements", "Binary Search", "Medium", 658, ("Two Pointers", "Binary Search", "Sliding Window", "Sorting", "Heap (Priority Queue)")),
+    Problem(177, "Find Smallest Letter Greater Than Target", "Binary Search", "Easy", 744, ("Binary Search",)),
+    Problem(178, "Peak Index in a Mountain Array", "Binary Search", "Medium", 852, ("Binary Search", "Ternary Search")),
+    # Linked List
+    Problem(179, "Swap Nodes in Pairs", "Linked List", "Medium", 24, ("Linked List", "Recursion")),
+    Problem(180, "Rotate List", "Linked List", "Medium", 61, ("Linked List", "Two Pointers")),
+    Problem(181, "Remove Duplicates from Sorted List", "Linked List", "Easy", 83, ("Linked List",)),
+    Problem(182, "Reverse Linked List II", "Linked List", "Medium", 92, ("Linked List",)),
+    Problem(183, "Linked List Cycle II", "Linked List", "Medium", 142, ("Hash Table", "Linked List", "Two Pointers", "Floyd's Cycle Finding Algorithm")),
+    Problem(184, "Sort List", "Linked List", "Medium", 148, ("Linked List", "Two Pointers", "Divide and Conquer", "Sorting", "Merge Sort")),
+    Problem(185, "Remove Linked List Elements", "Linked List", "Easy", 203, ("Linked List", "Recursion")),
+    Problem(186, "Palindrome Linked List", "Linked List", "Easy", 234, ("Linked List", "Two Pointers", "Stack", "Recursion")),
+    Problem(187, "Odd Even Linked List", "Linked List", "Medium", 328, ("Linked List",)),
+    Problem(188, "Middle of the Linked List", "Linked List", "Easy", 876, ("Linked List", "Two Pointers")),
+    # Trees
+    Problem(189, "Binary Tree Zigzag Level Order Traversal", "Trees", "Medium", 103, ("Tree", "Breadth-First Search", "Binary Tree")),
+    Problem(190, "Binary Tree Level Order Traversal II", "Trees", "Medium", 107, ("Tree", "Breadth-First Search", "Binary Tree")),
+    Problem(191, "Minimum Depth of Binary Tree", "Trees", "Easy", 111, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(192, "Path Sum", "Trees", "Easy", 112, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(193, "Path Sum II", "Trees", "Medium", 113, ("Backtracking", "Tree", "Depth-First Search", "Binary Tree")),
+    Problem(194, "Lowest Common Ancestor of a Binary Tree", "Trees", "Medium", 236, ("Tree", "Depth-First Search", "Binary Tree", "Binary Lifting", "Lowest Common Ancestor")),
+    Problem(195, "Binary Tree Paths", "Trees", "Easy", 257, ("Backtracking", "Tree", "Depth-First Search", "Binary Tree")),
+    Problem(196, "Path Sum III", "Trees", "Medium", 437, ("Tree", "Depth-First Search", "Binary Tree")),
+    Problem(197, "Merge Two Binary Trees", "Trees", "Easy", 617, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(198, "Average of Levels in Binary Tree", "Trees", "Easy", 637, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(199, "Maximum Binary Tree", "Trees", "Medium", 654, ("Divide and Conquer", "Stack", "Tree", "Monotonic Stack", "Binary Tree", "Cartesian Tree")),
+    Problem(200, "Maximum Width of Binary Tree", "Trees", "Medium", 662, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(201, "All Nodes Distance K in Binary Tree", "Trees", "Medium", 863, ("Hash Table", "Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    # Tries
+    Problem(202, "Design Search Autocomplete System", "Tries", "Hard", 642, ("Depth-First Search", "Design", "Trie", "Sorting", "Heap (Priority Queue)", "Data Stream")),
+    Problem(203, "Longest Word in Dictionary", "Tries", "Medium", 720, ("Hash Table", "Trie", "Sorting")),
+    Problem(204, "Prefix and Suffix Search", "Tries", "Hard", 745, ("Hash Table", "Design", "Trie")),
+    Problem(205, "Index Pairs of a String", "Tries", "Easy", 1065, ("Trie", "Sorting", "Aho–Corasick Algorithm")),
+    # Heap
+    Problem(206, "Rearrange String k Distance Apart", "Heap", "Hard", 358, ("Hash Table", "Greedy", "Sorting", "Heap (Priority Queue)", "Counting")),
+    Problem(207, "Find K Pairs with Smallest Sums", "Heap", "Medium", 373, ("Heap (Priority Queue)",)),
+    Problem(208, "Kth Smallest Element in a Sorted Matrix", "Heap", "Medium", 378, ("Binary Search", "Sorting", "Heap (Priority Queue)")),
+    Problem(209, "Sort Characters By Frequency", "Heap", "Medium", 451, ("Hash Table", "Sorting", "Heap (Priority Queue)", "Bucket Sort", "Counting")),
+    Problem(210, "Smallest Range Covering Elements from K Lists", "Heap", "Hard", 632, ("Hash Table", "Greedy", "Sliding Window", "Sorting", "Heap (Priority Queue)")),
+    Problem(211, "Reorganize String", "Heap", "Medium", 767, ("Hash Table", "Greedy", "Sorting", "Heap (Priority Queue)", "Counting")),
+    # Backtracking
+    Problem(212, "Sudoku Solver", "Backtracking", "Hard", 37, ("Hash Table", "Backtracking", "Algorithm X", "Dancing Links")),
+    Problem(213, "Permutations II", "Backtracking", "Medium", 47, ("Backtracking", "Sorting")),
+    Problem(214, "Combinations", "Backtracking", "Medium", 77, ("Backtracking",)),
+    Problem(215, "Combination Sum III", "Backtracking", "Medium", 216, ("Backtracking",)),
+    Problem(216, "Factor Combinations", "Backtracking", "Medium", 254, ("Backtracking", "Prime Factorization")),
+    Problem(217, "Generalized Abbreviation", "Backtracking", "Medium", 320, ("Backtracking", "Bit Manipulation")),
+    Problem(218, "Word Squares", "Backtracking", "Hard", 425, ("Backtracking", "Trie")),
+    Problem(219, "Partition to K Equal Sum Subsets", "Backtracking", "Medium", 698, ("Dynamic Programming", "Backtracking", "Bit Manipulation", "Memoization", "Bitmask")),
+    Problem(220, "Letter Case Permutation", "Backtracking", "Medium", 784, ("Backtracking", "Bit Manipulation")),
+    # Graphs
+    Problem(221, "Minimum Height Trees", "Graphs", "Medium", 310, ("Depth-First Search", "Breadth-First Search", "Graph Theory", "Topological Sort")),
+    # 1D DP
+    Problem(222, "Combination Sum IV", "1D DP", "Medium", 377, ("Dynamic Programming",)),
+    Problem(223, "Concatenated Words", "1D DP", "Hard", 472, ("Dynamic Programming", "Depth-First Search", "Trie", "Sorting")),
+    Problem(224, "Number of Longest Increasing Subsequence", "1D DP", "Medium", 673, ("Dynamic Programming", "Binary Indexed Tree", "Segment Tree", "Longest Increasing Subsequence")),
+    Problem(225, "Count Unique Characters of All Substrings of a Given String", "1D DP", "Hard", 828, ("Hash Table", "Dynamic Programming")),
+    # Intervals
+    Problem(226, "Minimum Number of Arrows to Burst Balloons", "Intervals", "Medium", 452, ("Greedy", "Sorting")),
+    Problem(227, "Employee Free Time", "Intervals", "Hard", 759, ("Sweep Line", "Sorting", "Heap (Priority Queue)")),
+    Problem(228, "Interval List Intersections", "Intervals", "Medium", 986, ("Two Pointers", "Sweep Line")),
+    # Math & Geometry
+    Problem(229, "Convert 1D Array Into 2D Array", "Math & Geometry", "Easy", 2022, ("Simulation",)),
 ]
 
 PROBLEMS_BY_ID = {p[0]: p for p in PROBLEMS}
