@@ -9,7 +9,7 @@ python3 neetcode_sr.py        # start your session
 python3 neetcode_sr.py --list-due      # just peek at today's problems
 python3 neetcode_sr.py --list-tomorrow # preview tomorrow's problems
 python3 neetcode_sr.py --stats      # see your progress
-python3 neetcode_sr.py --config     # change problems per day (2-10)
+python3 neetcode_sr.py --config     # change problems/day (2-10) and guaranteed review slots/day (0-5)
 python3 neetcode_sr.py --reset      # wipe history and start fresh
 python3 neetcode_sr.py --sync       # save progress + commit it locally to git
                                      # (run `git push` yourself afterward to
@@ -41,6 +41,7 @@ _LEGACY_DATA_FILE = Path.home() / ".neetcode_sr.json"
 PROBLEMS_PER_DAY = 5       # default; overridable in saved settings
 NEW_PER_DAY = 1            # guaranteed brand-new problems reserved each day
 MAX_STRUGGLED_PER_DAY = 2  # cap on struggled repeats force-included each day
+REVIEW_PER_DAY = 1         # guaranteed spaced-review slot(s) for mastered (rating-3) problems
 MIN_EASINESS = 1.3
 DEFAULT_EASINESS = 2.5
 FIRST_INTERVAL = 3         # days until re-show after 1st successful recall (was 1)
@@ -690,6 +691,7 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
 
     new_per_day    = data["settings"].get("new_per_day", NEW_PER_DAY)
     max_struggled  = data["settings"].get("max_struggled_per_day", MAX_STRUGGLED_PER_DAY)
+    review_per_day = data["settings"].get("review_per_day", REVIEW_PER_DAY)
 
     rng_state = random.getstate()
     random.seed(day_str)
@@ -732,16 +734,20 @@ def pick_for_date(data, as_of=None, *, save=False, use_cache=True):
         # 3. Repeat problems you struggled with (last rating == 2), capped so a
         #    backlog of hard problems can't crowd out everything else.
         take(struggled, min(max_struggled, n - len(selected)))
-        # 4. Keep filling with NEW problems — when you're keeping up (few/no
-        #    struggles) the whole day becomes fresh material.
+        # 4. Guarantee a floor of spaced review for already-mastered problems
+        #    (rated >= 3) so a big new-problem backlog can't perpetually starve
+        #    long-term retention review — reserved BEFORE more new problems.
+        take(review_due, min(review_per_day, n - len(selected)))
+        # 5. Keep filling with NEW problems — when you're keeping up (few/no
+        #    struggles) most of the remaining day becomes fresh material.
         take(new_due, n - len(selected))
-        # 5. Only once new problems run out do well-known reviews (rated 3,
-        #    solved independently) come back, spaced by SM-2.
+        # 6. If room remains beyond the guaranteed floor, pull in more
+        #    well-known reviews (rated 3), spaced by SM-2.
         take(review_due, n - len(selected))
-        # 6. If room remains, keep pushing those rated-1 and rated-2 repeats back in.
+        # 7. If room remains, keep pushing those rated-1 and rated-2 repeats back in.
         take(critical, n - len(selected))
         take(struggled, n - len(selected))
-        # 7. Finally, pull ahead from not-yet-due if still short.
+        # 8. Finally, pull ahead from not-yet-due if still short.
         take(not_due, n - len(selected))
     finally:
         random.setstate(rng_state)
@@ -1066,6 +1072,25 @@ def configure(data):
                 print(green(f"  Saved! Problems per day set to {n}."))
             else:
                 print(red("  Must be between 2 and 10."))
+    except (ValueError, KeyboardInterrupt, EOFError):
+        print(dim("  Unchanged."))
+
+    print()
+    current_review = data["settings"].get("review_per_day", REVIEW_PER_DAY)
+    print(f"  Guaranteed review slots per day (current: {current_review})")
+    try:
+        val = input("  New value (0-5, enter to keep): ").strip()
+        if val:
+            n = int(val)
+            if 0 <= n <= 5:
+                data["settings"]["review_per_day"] = n
+                # reset today so new setting applies
+                data["today_date"] = None
+                data["today_list"] = []
+                save_data(data)
+                print(green(f"  Saved! Guaranteed review slots per day set to {n}."))
+            else:
+                print(red("  Must be between 0 and 5."))
     except (ValueError, KeyboardInterrupt, EOFError):
         print(dim("  Unchanged."))
 
