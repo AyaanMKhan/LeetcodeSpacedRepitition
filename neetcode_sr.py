@@ -1164,7 +1164,11 @@ def main():
         confirm = input("Reset ALL review history? This cannot be undone. Type YES: ").strip()
         if confirm == "YES":
             DATA_FILE.unlink(missing_ok=True)
+            _LEGACY_DATA_FILE.unlink(missing_ok=True)
+            fresh_data = load_data()
+            generate_progress_report(fresh_data)
             print(green("History cleared."))
+            print(dim("  Run --sync to commit this reset, or --sync later once you've started fresh reviews."))
         else:
             print(dim("Cancelled."))
         return
