@@ -20,7 +20,7 @@ import shutil
 import sys
 import math
 import random
-from collections import defaultdict
+from collections import defaultdict, namedtuple
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
@@ -59,130 +59,138 @@ def blue(t):    return c(t, "34")
 DIFF_COLOR = {"Easy": green, "Medium": yellow, "Hard": red}
 
 # ── Active problem pool (comment out sections to exclude until ready) ─────────
+# Problem tuple: (id, name, primary_topic, difficulty, lc_number, subtopics)
+#   primary_topic is the existing single-bucket categorization (used for
+#   grouping/diversity/stats). subtopics is a tuple of finer-grained pattern
+#   tags (e.g. "Two Pointers", "Union-Find", "Topological Sort") sourced from
+#   https://seanprashad.com/leetcode-patterns/ by LC problem number/title;
+#   left as () where that source doesn't cover the problem.
+Problem = namedtuple("Problem", ["id", "name", "primary_topic", "difficulty", "lc_number", "subtopics"])
+
 PROBLEMS = [
     # Arrays & Hashing
-    (1,   "Contains Duplicate",                  "Arrays & Hashing", "Easy",   217),
-    (2,   "Valid Anagram",                        "Arrays & Hashing", "Easy",   242),
-    (3,   "Two Sum",                              "Arrays & Hashing", "Easy",   1),
-    (4,   "Group Anagrams",                       "Arrays & Hashing", "Medium", 49),
-    (5,   "Top K Frequent Elements",              "Arrays & Hashing", "Medium", 347),
-    (6,   "Product of Array Except Self",         "Arrays & Hashing", "Medium", 238),
-    (7,   "Valid Sudoku",                         "Arrays & Hashing", "Medium", 36),
-    (8,   "Encode and Decode Strings",            "Arrays & Hashing", "Medium", 271),
-    (9,   "Longest Consecutive Sequence",         "Arrays & Hashing", "Medium", 128),
+    Problem(1, "Contains Duplicate", "Arrays & Hashing", "Easy", 217, ("Hash Table", "Sorting")),
+    Problem(2, "Valid Anagram", "Arrays & Hashing", "Easy", 242, ("Hash Table", "Sorting")),
+    Problem(3, "Two Sum", "Arrays & Hashing", "Easy", 1, ("Hash Table",)),
+    Problem(4, "Group Anagrams", "Arrays & Hashing", "Medium", 49, ("Hash Table", "Sorting")),
+    Problem(5, "Top K Frequent Elements", "Arrays & Hashing", "Medium", 347, ("Hash Table", "Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Bucket Sort", "Counting", "Quickselect")),
+    Problem(6, "Product of Array Except Self", "Arrays & Hashing", "Medium", 238, ("Prefix Sum",)),
+    Problem(7, "Valid Sudoku", "Arrays & Hashing", "Medium", 36, ()),
+    Problem(8, "Encode and Decode Strings", "Arrays & Hashing", "Medium", 271, ("Design",)),
+    Problem(9, "Longest Consecutive Sequence", "Arrays & Hashing", "Medium", 128, ("Hash Table", "Union-Find")),
     # Two Pointers
-    (10,  "Valid Palindrome",                     "Two Pointers",     "Easy",   125),
-    (11,  "Two Sum II",                           "Two Pointers",     "Medium", 167),
-    (12,  "3Sum",                                 "Two Pointers",     "Medium", 15),
-    (13,  "Container With Most Water",            "Two Pointers",     "Medium", 11),
-    (14,  "Trapping Rain Water",                  "Two Pointers",     "Hard",   42),
+    Problem(10, "Valid Palindrome", "Two Pointers", "Easy", 125, ("Two Pointers",)),
+    Problem(11, "Two Sum II", "Two Pointers", "Medium", 167, ()),
+    Problem(12, "3Sum", "Two Pointers", "Medium", 15, ("Two Pointers", "Sorting")),
+    Problem(13, "Container With Most Water", "Two Pointers", "Medium", 11, ("Two Pointers", "Greedy")),
+    Problem(14, "Trapping Rain Water", "Two Pointers", "Hard", 42, ("Two Pointers", "Dynamic Programming", "Stack", "Monotonic Stack")),
     # Sliding Window
-    (15,  "Best Time to Buy and Sell Stock",      "Sliding Window",   "Easy",   121),
-    (16,  "Longest Substring Without Repeating",  "Sliding Window",   "Medium", 3),
-    (17,  "Longest Repeating Char Replacement",   "Sliding Window",   "Medium", 424),
-    (18,  "Permutation in String",                "Sliding Window",   "Medium", 567),
-    (19,  "Minimum Window Substring",             "Sliding Window",   "Hard",   76),
-    (20,  "Sliding Window Maximum",               "Sliding Window",   "Hard",   239),
+    Problem(15, "Best Time to Buy and Sell Stock", "Sliding Window", "Easy", 121, ("Dynamic Programming",)),
+    Problem(16, "Longest Substring Without Repeating", "Sliding Window", "Medium", 3, ("Hash Table", "Sliding Window")),
+    Problem(17, "Longest Repeating Char Replacement", "Sliding Window", "Medium", 424, ("Hash Table", "Sliding Window")),
+    Problem(18, "Permutation in String", "Sliding Window", "Medium", 567, ("Hash Table", "Two Pointers", "Sliding Window")),
+    Problem(19, "Minimum Window Substring", "Sliding Window", "Hard", 76, ("Hash Table", "Sliding Window")),
+    Problem(20, "Sliding Window Maximum", "Sliding Window", "Hard", 239, ("Queue", "Sliding Window", "Heap (Priority Queue)", "Monotonic Queue", "Range Minimum/Maximum Query")),
     # Stack
-    (21,  "Valid Parentheses",                    "Stack",            "Easy",   20),
-    (22,  "Min Stack",                            "Stack",            "Medium", 155),
-    (23,  "Evaluate Reverse Polish Notation",     "Stack",            "Medium", 150),
-    (24,  "Generate Parentheses",                 "Stack",            "Medium", 22),
-    (25,  "Daily Temperatures",                   "Stack",            "Medium", 739),
-    (26,  "Car Fleet",                            "Stack",            "Medium", 853),
-    (27,  "Implement Queue using Stacks",         "Stack",            "Easy",   232),
-    (28,  "Largest Rectangle in Histogram",       "Stack",            "Hard",   84),
+    Problem(21, "Valid Parentheses", "Stack", "Easy", 20, ("Stack", "Bracket Sequences")),
+    Problem(22, "Min Stack", "Stack", "Medium", 155, ()),
+    Problem(23, "Evaluate Reverse Polish Notation", "Stack", "Medium", 150, ()),
+    Problem(24, "Generate Parentheses", "Stack", "Medium", 22, ("Dynamic Programming", "Backtracking", "Bracket Sequences")),
+    Problem(25, "Daily Temperatures", "Stack", "Medium", 739, ()),
+    Problem(26, "Car Fleet", "Stack", "Medium", 853, ()),
+    Problem(27, "Implement Queue using Stacks", "Stack", "Easy", 232, ()),
+    Problem(28, "Largest Rectangle in Histogram", "Stack", "Hard", 84, ()),
     # Binary Search
-    (29,  "Binary Search",                        "Binary Search",    "Easy",   704),
-    (30,  "Search a 2D Matrix",                   "Binary Search",    "Medium", 74),
-    (31,  "Koko Eating Bananas",                  "Binary Search",    "Medium", 875),
-    (32,  "Find Min in Rotated Sorted Array",     "Binary Search",    "Medium", 153),
-    (33,  "Search in Rotated Sorted Array",       "Binary Search",    "Medium", 33),
-    (34,  "Time Based Key-Value Store",           "Binary Search",    "Medium", 981),
-    (35,  "Median of Two Sorted Arrays",          "Binary Search",    "Hard",   4),
+    Problem(29, "Binary Search", "Binary Search", "Easy", 704, ("Binary Search",)),
+    Problem(30, "Search a 2D Matrix", "Binary Search", "Medium", 74, ("Binary Search",)),
+    Problem(31, "Koko Eating Bananas", "Binary Search", "Medium", 875, ()),
+    Problem(32, "Find Min in Rotated Sorted Array", "Binary Search", "Medium", 153, ("Binary Search",)),
+    Problem(33, "Search in Rotated Sorted Array", "Binary Search", "Medium", 33, ("Binary Search",)),
+    Problem(34, "Time Based Key-Value Store", "Binary Search", "Medium", 981, ()),
+    Problem(35, "Median of Two Sorted Arrays", "Binary Search", "Hard", 4, ("Binary Search", "Divide and Conquer")),
     # Linked List
-    (36,  "Reverse Linked List",                  "Linked List",      "Easy",   206),
-    (37,  "Merge Two Sorted Lists",               "Linked List",      "Easy",   21),
-    (38,  "Reorder List",                         "Linked List",      "Medium", 143),
-    (39,  "Remove Nth Node From End",             "Linked List",      "Medium", 19),
-    (40,  "Copy List with Random Pointer",        "Linked List",      "Medium", 138),
-    (41,  "Add Two Numbers",                      "Linked List",      "Medium", 2),
-    (42,  "LRU Cache",                            "Linked List",      "Medium", 146),
-    (43,  "Merge K Sorted Lists",                 "Linked List",      "Hard",   23),
-    (44,  "Reverse Nodes in k-Group",             "Linked List",      "Hard",   25),
+    Problem(36, "Reverse Linked List", "Linked List", "Easy", 206, ("Linked List", "Recursion")),
+    Problem(37, "Merge Two Sorted Lists", "Linked List", "Easy", 21, ("Linked List", "Recursion")),
+    Problem(38, "Reorder List", "Linked List", "Medium", 143, ("Linked List", "Two Pointers", "Stack", "Recursion")),
+    Problem(39, "Remove Nth Node From End", "Linked List", "Medium", 19, ("Linked List", "Two Pointers")),
+    Problem(40, "Copy List with Random Pointer", "Linked List", "Medium", 138, ()),
+    Problem(41, "Add Two Numbers", "Linked List", "Medium", 2, ("Linked List", "Math", "Recursion")),
+    Problem(42, "LRU Cache", "Linked List", "Medium", 146, ()),
+    Problem(43, "Merge K Sorted Lists", "Linked List", "Hard", 23, ("Linked List", "Divide and Conquer", "Heap (Priority Queue)", "Merge Sort", "Tournament Sort")),
+    Problem(44, "Reverse Nodes in k-Group", "Linked List", "Hard", 25, ("Linked List", "Recursion")),
     # Trees
-    (45,  "Invert Binary Tree",                   "Trees",            "Easy",   226),
-    (46,  "Maximum Depth of Binary Tree",         "Trees",            "Easy",   104),
-    (47,  "Diameter of Binary Tree",              "Trees",            "Easy",   543),
-    (48,  "Balanced Binary Tree",                 "Trees",            "Easy",   110),
-    (49,  "Same Tree",                            "Trees",            "Easy",   100),
-    (50,  "Subtree of Another Tree",              "Trees",            "Easy",   572),
-    (51,  "Lowest Common Ancestor of BST",        "Trees",            "Medium", 235),
-    (52,  "Binary Tree Level Order Traversal",    "Trees",            "Medium", 102),
-    (53,  "Binary Tree Right Side View",          "Trees",            "Medium", 199),
-    (54,  "Count Good Nodes in Binary Tree",      "Trees",            "Medium", 1448),
-    (55,  "Validate Binary Search Tree",          "Trees",            "Medium", 98),
-    (56,  "Kth Smallest Element in BST",          "Trees",            "Medium", 230),
-    (57,  "Construct Binary Tree from Preorder",  "Trees",            "Medium", 105),
-    (58,  "Binary Tree Max Path Sum",             "Trees",            "Hard",   124),
-    (59,  "Serialize and Deserialize Binary Tree","Trees",            "Hard",   297),
-    (60,  "Binary Search Tree Iterator",          "Trees",            "Medium", 173),
+    Problem(45, "Invert Binary Tree", "Trees", "Easy", 226, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(46, "Maximum Depth of Binary Tree", "Trees", "Easy", 104, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(47, "Diameter of Binary Tree", "Trees", "Easy", 543, ()),
+    Problem(48, "Balanced Binary Tree", "Trees", "Easy", 110, ()),
+    Problem(49, "Same Tree", "Trees", "Easy", 100, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(50, "Subtree of Another Tree", "Trees", "Easy", 572, ("Tree", "Depth-First Search", "String Matching", "Binary Tree", "Hash Function")),
+    Problem(51, "Lowest Common Ancestor of BST", "Trees", "Medium", 235, ("Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree", "Binary Lifting", "Lowest Common Ancestor")),
+    Problem(52, "Binary Tree Level Order Traversal", "Trees", "Medium", 102, ("Tree", "Breadth-First Search", "Binary Tree")),
+    Problem(53, "Binary Tree Right Side View", "Trees", "Medium", 199, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
+    Problem(54, "Count Good Nodes in Binary Tree", "Trees", "Medium", 1448, ()),
+    Problem(55, "Validate Binary Search Tree", "Trees", "Medium", 98, ("Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree")),
+    Problem(56, "Kth Smallest Element in BST", "Trees", "Medium", 230, ("Tree", "Depth-First Search", "Binary Search Tree", "Binary Tree")),
+    Problem(57, "Construct Binary Tree from Preorder", "Trees", "Medium", 105, ("Hash Table", "Divide and Conquer", "Tree", "Binary Tree")),
+    Problem(58, "Binary Tree Max Path Sum", "Trees", "Hard", 124, ("Dynamic Programming", "Tree", "Depth-First Search", "Binary Tree", "DP on Trees")),
+    Problem(59, "Serialize and Deserialize Binary Tree", "Trees", "Hard", 297, ("Tree", "Depth-First Search", "Breadth-First Search", "Design", "Binary Tree")),
+    Problem(60, "Binary Search Tree Iterator", "Trees", "Medium", 173, ()),
     # Tries
-    (61,  "Implement Trie (Prefix Tree)",         "Tries",            "Medium", 208),
-    (62,  "Design Add and Search Words",          "Tries",            "Medium", 211),
-    (63,  "Word Search II",                       "Tries",            "Hard",   212),
+    Problem(61, "Implement Trie (Prefix Tree)", "Tries", "Medium", 208, ("Hash Table", "Design", "Trie")),
+    Problem(62, "Design Add and Search Words", "Tries", "Medium", 211, ("Depth-First Search", "Design", "Trie")),
+    Problem(63, "Word Search II", "Tries", "Hard", 212, ("Backtracking", "Trie")),
     # Heap / Priority Queue
-    (64,  "Kth Largest Element in a Stream",      "Heap",             "Easy",   703),
-    (65,  "Last Stone Weight",                    "Heap",             "Easy",   1046),
-    (66,  "K Closest Points to Origin",           "Heap",             "Medium", 973),
-    (67,  "Kth Largest Element in an Array",      "Heap",             "Medium", 215),
-    (68,  "Task Scheduler",                       "Heap",             "Medium", 621),
-    (69,  "Design Twitter",                       "Heap",             "Medium", 355),
-    (70,  "Find Median from Data Stream",         "Heap",             "Hard",   295),
+    Problem(64, "Kth Largest Element in a Stream", "Heap", "Easy", 703, ()),
+    Problem(65, "Last Stone Weight", "Heap", "Easy", 1046, ()),
+    Problem(66, "K Closest Points to Origin", "Heap", "Medium", 973, ("Math", "Divide and Conquer", "Geometry", "Sorting", "Heap (Priority Queue)", "Quickselect", "K-D Tree")),
+    Problem(67, "Kth Largest Element in an Array", "Heap", "Medium", 215, ("Divide and Conquer", "Sorting", "Heap (Priority Queue)", "Quickselect")),
+    Problem(68, "Task Scheduler", "Heap", "Medium", 621, ("Hash Table", "Greedy", "Sorting", "Heap (Priority Queue)", "Counting")),
+    Problem(69, "Design Twitter", "Heap", "Medium", 355, ()),
+    Problem(70, "Find Median from Data Stream", "Heap", "Hard", 295, ("Two Pointers", "Design", "Sorting", "Heap (Priority Queue)", "Data Stream")),
     # Backtracking
-    (71,  "Subsets",                              "Backtracking",     "Medium", 78),
-    (72,  "Combination Sum",                      "Backtracking",     "Medium", 39),
-    (73,  "Permutations",                         "Backtracking",     "Medium", 46),
-    (74,  "Subsets II",                           "Backtracking",     "Medium", 90),
-    (75,  "Combination Sum II",                   "Backtracking",     "Medium", 40),
-    (76,  "Word Search",                          "Backtracking",     "Medium", 79),
-    (77,  "Palindrome Partitioning",              "Backtracking",     "Medium", 131),
-    (78,  "Letter Combinations Phone Number",     "Backtracking",     "Medium", 17),
-    (79,  "N-Queens",                             "Backtracking",     "Hard",   51),
+    Problem(71, "Subsets", "Backtracking", "Medium", 78, ("Backtracking", "Bit Manipulation")),
+    Problem(72, "Combination Sum", "Backtracking", "Medium", 39, ("Backtracking",)),
+    Problem(73, "Permutations", "Backtracking", "Medium", 46, ("Backtracking",)),
+    Problem(74, "Subsets II", "Backtracking", "Medium", 90, ("Backtracking", "Bit Manipulation")),
+    Problem(75, "Combination Sum II", "Backtracking", "Medium", 40, ("Backtracking",)),
+    Problem(76, "Word Search", "Backtracking", "Medium", 79, ("Backtracking", "Depth-First Search")),
+    Problem(77, "Palindrome Partitioning", "Backtracking", "Medium", 131, ("Dynamic Programming", "Backtracking")),
+    Problem(78, "Letter Combinations Phone Number", "Backtracking", "Medium", 17, ("Hash Table", "Backtracking")),
+    Problem(79, "N-Queens", "Backtracking", "Hard", 51, ("Backtracking", "Algorithm X")),
     # Graphs
-    (80,  "Number of Islands",                    "Graphs",           "Medium", 200),
-    (81,  "Max Area of Island",                   "Graphs",           "Medium", 695),
-    (82,  "Clone Graph",                          "Graphs",           "Medium", 133),
-    (83,  "Walls and Gates",                      "Graphs",           "Medium", 286),
-    (84,  "Rotting Oranges",                      "Graphs",           "Medium", 994),
-    (85,  "Pacific Atlantic Water Flow",          "Graphs",           "Medium", 417),
-    (86,  "Surrounded Regions",                   "Graphs",           "Medium", 130),
-    (87,  "Course Schedule",                      "Graphs",           "Medium", 207),
-    (88,  "Course Schedule II",                   "Graphs",           "Medium", 210),
-    (89,  "Graph Valid Tree",                     "Graphs",           "Medium", 261),
-    (90,  "Number of Connected Components",       "Graphs",           "Medium", 323),
-    (91,  "Redundant Connection",                 "Graphs",           "Medium", 684),
+    Problem(80, "Number of Islands", "Graphs", "Medium", 200, ("Depth-First Search", "Breadth-First Search", "Union-Find")),
+    Problem(81, "Max Area of Island", "Graphs", "Medium", 695, ()),
+    Problem(82, "Clone Graph", "Graphs", "Medium", 133, ("Hash Table", "Depth-First Search", "Breadth-First Search", "Graph Theory")),
+    Problem(83, "Walls and Gates", "Graphs", "Medium", 286, ()),
+    Problem(84, "Rotting Oranges", "Graphs", "Medium", 994, ()),
+    Problem(85, "Pacific Atlantic Water Flow", "Graphs", "Medium", 417, ("Depth-First Search", "Breadth-First Search")),
+    Problem(86, "Surrounded Regions", "Graphs", "Medium", 130, ()),
+    Problem(87, "Course Schedule", "Graphs", "Medium", 207, ("Depth-First Search", "Breadth-First Search", "Graph Theory", "Topological Sort", "Directed Acyclic Graph")),
+    Problem(88, "Course Schedule II", "Graphs", "Medium", 210, ("Depth-First Search", "Breadth-First Search", "Graph Theory", "Topological Sort")),
+    Problem(89, "Graph Valid Tree", "Graphs", "Medium", 261, ("Depth-First Search", "Breadth-First Search", "Union-Find", "Graph Theory")),
+    Problem(90, "Number of Connected Components", "Graphs", "Medium", 323, ("Depth-First Search", "Breadth-First Search", "Union-Find", "Graph Theory")),
+    Problem(91, "Redundant Connection", "Graphs", "Medium", 684, ()),
     # Advanced Graphs (disabled — uncomment when ready)
-    (92,  "Word Ladder",                          "Graphs",           "Hard",   127),
-    (93,  "Reconstruct Itinerary",                "Graphs",           "Hard",   332),
-    (94,  "Min Cost to Connect All Points",       "Graphs",           "Medium", 1584),
-    (95,  "Network Delay Time",                   "Graphs",           "Medium", 743),
-    (96,  "Swim in Rising Water",                 "Graphs",           "Hard",   778),
-    (97,  "Alien Dictionary",                     "Graphs",           "Hard",   269),
-    (98,  "Cheapest Flights Within K Stops",      "Graphs",           "Medium", 787),
+    Problem(92, "Word Ladder", "Graphs", "Hard", 127, ()),
+    Problem(93, "Reconstruct Itinerary", "Graphs", "Hard", 332, ()),
+    Problem(94, "Min Cost to Connect All Points", "Graphs", "Medium", 1584, ()),
+    Problem(95, "Network Delay Time", "Graphs", "Medium", 743, ()),
+    Problem(96, "Swim in Rising Water", "Graphs", "Hard", 778, ()),
+    Problem(97, "Alien Dictionary", "Graphs", "Hard", 269, ("Depth-First Search", "Breadth-First Search", "Graph Theory", "Topological Sort", "Directed Acyclic Graph")),
+    Problem(98, "Cheapest Flights Within K Stops", "Graphs", "Medium", 787, ()),
     # 1-D Dynamic Programming
-    (99,  "Climbing Stairs",                      "1D DP",            "Easy",   70),
-    (100, "Min Cost Climbing Stairs",             "1D DP",            "Easy",   746),
-    (101, "House Robber",                         "1D DP",            "Medium", 198),
-    (102, "House Robber II",                      "1D DP",            "Medium", 213),
-    (103, "Longest Palindromic Substring",        "1D DP",            "Medium", 5),
-    (104, "Palindromic Substrings",               "1D DP",            "Medium", 647),
-    (105, "Decode Ways",                          "1D DP",            "Medium", 91),
-    (106, "Coin Change",                          "1D DP",            "Medium", 322),
-    (107, "Maximum Product Subarray",             "1D DP",            "Medium", 152),
-    (108, "Word Break",                           "1D DP",            "Medium", 139),
-    (109, "Longest Increasing Subsequence",       "1D DP",            "Medium", 300),
-    (110, "Partition Equal Subset Sum",           "1D DP",            "Medium", 416),
+    Problem(99, "Climbing Stairs", "1D DP", "Easy", 70, ("Math", "Dynamic Programming", "Memoization")),
+    Problem(100, "Min Cost Climbing Stairs", "1D DP", "Easy", 746, ()),
+    Problem(101, "House Robber", "1D DP", "Medium", 198, ("Dynamic Programming",)),
+    Problem(102, "House Robber II", "1D DP", "Medium", 213, ("Dynamic Programming",)),
+    Problem(103, "Longest Palindromic Substring", "1D DP", "Medium", 5, ("Two Pointers", "Dynamic Programming", "Manacher")),
+    Problem(104, "Palindromic Substrings", "1D DP", "Medium", 647, ("Two Pointers", "Dynamic Programming")),
+    Problem(105, "Decode Ways", "1D DP", "Medium", 91, ("Dynamic Programming",)),
+    Problem(106, "Coin Change", "1D DP", "Medium", 322, ("Dynamic Programming", "Breadth-First Search", "Knapsack Problem", "Complete Knapsack")),
+    Problem(107, "Maximum Product Subarray", "1D DP", "Medium", 152, ("Dynamic Programming",)),
+    Problem(108, "Word Break", "1D DP", "Medium", 139, ("Hash Table", "Dynamic Programming", "Trie", "Memoization", "Brute-Force Search")),
+    Problem(109, "Longest Increasing Subsequence", "1D DP", "Medium", 300, ("Binary Search", "Dynamic Programming", "Longest Increasing Subsequence")),
+    Problem(110, "Partition Equal Subset Sum", "1D DP", "Medium", 416, ("Dynamic Programming", "Knapsack Problem", "0-1 Knapsack")),
     # 2-D Dynamic Programming (disabled — uncomment when ready)
     # (111, "Unique Paths",                         "2D DP",            "Medium", 62),
     # (112, "Longest Common Subsequence",           "2D DP",            "Medium", 1143),
@@ -196,21 +204,21 @@ PROBLEMS = [
     # (120, "Burst Balloons",                       "2D DP",            "Hard",   312),
     # (121, "Regular Expression Matching",          "2D DP",            "Hard",   10),
     # Greedy
-    (122, "Maximum Subarray",                     "Greedy",           "Medium", 53),
-    (123, "Jump Game",                            "Greedy",           "Medium", 55),
-    (124, "Jump Game II",                         "Greedy",           "Medium", 45),
-    (125, "Gas Station",                          "Greedy",           "Medium", 134),
-    (126, "Hand of Straights",                    "Greedy",           "Medium", 846),
-    (127, "Merge Triplets to Form Target",        "Greedy",           "Medium", 1899),
-    (128, "Partition Labels",                     "Greedy",           "Medium", 763),
-    (129, "Valid Parenthesis String",             "Greedy",           "Medium", 678),
+    Problem(122, "Maximum Subarray", "Greedy", "Medium", 53, ("Divide and Conquer", "Dynamic Programming")),
+    Problem(123, "Jump Game", "Greedy", "Medium", 55, ("Dynamic Programming", "Greedy")),
+    Problem(124, "Jump Game II", "Greedy", "Medium", 45, ()),
+    Problem(125, "Gas Station", "Greedy", "Medium", 134, ("Greedy",)),
+    Problem(126, "Hand of Straights", "Greedy", "Medium", 846, ()),
+    Problem(127, "Merge Triplets to Form Target", "Greedy", "Medium", 1899, ()),
+    Problem(128, "Partition Labels", "Greedy", "Medium", 763, ()),
+    Problem(129, "Valid Parenthesis String", "Greedy", "Medium", 678, ()),
     # Intervals
-    (130, "Insert Interval",                      "Intervals",        "Medium", 57),
-    (131, "Merge Intervals",                      "Intervals",        "Medium", 56),
-    (132, "Non-overlapping Intervals",            "Intervals",        "Medium", 435),
-    (133, "Meeting Rooms",                        "Intervals",        "Easy",   252),
-    (134, "Meeting Rooms II",                     "Intervals",        "Medium", 253),
-    (135, "Minimum Interval to Include Query",    "Intervals",        "Hard",   1851),
+    Problem(130, "Insert Interval", "Intervals", "Medium", 57, ()),
+    Problem(131, "Merge Intervals", "Intervals", "Medium", 56, ("Sorting", "Quicksort")),
+    Problem(132, "Non-overlapping Intervals", "Intervals", "Medium", 435, ("Dynamic Programming", "Greedy", "Sorting")),
+    Problem(133, "Meeting Rooms", "Intervals", "Easy", 252, ("Sorting", "Quicksort")),
+    Problem(134, "Meeting Rooms II", "Intervals", "Medium", 253, ("Two Pointers", "Greedy", "Sorting", "Heap (Priority Queue)", "Prefix Sum")),
+    Problem(135, "Minimum Interval to Include Query", "Intervals", "Hard", 1851, ()),
     # Math & Geometry (disabled — uncomment when ready)
     # (136, "Rotate Image",                         "Math & Geometry",  "Medium", 48),
     # (137, "Spiral Matrix",                        "Math & Geometry",  "Medium", 54),
@@ -339,11 +347,11 @@ def migrate_cards_format(data):
             prob = PROBLEMS_BY_ID.get(int(key))
             if not prob:
                 continue
-            _, name, topic, diff, _ = prob
+            name, topic, diff = prob.name, prob.primary_topic, prob.difficulty
             changed = True
         elif key in PROBLEMS_BY_NAME:
             prob = PROBLEMS_BY_NAME[key]
-            _, name, topic, diff, _ = prob
+            name, topic, diff = prob.name, prob.primary_topic, prob.difficulty
             if not card.get("topic") or not card.get("difficulty"):
                 changed = True
         else:
@@ -402,7 +410,7 @@ def save_data(data):
     for name, card in list(data.get("cards", {}).items()):
         if name in PROBLEMS_BY_NAME:
             p = PROBLEMS_BY_NAME[name]
-            data["cards"][name] = normalize_card(card, p[2], p[3])
+            data["cards"][name] = normalize_card(card, p.primary_topic, p.difficulty)
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(DATA_FILE, "w") as f:
         json.dump(data, f, indent=2)
@@ -410,7 +418,8 @@ def save_data(data):
 # ── Problem selection ─────────────────────────────────────────────────────────
 
 def get_card(data, pid):
-    _, name, topic, diff, _ = PROBLEMS_BY_ID[pid]
+    prob = PROBLEMS_BY_ID[pid]
+    name, topic, diff = prob.name, prob.primary_topic, prob.difficulty
     if name not in data["cards"]:
         data["cards"][name] = sm2_new(topic, diff)
     return data["cards"][name]
@@ -438,7 +447,7 @@ def pick_diverse_random(pool, n, data, as_of=None):
 
     by_topic = defaultdict(list)
     for p in pool:
-        by_topic[p[2]].append(p)
+        by_topic[p.primary_topic].append(p)
 
     for topic in by_topic:
         by_topic[topic].sort(key=lambda p: _urgency_key(p, data, as_of))
@@ -603,7 +612,9 @@ def print_problem_list(data, problem_ids, *, when=None, done_set=None, show_late
 
 def print_problem(data, idx, total, pid, done=False, show_latest_score=False):
     prob = PROBLEMS_BY_ID[pid]
-    _, name, topic, diff, lc_num = prob
+    name, topic, diff, lc_num, subtopics = (
+        prob.name, prob.primary_topic, prob.difficulty, prob.lc_number, prob.subtopics
+    )
     diff_fn = DIFF_COLOR.get(diff, lambda x: x)
     status = green("✓") if done else dim("○")
     url = lc_url(lc_num, name)
@@ -614,6 +625,8 @@ def print_problem(data, idx, total, pid, done=False, show_latest_score=False):
         score_text = f"  ·  {dim('Last score: ' + str(score))}" if score is not None else f"  ·  {dim('Last score: —')}"
     print(f"  {status}  {bold(str(idx))}/{total}  {bold(name)}")
     print(f"      {diff_fn(diff)}  ·  {dim(topic)}  ·  LC #{lc_num}{score_text}")
+    if subtopics:
+        print(f"      {dim('Patterns: ' + ', '.join(subtopics))}")
     print(f"      {blue(url)}")
 
 def print_separator():
@@ -738,13 +751,17 @@ def run_session(data):
 
 def review_one(data, pid, today_ids, done_set):
     prob = PROBLEMS_BY_ID[pid]
-    _, name, topic, diff, lc_num = prob
+    name, topic, diff, lc_num, subtopics = (
+        prob.name, prob.primary_topic, prob.difficulty, prob.lc_number, prob.subtopics
+    )
     diff_fn = DIFF_COLOR.get(diff, lambda x: x)
 
     print()
     print_separator()
     print(f"  {bold(name)}")
     print(f"  {diff_fn(diff)}  ·  {dim(topic)}  ·  LC #{lc_num}")
+    if subtopics:
+        print(f"  {dim('Patterns: ' + ', '.join(subtopics))}")
     print(f"  {blue(lc_url(lc_num, name))}")
     print()
     print(dim("  Open the link, solve or trace through the problem, then rate yourself."))
@@ -811,16 +828,16 @@ def print_stats(data, today_ids):
     week_ahead = date.today() + timedelta(days=7)
     due_week   = sum(
         1 for p in PROBLEMS
-        if p[1] in cards and
-           date.fromisoformat(cards[p[1]]["next_review"]) <= week_ahead
+        if p.name in cards and
+           date.fromisoformat(cards[p.name]["next_review"]) <= week_ahead
     )
 
     # By difficulty
     by_diff = {"Easy": 0, "Medium": 0, "Hard": 0}
     for p in PROBLEMS:
-        c = cards.get(p[1])
+        c = cards.get(p.name)
         if c and c.get("repetitions", 0) > 0:
-            diff = c.get("difficulty", p[3])
+            diff = c.get("difficulty", p.difficulty)
             by_diff[diff] = by_diff.get(diff, 0) + 1
 
     print(f"  Total problems reviewed : {bold(str(total_reviewed))} / {len(PROBLEMS)}")
