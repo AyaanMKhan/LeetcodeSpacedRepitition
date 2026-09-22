@@ -1,33 +1,36 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-09-22 12:44_  
+_Last updated: 2026-09-22 12:50_  
 _Current streak: 🔥 0 day(s)_
 
 ## Overview
 
-- **Attempted:** 0 / 124 problems
+- **Attempted:** 0 / 229 problems
 - **Mastered:** 0
 - **Still struggling:** 0
-- **Not yet attempted:** 124
+- **Not yet attempted:** 229
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 0/9 | 0 | 9 |
-| Two Pointers | 0/5 | 0 | 5 |
-| Sliding Window | 0/6 | 0 | 6 |
-| Stack | 0/8 | 0 | 8 |
-| Binary Search | 0/7 | 0 | 7 |
-| Linked List | 0/9 | 0 | 9 |
-| Trees | 0/16 | 0 | 16 |
-| Tries | 0/3 | 0 | 3 |
-| Heap | 0/7 | 0 | 7 |
-| Backtracking | 0/9 | 0 | 9 |
-| Graphs | 0/19 | 0 | 19 |
-| 1D DP | 0/12 | 0 | 12 |
+| Arrays & Hashing | 0/14 | 0 | 14 |
+| Two Pointers | 0/12 | 0 | 12 |
+| Sliding Window | 0/12 | 0 | 12 |
+| Stack | 0/9 | 0 | 9 |
+| Binary Search | 0/14 | 0 | 14 |
+| Linked List | 0/21 | 0 | 21 |
+| Trees | 0/29 | 0 | 29 |
+| Tries | 0/7 | 0 | 7 |
+| Heap | 0/13 | 0 | 13 |
+| Backtracking | 0/18 | 0 | 18 |
+| Graphs | 0/20 | 0 | 20 |
+| 1D DP | 0/16 | 0 | 16 |
+| 2D DP | 0/11 | 0 | 11 |
 | Greedy | 0/8 | 0 | 8 |
-| Intervals | 0/6 | 0 | 6 |
+| Intervals | 0/9 | 0 | 9 |
+| Math & Geometry | 0/9 | 0 | 9 |
+| Bit Manipulation | 0/7 | 0 | 7 |
 
 ## Checklist
 
@@ -42,6 +45,11 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Valid Sudoku
 - [ ] Encode and Decode Strings
 - [ ] Longest Consecutive Sequence
+- [ ] First Missing Positive
+- [ ] Majority Element
+- [ ] Range Sum Query - Immutable
+- [ ] Find All Duplicates in an Array
+- [ ] Find All Numbers Disappeared in an Array
 
 ### Two Pointers
 
@@ -50,6 +58,13 @@ _Current streak: 🔥 0 day(s)_
 - [ ] 3Sum
 - [ ] Container With Most Water
 - [ ] Trapping Rain Water
+- [ ] 3Sum Closest
+- [ ] Sort Colors
+- [ ] Rotate Array
+- [ ] Move Zeroes
+- [ ] Is Subsequence
+- [ ] Backspace String Compare
+- [ ] Squares of a Sorted Array
 
 ### Sliding Window
 
@@ -59,6 +74,12 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Permutation in String
 - [ ] Minimum Window Substring
 - [ ] Sliding Window Maximum
+- [ ] Substring with Concatenation of All Words
+- [ ] Minimum Size Subarray Sum
+- [ ] Sliding Window Median
+- [ ] Maximum Average Subarray I
+- [ ] Subarray Product Less Than K
+- [ ] Fruit Into Baskets
 
 ### Stack
 
@@ -70,6 +91,7 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Car Fleet
 - [ ] Implement Queue using Stacks
 - [ ] Largest Rectangle in Histogram
+- [ ] Maximum Frequency Stack
 
 ### Binary Search
 
@@ -80,6 +102,13 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Search in Rotated Sorted Array
 - [ ] Time Based Key-Value Store
 - [ ] Median of Two Sorted Arrays
+- [ ] Search in Rotated Sorted Array II
+- [ ] Find Peak Element
+- [ ] Search a 2D Matrix II
+- [ ] Count of Range Sum
+- [ ] Find K Closest Elements
+- [ ] Find Smallest Letter Greater Than Target
+- [ ] Peak Index in a Mountain Array
 
 ### Linked List
 
@@ -92,6 +121,18 @@ _Current streak: 🔥 0 day(s)_
 - [ ] LRU Cache
 - [ ] Merge K Sorted Lists
 - [ ] Reverse Nodes in k-Group
+- [ ] Linked List Cycle
+- [ ] Find the Duplicate Number
+- [ ] Swap Nodes in Pairs
+- [ ] Rotate List
+- [ ] Remove Duplicates from Sorted List
+- [ ] Reverse Linked List II
+- [ ] Linked List Cycle II
+- [ ] Sort List
+- [ ] Remove Linked List Elements
+- [ ] Palindrome Linked List
+- [ ] Odd Even Linked List
+- [ ] Middle of the Linked List
 
 ### Trees
 
@@ -111,12 +152,29 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Binary Tree Max Path Sum
 - [ ] Serialize and Deserialize Binary Tree
 - [ ] Binary Search Tree Iterator
+- [ ] Binary Tree Zigzag Level Order Traversal
+- [ ] Binary Tree Level Order Traversal II
+- [ ] Minimum Depth of Binary Tree
+- [ ] Path Sum
+- [ ] Path Sum II
+- [ ] Lowest Common Ancestor of a Binary Tree
+- [ ] Binary Tree Paths
+- [ ] Path Sum III
+- [ ] Merge Two Binary Trees
+- [ ] Average of Levels in Binary Tree
+- [ ] Maximum Binary Tree
+- [ ] Maximum Width of Binary Tree
+- [ ] All Nodes Distance K in Binary Tree
 
 ### Tries
 
 - [ ] Implement Trie (Prefix Tree)
 - [ ] Design Add and Search Words
 - [ ] Word Search II
+- [ ] Design Search Autocomplete System
+- [ ] Longest Word in Dictionary
+- [ ] Prefix and Suffix Search
+- [ ] Index Pairs of a String
 
 ### Heap
 
@@ -127,6 +185,12 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Task Scheduler
 - [ ] Design Twitter
 - [ ] Find Median from Data Stream
+- [ ] Rearrange String k Distance Apart
+- [ ] Find K Pairs with Smallest Sums
+- [ ] Kth Smallest Element in a Sorted Matrix
+- [ ] Sort Characters By Frequency
+- [ ] Smallest Range Covering Elements from K Lists
+- [ ] Reorganize String
 
 ### Backtracking
 
@@ -139,6 +203,15 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Palindrome Partitioning
 - [ ] Letter Combinations Phone Number
 - [ ] N-Queens
+- [ ] Sudoku Solver
+- [ ] Permutations II
+- [ ] Combinations
+- [ ] Combination Sum III
+- [ ] Factor Combinations
+- [ ] Generalized Abbreviation
+- [ ] Word Squares
+- [ ] Partition to K Equal Sum Subsets
+- [ ] Letter Case Permutation
 
 ### Graphs
 
@@ -161,6 +234,7 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Swim in Rising Water
 - [ ] Alien Dictionary
 - [ ] Cheapest Flights Within K Stops
+- [ ] Minimum Height Trees
 
 ### 1D DP
 
@@ -176,6 +250,24 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Word Break
 - [ ] Longest Increasing Subsequence
 - [ ] Partition Equal Subset Sum
+- [ ] Combination Sum IV
+- [ ] Concatenated Words
+- [ ] Number of Longest Increasing Subsequence
+- [ ] Count Unique Characters of All Substrings of a Given String
+
+### 2D DP
+
+- [ ] Unique Paths
+- [ ] Longest Common Subsequence
+- [ ] Best Time to Buy Stock w/ Cooldown
+- [ ] Coin Change II
+- [ ] Target Sum
+- [ ] Interleaving String
+- [ ] Longest Increasing Path in Matrix
+- [ ] Distinct Subsequences
+- [ ] Edit Distance
+- [ ] Burst Balloons
+- [ ] Regular Expression Matching
 
 ### Greedy
 
@@ -196,3 +288,28 @@ _Current streak: 🔥 0 day(s)_
 - [ ] Meeting Rooms
 - [ ] Meeting Rooms II
 - [ ] Minimum Interval to Include Query
+- [ ] Minimum Number of Arrows to Burst Balloons
+- [ ] Employee Free Time
+- [ ] Interval List Intersections
+
+### Math & Geometry
+
+- [ ] Rotate Image
+- [ ] Spiral Matrix
+- [ ] Set Matrix Zeroes
+- [ ] Happy Number
+- [ ] Plus One
+- [ ] Pow(x, n)
+- [ ] Multiply Strings
+- [ ] Detect Squares
+- [ ] Convert 1D Array Into 2D Array
+
+### Bit Manipulation
+
+- [ ] Single Number
+- [ ] Number of 1 Bits
+- [ ] Counting Bits
+- [ ] Reverse Bits
+- [ ] Missing Number
+- [ ] Sum of Two Integers
+- [ ] Reverse Integer
