@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-09-22 17:36_  
+_Last updated: 2026-09-25 11:30_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 7 / 229 problems
-- **Mastered:** 4
+- **Attempted:** 10 / 229 problems
+- **Mastered:** 7
 - **Still struggling:** 3
-- **Not yet attempted:** 222
+- **Not yet attempted:** 219
 
 ## Progress by Topic
 
@@ -16,10 +16,10 @@ _Current streak: 🔥 1 day(s)_
 |---|---|---|---|
 | Arrays & Hashing | 4/14 | 1 | 14 |
 | Two Pointers | 1/12 | 1 | 12 |
-| Sliding Window | 0/12 | 0 | 12 |
+| Sliding Window | 1/12 | 1 | 12 |
 | Stack | 0/9 | 0 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 0/21 | 0 | 21 |
+| Linked List | 1/21 | 1 | 21 |
 | Trees | 0/29 | 0 | 29 |
 | Tries | 1/7 | 1 | 7 |
 | Heap | 0/13 | 0 | 13 |
@@ -28,7 +28,7 @@ _Current streak: 🔥 1 day(s)_
 | 1D DP | 0/16 | 0 | 16 |
 | 2D DP | 0/11 | 0 | 11 |
 | Greedy | 0/8 | 0 | 8 |
-| Intervals | 0/9 | 0 | 9 |
+| Intervals | 1/9 | 1 | 9 |
 | Math & Geometry | 0/9 | 0 | 9 |
 | Bit Manipulation | 0/7 | 0 | 7 |
 
@@ -68,7 +68,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Sliding Window
 
-- [ ] Best Time to Buy and Sell Stock
+- [x] Best Time to Buy and Sell Stock
 - [ ] Longest Substring Without Repeating
 - [ ] Longest Repeating Char Replacement
 - [ ] Permutation in String
@@ -112,7 +112,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Linked List
 
-- [ ] Reverse Linked List
+- [x] Reverse Linked List
 - [ ] Merge Two Sorted Lists
 - [ ] Reorder List
 - [ ] Remove Nth Node From End
@@ -282,7 +282,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Intervals
 
-- [ ] Insert Interval
+- [x] Insert Interval
 - [ ] Merge Intervals
 - [ ] Non-overlapping Intervals
 - [ ] Meeting Rooms
