@@ -1,25 +1,25 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-09-25 11:30_  
+_Last updated: 2026-09-28 15:28_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 10 / 229 problems
-- **Mastered:** 7
+- **Attempted:** 12 / 229 problems
+- **Mastered:** 9
 - **Still struggling:** 3
-- **Not yet attempted:** 219
+- **Not yet attempted:** 217
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 4/14 | 1 | 14 |
+| Arrays & Hashing | 5/14 | 2 | 14 |
 | Two Pointers | 1/12 | 1 | 12 |
 | Sliding Window | 1/12 | 1 | 12 |
 | Stack | 0/9 | 0 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 1/21 | 1 | 21 |
+| Linked List | 2/21 | 2 | 21 |
 | Trees | 0/29 | 0 | 29 |
 | Tries | 1/7 | 1 | 7 |
 | Heap | 0/13 | 0 | 13 |
@@ -40,7 +40,7 @@ _Current streak: 🔥 1 day(s)_
 - [ ] Valid Anagram
 - [ ] Two Sum
 - [x] Group Anagrams
-- [ ] Top K Frequent Elements
+- [x] Top K Frequent Elements
 - [ ] Product of Array Except Self
 - [ ] Valid Sudoku
 - [ ] Encode and Decode Strings
@@ -113,7 +113,7 @@ _Current streak: 🔥 1 day(s)_
 ### Linked List
 
 - [x] Reverse Linked List
-- [ ] Merge Two Sorted Lists
+- [x] Merge Two Sorted Lists
 - [ ] Reorder List
 - [ ] Remove Nth Node From End
 - [ ] Copy List with Random Pointer

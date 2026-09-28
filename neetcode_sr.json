@@ -43,14 +43,16 @@
       ]
     },
     "Top K Frequent Elements": {
-      "easiness": 1.7,
+      "easiness": 1.85,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-25",
-      "last_review": "2026-05-24",
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-01",
+      "last_review": "2026-09-28",
+      "recall_ratings": [
+        3
+      ]
     },
     "Product of Array Except Self": {
       "easiness": 2.5,
@@ -370,14 +372,16 @@
       ]
     },
     "Merge Two Sorted Lists": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Linked List",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-01",
+      "last_review": "2026-09-28",
+      "recall_ratings": [
+        3
+      ]
     },
     "Reorder List": {
       "easiness": 2.5,
@@ -622,14 +626,15 @@
       ]
     },
     "Design Add and Search Words": {
-      "easiness": 2.35,
+      "easiness": 2.2,
       "difficulty": "Medium",
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-09-26",
-      "last_review": "2026-09-25",
+      "next_review": "2026-09-29",
+      "last_review": "2026-09-28",
       "recall_ratings": [
+        2,
         2
       ]
     },
@@ -644,14 +649,16 @@
       "recall_ratings": []
     },
     "Kth Largest Element in a Stream": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Easy",
       "topic": "Heap",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-09-29",
+      "last_review": "2026-09-28",
+      "recall_ratings": [
+        2
+      ]
     },
     "Last Stone Weight": {
       "easiness": 2.5,
@@ -1319,14 +1326,16 @@
       ]
     },
     "Merge Intervals": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Intervals",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-09-29",
+      "last_review": "2026-09-28",
+      "recall_ratings": [
+        2
+      ]
     },
     "Non-overlapping Intervals": {
       "easiness": 2.5,
@@ -2315,20 +2324,20 @@
     "card_format_version": 2
   },
   "streak": 1,
-  "last_session": "2026-09-25",
+  "last_session": "2026-09-28",
   "today_list": [
-    36,
-    130,
-    10,
-    15,
-    62
+    64,
+    62,
+    5,
+    37,
+    131
   ],
-  "today_date": "2026-09-25",
+  "today_date": "2026-09-28",
   "today_done": [
-    36,
-    130,
-    10,
-    15,
-    62
+    64,
+    62,
+    5,
+    37,
+    131
   ]
 }
