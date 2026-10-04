@@ -1,34 +1,34 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-09-28 15:28_  
+_Last updated: 2026-10-04 12:28_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 12 / 229 problems
-- **Mastered:** 9
+- **Attempted:** 17 / 229 problems
+- **Mastered:** 14
 - **Still struggling:** 3
-- **Not yet attempted:** 217
+- **Not yet attempted:** 212
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 5/14 | 2 | 14 |
+| Arrays & Hashing | 6/14 | 3 | 14 |
 | Two Pointers | 1/12 | 1 | 12 |
 | Sliding Window | 1/12 | 1 | 12 |
 | Stack | 0/9 | 0 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
 | Linked List | 2/21 | 2 | 21 |
 | Trees | 0/29 | 0 | 29 |
-| Tries | 1/7 | 1 | 7 |
-| Heap | 0/13 | 0 | 13 |
+| Tries | 2/7 | 2 | 7 |
+| Heap | 1/13 | 1 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
 | Graphs | 1/20 | 1 | 20 |
 | 1D DP | 0/16 | 0 | 16 |
 | 2D DP | 0/11 | 0 | 11 |
-| Greedy | 0/8 | 0 | 8 |
-| Intervals | 1/9 | 1 | 9 |
+| Greedy | 1/8 | 1 | 8 |
+| Intervals | 2/9 | 2 | 9 |
 | Math & Geometry | 0/9 | 0 | 9 |
 | Bit Manipulation | 0/7 | 0 | 7 |
 
@@ -41,7 +41,7 @@ _Current streak: 🔥 1 day(s)_
 - [ ] Two Sum
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
-- [ ] Product of Array Except Self
+- [x] Product of Array Except Self
 - [ ] Valid Sudoku
 - [ ] Encode and Decode Strings
 - [ ] Longest Consecutive Sequence
@@ -169,7 +169,7 @@ _Current streak: 🔥 1 day(s)_
 ### Tries
 
 - [x] Implement Trie (Prefix Tree)
-- [ ] Design Add and Search Words
+- [x] Design Add and Search Words
 - [ ] Word Search II
 - [ ] Design Search Autocomplete System
 - [ ] Longest Word in Dictionary
@@ -178,7 +178,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Heap
 
-- [ ] Kth Largest Element in a Stream
+- [x] Kth Largest Element in a Stream
 - [ ] Last Stone Weight
 - [ ] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
@@ -271,7 +271,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Greedy
 
-- [ ] Maximum Subarray
+- [x] Maximum Subarray
 - [ ] Jump Game
 - [ ] Jump Game II
 - [ ] Gas Station
@@ -283,7 +283,7 @@ _Current streak: 🔥 1 day(s)_
 ### Intervals
 
 - [x] Insert Interval
-- [ ] Merge Intervals
+- [x] Merge Intervals
 - [ ] Non-overlapping Intervals
 - [ ] Meeting Rooms
 - [ ] Meeting Rooms II

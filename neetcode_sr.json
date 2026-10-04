@@ -55,14 +55,16 @@
       ]
     },
     "Product of Array Except Self": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-03",
+      "last_review": "2026-09-30",
+      "recall_ratings": [
+        3
+      ]
     },
     "Valid Sudoku": {
       "easiness": 2.5,
@@ -360,26 +362,28 @@
       "recall_ratings": []
     },
     "Reverse Linked List": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Easy",
       "topic": "Linked List",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-09-28",
-      "last_review": "2026-09-25",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-07",
+      "last_review": "2026-09-30",
       "recall_ratings": [
+        3,
         3
       ]
     },
     "Merge Two Sorted Lists": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Easy",
       "topic": "Linked List",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-01",
-      "last_review": "2026-09-28",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-11",
+      "last_review": "2026-10-04",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -626,16 +630,17 @@
       ]
     },
     "Design Add and Search Words": {
-      "easiness": 2.2,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Tries",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-09-29",
-      "last_review": "2026-09-28",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-03",
+      "last_review": "2026-09-30",
       "recall_ratings": [
         2,
-        2
+        2,
+        3
       ]
     },
     "Word Search II": {
@@ -649,15 +654,16 @@
       "recall_ratings": []
     },
     "Kth Largest Element in a Stream": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-09-29",
-      "last_review": "2026-09-28",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-03",
+      "last_review": "2026-09-30",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Last Stone Weight": {
@@ -823,14 +829,16 @@
       ]
     },
     "Max Area of Island": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Graphs",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-05",
+      "last_review": "2026-10-04",
+      "recall_ratings": [
+        2
+      ]
     },
     "Clone Graph": {
       "easiness": 2.5,
@@ -1233,24 +1241,28 @@
       "recall_ratings": []
     },
     "Maximum Subarray": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Greedy",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-03",
+      "last_review": "2026-09-30",
+      "recall_ratings": [
+        3
+      ]
     },
     "Jump Game": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Greedy",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-05",
+      "last_review": "2026-10-04",
+      "recall_ratings": [
+        2
+      ]
     },
     "Jump Game II": {
       "easiness": 2.5,
@@ -1326,15 +1338,16 @@
       ]
     },
     "Merge Intervals": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Intervals",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-09-29",
-      "last_review": "2026-09-28",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-07",
+      "last_review": "2026-10-04",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Non-overlapping Intervals": {
@@ -1458,14 +1471,16 @@
       "recall_ratings": []
     },
     "Single Number": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Easy",
       "topic": "Bit Manipulation",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-05",
+      "last_review": "2026-10-04",
+      "recall_ratings": [
+        2
+      ]
     },
     "Number of 1 Bits": {
       "easiness": 2.5,
@@ -2324,20 +2339,20 @@
     "card_format_version": 2
   },
   "streak": 1,
-  "last_session": "2026-09-28",
+  "last_session": "2026-10-04",
   "today_list": [
-    64,
-    62,
-    5,
+    144,
+    131,
     37,
-    131
+    81,
+    123
   ],
-  "today_date": "2026-09-28",
+  "today_date": "2026-10-04",
   "today_done": [
-    64,
-    62,
-    5,
+    144,
+    131,
     37,
-    131
+    81,
+    123
   ]
 }
