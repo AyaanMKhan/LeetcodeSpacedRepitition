@@ -817,19 +817,20 @@
       "recall_ratings": []
     },
     "Number of Islands": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Graphs",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-09-25",
-      "last_review": "2026-09-22",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-06",
+      "last_review": "2026-09-29",
       "recall_ratings": [
+        3,
         3
       ]
     },
     "Max Area of Island": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Graphs",
       "interval": 1,
@@ -837,6 +838,7 @@
       "next_review": "2026-10-05",
       "last_review": "2026-10-04",
       "recall_ratings": [
+        3,
         2
       ]
     },
@@ -1391,14 +1393,16 @@
       "recall_ratings": []
     },
     "Rotate Image": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-02",
+      "last_review": "2026-09-29",
+      "recall_ratings": [
+        3
+      ]
     },
     "Spiral Matrix": {
       "easiness": 2.5,

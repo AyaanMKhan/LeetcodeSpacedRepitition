@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-04 12:28_  
+_Last updated: 2026-10-04 12:29_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 17 / 229 problems
-- **Mastered:** 14
+- **Attempted:** 18 / 229 problems
+- **Mastered:** 15
 - **Still struggling:** 3
-- **Not yet attempted:** 212
+- **Not yet attempted:** 211
 
 ## Progress by Topic
 
@@ -29,7 +29,7 @@ _Current streak: 🔥 1 day(s)_
 | 2D DP | 0/11 | 0 | 11 |
 | Greedy | 1/8 | 1 | 8 |
 | Intervals | 2/9 | 2 | 9 |
-| Math & Geometry | 0/9 | 0 | 9 |
+| Math & Geometry | 1/9 | 1 | 9 |
 | Bit Manipulation | 0/7 | 0 | 7 |
 
 ## Checklist
@@ -294,7 +294,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Math & Geometry
 
-- [ ] Rotate Image
+- [x] Rotate Image
 - [ ] Spiral Matrix
 - [ ] Set Matrix Zeroes
 - [ ] Happy Number
