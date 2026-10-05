@@ -150,14 +150,15 @@
       "recall_ratings": []
     },
     "Best Time to Buy and Sell Stock": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Easy",
       "topic": "Sliding Window",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-09-28",
-      "last_review": "2026-09-25",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-12",
+      "last_review": "2026-10-05",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -388,14 +389,16 @@
       ]
     },
     "Reorder List": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Linked List",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-06",
+      "last_review": "2026-10-05",
+      "recall_ratings": [
+        2
+      ]
     },
     "Remove Nth Node From End": {
       "easiness": 2.5,
@@ -830,16 +833,17 @@
       ]
     },
     "Max Area of Island": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Graphs",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-05",
-      "last_review": "2026-10-04",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-08",
+      "last_review": "2026-10-05",
       "recall_ratings": [
         3,
-        2
+        2,
+        3
       ]
     },
     "Clone Graph": {
@@ -1133,14 +1137,16 @@
       "recall_ratings": []
     },
     "Unique Paths": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "2D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-08",
+      "last_review": "2026-10-05",
+      "recall_ratings": [
+        3
+      ]
     },
     "Longest Common Subsequence": {
       "easiness": 2.5,
@@ -1255,15 +1261,16 @@
       ]
     },
     "Jump Game": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Greedy",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-05",
-      "last_review": "2026-10-04",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-08",
+      "last_review": "2026-10-05",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Jump Game II": {
@@ -2342,21 +2349,21 @@
     "selection_version": 4,
     "card_format_version": 2
   },
-  "streak": 1,
-  "last_session": "2026-10-04",
+  "streak": 2,
+  "last_session": "2026-10-05",
   "today_list": [
-    144,
-    131,
-    37,
+    111,
     81,
-    123
+    123,
+    15,
+    38
   ],
-  "today_date": "2026-10-04",
+  "today_date": "2026-10-05",
   "today_done": [
-    144,
-    131,
-    37,
+    111,
     81,
-    123
+    123,
+    15,
+    38
   ]
 }

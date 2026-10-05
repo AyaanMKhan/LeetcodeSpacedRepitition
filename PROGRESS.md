@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-04 12:29_  
-_Current streak: 🔥 1 day(s)_
+_Last updated: 2026-10-05 13:10_  
+_Current streak: 🔥 2 day(s)_
 
 ## Overview
 
-- **Attempted:** 18 / 229 problems
-- **Mastered:** 15
+- **Attempted:** 21 / 229 problems
+- **Mastered:** 18
 - **Still struggling:** 3
-- **Not yet attempted:** 211
+- **Not yet attempted:** 208
 
 ## Progress by Topic
 
@@ -24,10 +24,10 @@ _Current streak: 🔥 1 day(s)_
 | Tries | 2/7 | 2 | 7 |
 | Heap | 1/13 | 1 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
-| Graphs | 1/20 | 1 | 20 |
+| Graphs | 2/20 | 2 | 20 |
 | 1D DP | 0/16 | 0 | 16 |
-| 2D DP | 0/11 | 0 | 11 |
-| Greedy | 1/8 | 1 | 8 |
+| 2D DP | 1/11 | 1 | 11 |
+| Greedy | 2/8 | 2 | 8 |
 | Intervals | 2/9 | 2 | 9 |
 | Math & Geometry | 1/9 | 1 | 9 |
 | Bit Manipulation | 0/7 | 0 | 7 |
@@ -216,7 +216,7 @@ _Current streak: 🔥 1 day(s)_
 ### Graphs
 
 - [x] Number of Islands
-- [ ] Max Area of Island
+- [x] Max Area of Island
 - [ ] Clone Graph
 - [ ] Walls and Gates
 - [ ] Rotting Oranges
@@ -257,7 +257,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### 2D DP
 
-- [ ] Unique Paths
+- [x] Unique Paths
 - [ ] Longest Common Subsequence
 - [ ] Best Time to Buy Stock w/ Cooldown
 - [ ] Coin Change II
@@ -272,7 +272,7 @@ _Current streak: 🔥 1 day(s)_
 ### Greedy
 
 - [x] Maximum Subarray
-- [ ] Jump Game
+- [x] Jump Game
 - [ ] Jump Game II
 - [ ] Gas Station
 - [ ] Hand of Straights
