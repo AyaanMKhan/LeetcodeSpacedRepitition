@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-05 13:10_  
-_Current streak: 🔥 2 day(s)_
+_Last updated: 2026-10-09 00:07_  
+_Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 21 / 229 problems
-- **Mastered:** 18
+- **Attempted:** 24 / 229 problems
+- **Mastered:** 21
 - **Still struggling:** 3
-- **Not yet attempted:** 208
+- **Not yet attempted:** 205
 
 ## Progress by Topic
 
@@ -19,7 +19,7 @@ _Current streak: 🔥 2 day(s)_
 | Sliding Window | 1/12 | 1 | 12 |
 | Stack | 0/9 | 0 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 2/21 | 2 | 21 |
+| Linked List | 3/21 | 3 | 21 |
 | Trees | 0/29 | 0 | 29 |
 | Tries | 2/7 | 2 | 7 |
 | Heap | 1/13 | 1 | 13 |
@@ -29,8 +29,8 @@ _Current streak: 🔥 2 day(s)_
 | 2D DP | 1/11 | 1 | 11 |
 | Greedy | 2/8 | 2 | 8 |
 | Intervals | 2/9 | 2 | 9 |
-| Math & Geometry | 1/9 | 1 | 9 |
-| Bit Manipulation | 0/7 | 0 | 7 |
+| Math & Geometry | 2/9 | 2 | 9 |
+| Bit Manipulation | 1/7 | 1 | 7 |
 
 ## Checklist
 
@@ -114,7 +114,7 @@ _Current streak: 🔥 2 day(s)_
 
 - [x] Reverse Linked List
 - [x] Merge Two Sorted Lists
-- [ ] Reorder List
+- [x] Reorder List
 - [ ] Remove Nth Node From End
 - [ ] Copy List with Random Pointer
 - [ ] Add Two Numbers
@@ -295,7 +295,7 @@ _Current streak: 🔥 2 day(s)_
 ### Math & Geometry
 
 - [x] Rotate Image
-- [ ] Spiral Matrix
+- [x] Spiral Matrix
 - [ ] Set Matrix Zeroes
 - [ ] Happy Number
 - [ ] Plus One
@@ -306,7 +306,7 @@ _Current streak: 🔥 2 day(s)_
 
 ### Bit Manipulation
 
-- [ ] Single Number
+- [x] Single Number
 - [ ] Number of 1 Bits
 - [ ] Counting Bits
 - [ ] Reverse Bits
