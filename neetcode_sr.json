@@ -70,11 +70,14 @@
       "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-18",
+      "last_review": "2026-10-15",
+      "recall_ratings": [
+        2,
+        3
+      ]
     },
     "Encode and Decode Strings": {
       "easiness": 2.5,
@@ -97,27 +100,30 @@
       "recall_ratings": []
     },
     "Valid Palindrome": {
-      "easiness": 2.8,
+      "easiness": 2.95,
       "difficulty": "Easy",
       "topic": "Two Pointers",
-      "interval": 7,
-      "repetitions": 2,
-      "next_review": "2026-10-02",
-      "last_review": "2026-09-25",
+      "interval": 20,
+      "repetitions": 3,
+      "next_review": "2026-11-04",
+      "last_review": "2026-10-15",
       "recall_ratings": [
+        3,
         3,
         3
       ]
     },
     "Two Sum II": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Two Pointers",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-18",
+      "last_review": "2026-10-15",
+      "recall_ratings": [
+        3
+      ]
     },
     "3Sum": {
       "easiness": 2.5,
@@ -163,15 +169,16 @@
       ]
     },
     "Longest Substring Without Repeating": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Sliding Window",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-09",
-      "last_review": "2026-10-08",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-12",
+      "last_review": "2026-10-09",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Longest Repeating Char Replacement": {
@@ -215,14 +222,16 @@
       "recall_ratings": []
     },
     "Valid Parentheses": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Stack",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-15",
+      "last_review": "2026-10-12",
+      "recall_ratings": [
+        3
+      ]
     },
     "Min Stack": {
       "easiness": 2.5,
@@ -365,14 +374,15 @@
       "recall_ratings": []
     },
     "Reverse Linked List": {
-      "easiness": 2.8,
+      "easiness": 2.95,
       "difficulty": "Easy",
       "topic": "Linked List",
-      "interval": 7,
-      "repetitions": 2,
-      "next_review": "2026-10-07",
-      "last_review": "2026-09-30",
+      "interval": 20,
+      "repetitions": 3,
+      "next_review": "2026-10-29",
+      "last_review": "2026-10-09",
       "recall_ratings": [
+        3,
         3,
         3
       ]
@@ -404,14 +414,18 @@
       ]
     },
     "Remove Nth Node From End": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Linked List",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-18",
+      "last_review": "2026-10-15",
+      "recall_ratings": [
+        2,
+        2,
+        3
+      ]
     },
     "Copy List with Random Pointer": {
       "easiness": 2.5,
@@ -660,27 +674,31 @@
       "recall_ratings": []
     },
     "Kth Largest Element in a Stream": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-03",
-      "last_review": "2026-09-30",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-10-13",
+      "last_review": "2026-10-12",
       "recall_ratings": [
         2,
-        3
+        3,
+        2
       ]
     },
     "Last Stone Weight": {
       "easiness": 2.5,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-15",
+      "last_review": "2026-10-12",
+      "recall_ratings": [
+        2,
+        3
+      ]
     },
     "K Closest Points to Origin": {
       "easiness": 2.5,
@@ -1020,14 +1038,16 @@
       "recall_ratings": []
     },
     "Climbing Stairs": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "1D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-18",
+      "last_review": "2026-10-15",
+      "recall_ratings": [
+        3
+      ]
     },
     "Min Cost Climbing Stairs": {
       "easiness": 2.5,
@@ -1428,14 +1448,16 @@
       ]
     },
     "Set Matrix Zeroes": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-15",
+      "last_review": "2026-10-12",
+      "recall_ratings": [
+        3
+      ]
     },
     "Happy Number": {
       "easiness": 2.5,
@@ -2357,20 +2379,20 @@
     "card_format_version": 2
   },
   "streak": 1,
-  "last_session": "2026-10-09",
+  "last_session": "2026-10-15",
   "today_list": [
-    16,
-    144,
-    38,
-    111,
-    137
+    11,
+    39,
+    7,
+    10,
+    99
   ],
-  "today_date": "2026-10-08",
+  "today_date": "2026-10-15",
   "today_done": [
-    16,
-    144,
-    38,
-    111,
-    137
+    11,
+    39,
+    7,
+    10,
+    99
   ]
 }

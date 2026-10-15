@@ -1,35 +1,35 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-09 00:07_  
+_Last updated: 2026-10-15 16:04_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 24 / 229 problems
-- **Mastered:** 21
+- **Attempted:** 31 / 229 problems
+- **Mastered:** 28
 - **Still struggling:** 3
-- **Not yet attempted:** 205
+- **Not yet attempted:** 198
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 6/14 | 3 | 14 |
-| Two Pointers | 1/12 | 1 | 12 |
-| Sliding Window | 1/12 | 1 | 12 |
-| Stack | 0/9 | 0 | 9 |
+| Arrays & Hashing | 7/14 | 4 | 14 |
+| Two Pointers | 2/12 | 2 | 12 |
+| Sliding Window | 2/12 | 2 | 12 |
+| Stack | 1/9 | 1 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 3/21 | 3 | 21 |
+| Linked List | 4/21 | 4 | 21 |
 | Trees | 0/29 | 0 | 29 |
 | Tries | 2/7 | 2 | 7 |
 | Heap | 1/13 | 1 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
 | Graphs | 2/20 | 2 | 20 |
-| 1D DP | 0/16 | 0 | 16 |
+| 1D DP | 1/16 | 1 | 16 |
 | 2D DP | 1/11 | 1 | 11 |
 | Greedy | 2/8 | 2 | 8 |
 | Intervals | 2/9 | 2 | 9 |
-| Math & Geometry | 2/9 | 2 | 9 |
+| Math & Geometry | 3/9 | 3 | 9 |
 | Bit Manipulation | 1/7 | 1 | 7 |
 
 ## Checklist
@@ -42,7 +42,7 @@ _Current streak: 🔥 1 day(s)_
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
-- [ ] Valid Sudoku
+- [x] Valid Sudoku
 - [ ] Encode and Decode Strings
 - [ ] Longest Consecutive Sequence
 - [ ] First Missing Positive
@@ -54,7 +54,7 @@ _Current streak: 🔥 1 day(s)_
 ### Two Pointers
 
 - [x] Valid Palindrome
-- [ ] Two Sum II
+- [x] Two Sum II
 - [ ] 3Sum
 - [ ] Container With Most Water
 - [ ] Trapping Rain Water
@@ -69,7 +69,7 @@ _Current streak: 🔥 1 day(s)_
 ### Sliding Window
 
 - [x] Best Time to Buy and Sell Stock
-- [ ] Longest Substring Without Repeating
+- [x] Longest Substring Without Repeating
 - [ ] Longest Repeating Char Replacement
 - [ ] Permutation in String
 - [ ] Minimum Window Substring
@@ -83,7 +83,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Stack
 
-- [ ] Valid Parentheses
+- [x] Valid Parentheses
 - [ ] Min Stack
 - [ ] Evaluate Reverse Polish Notation
 - [ ] Generate Parentheses
@@ -115,7 +115,7 @@ _Current streak: 🔥 1 day(s)_
 - [x] Reverse Linked List
 - [x] Merge Two Sorted Lists
 - [x] Reorder List
-- [ ] Remove Nth Node From End
+- [x] Remove Nth Node From End
 - [ ] Copy List with Random Pointer
 - [ ] Add Two Numbers
 - [ ] LRU Cache
@@ -178,8 +178,8 @@ _Current streak: 🔥 1 day(s)_
 
 ### Heap
 
-- [x] Kth Largest Element in a Stream
-- [ ] Last Stone Weight
+- [ ] Kth Largest Element in a Stream
+- [x] Last Stone Weight
 - [ ] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
 - [ ] Task Scheduler
@@ -238,7 +238,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### 1D DP
 
-- [ ] Climbing Stairs
+- [x] Climbing Stairs
 - [ ] Min Cost Climbing Stairs
 - [ ] House Robber
 - [ ] House Robber II
@@ -296,7 +296,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Rotate Image
 - [x] Spiral Matrix
-- [ ] Set Matrix Zeroes
+- [x] Set Matrix Zeroes
 - [ ] Happy Number
 - [ ] Plus One
 - [ ] Pow(x, n)
