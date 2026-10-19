@@ -638,14 +638,15 @@
       "recall_ratings": []
     },
     "Implement Trie (Prefix Tree)": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Tries",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-09-25",
-      "last_review": "2026-09-22",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-26",
+      "last_review": "2026-10-19",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -674,17 +675,18 @@
       "recall_ratings": []
     },
     "Kth Largest Element in a Stream": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-13",
-      "last_review": "2026-10-12",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-19",
       "recall_ratings": [
         2,
         3,
-        2
+        2,
+        3
       ]
     },
     "Last Stone Weight": {
@@ -868,14 +870,16 @@
       ]
     },
     "Clone Graph": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Graphs",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-19",
+      "recall_ratings": [
+        3
+      ]
     },
     "Walls and Gates": {
       "easiness": 2.5,
@@ -1298,14 +1302,16 @@
       ]
     },
     "Jump Game II": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Greedy",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-20",
+      "last_review": "2026-10-19",
+      "recall_ratings": [
+        1
+      ]
     },
     "Gas Station": {
       "easiness": 2.5,
@@ -1384,14 +1390,16 @@
       ]
     },
     "Non-overlapping Intervals": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Intervals",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-20",
+      "last_review": "2026-10-19",
+      "recall_ratings": [
+        2
+      ]
     },
     "Meeting Rooms": {
       "easiness": 2.5,
@@ -2379,20 +2387,20 @@
     "card_format_version": 2
   },
   "streak": 1,
-  "last_session": "2026-10-15",
+  "last_session": "2026-10-19",
   "today_list": [
-    11,
-    39,
-    7,
-    10,
-    99
+    124,
+    64,
+    61,
+    82,
+    132
   ],
-  "today_date": "2026-10-15",
+  "today_date": "2026-10-19",
   "today_done": [
-    11,
-    39,
-    7,
-    10,
-    99
+    124,
+    64,
+    61,
+    82,
+    132
   ]
 }

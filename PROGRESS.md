@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-15 16:04_  
+_Last updated: 2026-10-19 11:17_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 31 / 229 problems
-- **Mastered:** 28
+- **Attempted:** 33 / 229 problems
+- **Mastered:** 30
 - **Still struggling:** 3
-- **Not yet attempted:** 198
+- **Not yet attempted:** 196
 
 ## Progress by Topic
 
@@ -22,9 +22,9 @@ _Current streak: 🔥 1 day(s)_
 | Linked List | 4/21 | 4 | 21 |
 | Trees | 0/29 | 0 | 29 |
 | Tries | 2/7 | 2 | 7 |
-| Heap | 1/13 | 1 | 13 |
+| Heap | 2/13 | 2 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
-| Graphs | 2/20 | 2 | 20 |
+| Graphs | 3/20 | 3 | 20 |
 | 1D DP | 1/16 | 1 | 16 |
 | 2D DP | 1/11 | 1 | 11 |
 | Greedy | 2/8 | 2 | 8 |
@@ -178,7 +178,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Heap
 
-- [ ] Kth Largest Element in a Stream
+- [x] Kth Largest Element in a Stream
 - [x] Last Stone Weight
 - [ ] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
@@ -217,7 +217,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Number of Islands
 - [x] Max Area of Island
-- [ ] Clone Graph
+- [x] Clone Graph
 - [ ] Walls and Gates
 - [ ] Rotting Oranges
 - [ ] Pacific Atlantic Water Flow
