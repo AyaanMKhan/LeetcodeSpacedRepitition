@@ -183,15 +183,16 @@
       ]
     },
     "Longest Repeating Char Replacement": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "Sliding Window",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-10-21",
-      "last_review": "2026-10-20",
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-21",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Permutation in String": {
@@ -1305,16 +1306,17 @@
       ]
     },
     "Jump Game II": {
-      "easiness": 1.8,
+      "easiness": 1.65,
       "difficulty": "Medium",
       "topic": "Greedy",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-10-21",
-      "last_review": "2026-10-20",
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-21",
       "recall_ratings": [
         1,
-        1
+        1,
+        2
       ]
     },
     "Gas Station": {
@@ -1394,27 +1396,30 @@
       ]
     },
     "Non-overlapping Intervals": {
-      "easiness": 2.2,
+      "easiness": 2.05,
       "difficulty": "Medium",
       "topic": "Intervals",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-10-21",
-      "last_review": "2026-10-20",
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-21",
       "recall_ratings": [
+        2,
         2,
         2
       ]
     },
     "Meeting Rooms": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Intervals",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-24",
+      "last_review": "2026-10-21",
+      "recall_ratings": [
+        3
+      ]
     },
     "Meeting Rooms II": {
       "easiness": 2.5,
@@ -1473,15 +1478,16 @@
       ]
     },
     "Happy Number": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Easy",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-10-21",
-      "last_review": "2026-10-20",
+      "next_review": "2026-10-22",
+      "last_review": "2026-10-21",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Plus One": {
@@ -2393,21 +2399,15 @@
     "selection_version": 4,
     "card_format_version": 2
   },
-  "streak": 2,
-  "last_session": "2026-10-20",
+  "streak": 3,
+  "last_session": "2026-10-21",
   "today_list": [
-    139,
-    124,
+    40,
+    17,
     132,
-    16,
-    17
+    122,
+    18
   ],
-  "today_date": "2026-10-20",
-  "today_done": [
-    139,
-    124,
-    132,
-    16,
-    17
-  ]
+  "today_date": "2026-10-22",
+  "today_done": []
 }

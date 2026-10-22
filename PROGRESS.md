@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-20 14:23_  
-_Current streak: 🔥 2 day(s)_
+_Last updated: 2026-10-22 06:27_  
+_Current streak: 🔥 3 day(s)_
 
 ## Overview
 
-- **Attempted:** 33 / 229 problems
-- **Mastered:** 30
+- **Attempted:** 34 / 229 problems
+- **Mastered:** 31
 - **Still struggling:** 3
-- **Not yet attempted:** 196
+- **Not yet attempted:** 195
 
 ## Progress by Topic
 
@@ -28,7 +28,7 @@ _Current streak: 🔥 2 day(s)_
 | 1D DP | 1/16 | 1 | 16 |
 | 2D DP | 1/11 | 1 | 11 |
 | Greedy | 2/8 | 2 | 8 |
-| Intervals | 2/9 | 2 | 9 |
+| Intervals | 3/9 | 3 | 9 |
 | Math & Geometry | 3/9 | 3 | 9 |
 | Bit Manipulation | 1/7 | 1 | 7 |
 
@@ -285,7 +285,7 @@ _Current streak: 🔥 2 day(s)_
 - [x] Insert Interval
 - [x] Merge Intervals
 - [ ] Non-overlapping Intervals
-- [ ] Meeting Rooms
+- [x] Meeting Rooms
 - [ ] Meeting Rooms II
 - [ ] Minimum Interval to Include Query
 - [ ] Minimum Number of Arrows to Burst Balloons
