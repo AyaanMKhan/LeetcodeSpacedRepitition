@@ -1,14 +1,16 @@
 {
   "cards": {
     "Contains Duplicate": {
-      "easiness": 2.6,
+      "easiness": 2.75,
       "difficulty": "Easy",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 1,
-      "next_review": "2026-05-25",
-      "last_review": "2026-05-24",
-      "recall_ratings": []
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-10-31",
+      "last_review": "2026-10-24",
+      "recall_ratings": [
+        3
+      ]
     },
     "Valid Anagram": {
       "easiness": 2.6,
@@ -183,15 +185,16 @@
       ]
     },
     "Longest Repeating Char Replacement": {
-      "easiness": 2.0,
+      "easiness": 1.85,
       "difficulty": "Medium",
       "topic": "Sliding Window",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-10-22",
-      "last_review": "2026-10-21",
+      "next_review": "2026-10-25",
+      "last_review": "2026-10-24",
       "recall_ratings": [
         1,
+        2,
         2
       ]
     },
@@ -1058,14 +1061,16 @@
       ]
     },
     "Min Cost Climbing Stairs": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "1D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-27",
+      "last_review": "2026-10-24",
+      "recall_ratings": [
+        3
+      ]
     },
     "House Robber": {
       "easiness": 2.5,
@@ -1306,28 +1311,31 @@
       ]
     },
     "Jump Game II": {
-      "easiness": 1.65,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "Greedy",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-22",
-      "last_review": "2026-10-21",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-10-27",
+      "last_review": "2026-10-24",
       "recall_ratings": [
         1,
         1,
-        2
+        2,
+        3
       ]
     },
     "Gas Station": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Greedy",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-10-25",
+      "last_review": "2026-10-24",
+      "recall_ratings": [
+        1
+      ]
     },
     "Hand of Straights": {
       "easiness": 2.5,
@@ -2399,15 +2407,21 @@
     "selection_version": 4,
     "card_format_version": 2
   },
-  "streak": 3,
-  "last_session": "2026-10-21",
+  "streak": 1,
+  "last_session": "2026-10-24",
   "today_list": [
-    40,
+    100,
+    124,
     17,
-    132,
-    122,
-    18
+    1,
+    125
   ],
-  "today_date": "2026-10-22",
-  "today_done": []
+  "today_date": "2026-10-24",
+  "today_done": [
+    100,
+    124,
+    17,
+    1,
+    125
+  ]
 }

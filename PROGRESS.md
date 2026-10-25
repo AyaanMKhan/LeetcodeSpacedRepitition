@@ -1,20 +1,20 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-22 06:27_  
-_Current streak: 🔥 3 day(s)_
+_Last updated: 2026-10-24 22:00_  
+_Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 34 / 229 problems
-- **Mastered:** 31
-- **Still struggling:** 3
-- **Not yet attempted:** 195
+- **Attempted:** 36 / 229 problems
+- **Mastered:** 34
+- **Still struggling:** 2
+- **Not yet attempted:** 193
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 7/14 | 4 | 14 |
+| Arrays & Hashing | 7/14 | 5 | 14 |
 | Two Pointers | 2/12 | 2 | 12 |
 | Sliding Window | 2/12 | 2 | 12 |
 | Stack | 1/9 | 1 | 9 |
@@ -25,9 +25,9 @@ _Current streak: 🔥 3 day(s)_
 | Heap | 2/13 | 2 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
 | Graphs | 3/20 | 3 | 20 |
-| 1D DP | 1/16 | 1 | 16 |
+| 1D DP | 2/16 | 2 | 16 |
 | 2D DP | 1/11 | 1 | 11 |
-| Greedy | 2/8 | 2 | 8 |
+| Greedy | 3/8 | 3 | 8 |
 | Intervals | 3/9 | 3 | 9 |
 | Math & Geometry | 3/9 | 3 | 9 |
 | Bit Manipulation | 1/7 | 1 | 7 |
@@ -36,7 +36,7 @@ _Current streak: 🔥 3 day(s)_
 
 ### Arrays & Hashing
 
-- [ ] Contains Duplicate
+- [x] Contains Duplicate
 - [ ] Valid Anagram
 - [ ] Two Sum
 - [x] Group Anagrams
@@ -239,7 +239,7 @@ _Current streak: 🔥 3 day(s)_
 ### 1D DP
 
 - [x] Climbing Stairs
-- [ ] Min Cost Climbing Stairs
+- [x] Min Cost Climbing Stairs
 - [ ] House Robber
 - [ ] House Robber II
 - [ ] Longest Palindromic Substring
@@ -273,7 +273,7 @@ _Current streak: 🔥 3 day(s)_
 
 - [x] Maximum Subarray
 - [x] Jump Game
-- [ ] Jump Game II
+- [x] Jump Game II
 - [ ] Gas Station
 - [ ] Hand of Straights
 - [ ] Merge Triplets to Form Target
