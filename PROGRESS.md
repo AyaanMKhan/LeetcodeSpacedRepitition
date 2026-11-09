@@ -1,35 +1,35 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-10-24 22:00_  
+_Last updated: 2026-11-09 10:44_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 36 / 229 problems
-- **Mastered:** 34
-- **Still struggling:** 2
-- **Not yet attempted:** 193
+- **Attempted:** 44 / 229 problems
+- **Mastered:** 43
+- **Still struggling:** 1
+- **Not yet attempted:** 185
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 7/14 | 5 | 14 |
+| Arrays & Hashing | 7/14 | 6 | 14 |
 | Two Pointers | 2/12 | 2 | 12 |
-| Sliding Window | 2/12 | 2 | 12 |
+| Sliding Window | 3/12 | 3 | 12 |
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
 | Linked List | 4/21 | 4 | 21 |
-| Trees | 0/29 | 0 | 29 |
+| Trees | 1/29 | 1 | 29 |
 | Tries | 2/7 | 2 | 7 |
-| Heap | 2/13 | 2 | 13 |
+| Heap | 3/13 | 3 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
 | Graphs | 3/20 | 3 | 20 |
 | 1D DP | 2/16 | 2 | 16 |
 | 2D DP | 1/11 | 1 | 11 |
-| Greedy | 3/8 | 3 | 8 |
-| Intervals | 3/9 | 3 | 9 |
-| Math & Geometry | 3/9 | 3 | 9 |
+| Greedy | 4/8 | 4 | 8 |
+| Intervals | 5/9 | 5 | 9 |
+| Math & Geometry | 5/9 | 5 | 9 |
 | Bit Manipulation | 1/7 | 1 | 7 |
 
 ## Checklist
@@ -37,7 +37,7 @@ _Current streak: 🔥 1 day(s)_
 ### Arrays & Hashing
 
 - [x] Contains Duplicate
-- [ ] Valid Anagram
+- [x] Valid Anagram
 - [ ] Two Sum
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
@@ -70,7 +70,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Best Time to Buy and Sell Stock
 - [x] Longest Substring Without Repeating
-- [ ] Longest Repeating Char Replacement
+- [x] Longest Repeating Char Replacement
 - [ ] Permutation in String
 - [ ] Minimum Window Substring
 - [ ] Sliding Window Maximum
@@ -136,7 +136,7 @@ _Current streak: 🔥 1 day(s)_
 
 ### Trees
 
-- [ ] Invert Binary Tree
+- [x] Invert Binary Tree
 - [ ] Maximum Depth of Binary Tree
 - [ ] Diameter of Binary Tree
 - [ ] Balanced Binary Tree
@@ -180,7 +180,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Kth Largest Element in a Stream
 - [x] Last Stone Weight
-- [ ] K Closest Points to Origin
+- [x] K Closest Points to Origin
 - [ ] Kth Largest Element in an Array
 - [ ] Task Scheduler
 - [ ] Design Twitter
@@ -274,7 +274,7 @@ _Current streak: 🔥 1 day(s)_
 - [x] Maximum Subarray
 - [x] Jump Game
 - [x] Jump Game II
-- [ ] Gas Station
+- [x] Gas Station
 - [ ] Hand of Straights
 - [ ] Merge Triplets to Form Target
 - [ ] Partition Labels
@@ -284,9 +284,9 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Insert Interval
 - [x] Merge Intervals
-- [ ] Non-overlapping Intervals
+- [x] Non-overlapping Intervals
 - [x] Meeting Rooms
-- [ ] Meeting Rooms II
+- [x] Meeting Rooms II
 - [ ] Minimum Interval to Include Query
 - [ ] Minimum Number of Arrows to Burst Balloons
 - [ ] Employee Free Time
@@ -297,8 +297,8 @@ _Current streak: 🔥 1 day(s)_
 - [x] Rotate Image
 - [x] Spiral Matrix
 - [x] Set Matrix Zeroes
-- [ ] Happy Number
-- [ ] Plus One
+- [x] Happy Number
+- [x] Plus One
 - [ ] Pow(x, n)
 - [ ] Multiply Strings
 - [ ] Detect Squares

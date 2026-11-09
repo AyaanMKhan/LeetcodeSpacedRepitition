@@ -13,14 +13,16 @@
       ]
     },
     "Valid Anagram": {
-      "easiness": 2.6,
+      "easiness": 2.75,
       "difficulty": "Easy",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 1,
-      "next_review": "2026-05-25",
-      "last_review": "2026-05-24",
-      "recall_ratings": []
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-10",
+      "last_review": "2026-11-03",
+      "recall_ratings": [
+        3
+      ]
     },
     "Two Sum": {
       "easiness": 2.6,
@@ -185,28 +187,31 @@
       ]
     },
     "Longest Repeating Char Replacement": {
-      "easiness": 1.85,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "Sliding Window",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-25",
-      "last_review": "2026-10-24",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-02",
+      "last_review": "2026-10-30",
       "recall_ratings": [
         1,
         2,
-        2
+        2,
+        3
       ]
     },
     "Permutation in String": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Sliding Window",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-10",
+      "last_review": "2026-11-09",
+      "recall_ratings": [
+        1
+      ]
     },
     "Minimum Window Substring": {
       "easiness": 2.5,
@@ -485,14 +490,16 @@
       "recall_ratings": []
     },
     "Invert Binary Tree": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Trees",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-04",
+      "last_review": "2026-11-01",
+      "recall_ratings": [
+        3
+      ]
     },
     "Maximum Depth of Binary Tree": {
       "easiness": 2.5,
@@ -710,14 +717,16 @@
       ]
     },
     "K Closest Points to Origin": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Heap",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-02",
+      "last_review": "2026-10-30",
+      "recall_ratings": [
+        3
+      ]
     },
     "Kth Largest Element in an Array": {
       "easiness": 2.5,
@@ -863,16 +872,17 @@
       ]
     },
     "Max Area of Island": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Graphs",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-08",
-      "last_review": "2026-10-05",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-06",
+      "last_review": "2026-10-30",
       "recall_ratings": [
         3,
         2,
+        3,
         3
       ]
     },
@@ -1173,37 +1183,46 @@
       "recall_ratings": []
     },
     "Unique Paths": {
-      "easiness": 2.8,
+      "easiness": 2.95,
       "difficulty": "Medium",
       "topic": "2D DP",
-      "interval": 7,
-      "repetitions": 2,
-      "next_review": "2026-10-15",
-      "last_review": "2026-10-08",
+      "interval": 20,
+      "repetitions": 3,
+      "next_review": "2026-11-21",
+      "last_review": "2026-11-01",
       "recall_ratings": [
+        3,
         3,
         3
       ]
     },
     "Longest Common Subsequence": {
-      "easiness": 2.5,
+      "easiness": 1.65,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-10",
+      "last_review": "2026-11-09",
+      "recall_ratings": [
+        1,
+        1,
+        2
+      ]
     },
     "Best Time to Buy Stock w/ Cooldown": {
-      "easiness": 2.5,
+      "easiness": 1.45,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-10",
+      "last_review": "2026-11-09",
+      "recall_ratings": [
+        1,
+        1,
+        1
+      ]
     },
     "Coin Change II": {
       "easiness": 2.5,
@@ -1326,15 +1345,17 @@
       ]
     },
     "Gas Station": {
-      "easiness": 2.15,
+      "easiness": 1.95,
       "difficulty": "Medium",
       "topic": "Greedy",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-25",
-      "last_review": "2026-10-24",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-03",
+      "last_review": "2026-10-31",
       "recall_ratings": [
-        1
+        1,
+        1,
+        3
       ]
     },
     "Hand of Straights": {
@@ -1404,17 +1425,18 @@
       ]
     },
     "Non-overlapping Intervals": {
-      "easiness": 2.05,
+      "easiness": 2.2,
       "difficulty": "Medium",
       "topic": "Intervals",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-22",
-      "last_review": "2026-10-21",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-03",
+      "last_review": "2026-10-31",
       "recall_ratings": [
         2,
         2,
-        2
+        2,
+        3
       ]
     },
     "Meeting Rooms": {
@@ -1430,14 +1452,19 @@
       ]
     },
     "Meeting Rooms II": {
-      "easiness": 2.5,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "Intervals",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-12",
+      "last_review": "2026-11-09",
+      "recall_ratings": [
+        1,
+        1,
+        2,
+        3
+      ]
     },
     "Minimum Interval to Include Query": {
       "easiness": 2.5,
@@ -1489,24 +1516,29 @@
       "easiness": 2.0,
       "difficulty": "Easy",
       "topic": "Math & Geometry",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-10-22",
-      "last_review": "2026-10-21",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-03",
+      "last_review": "2026-10-31",
       "recall_ratings": [
         1,
-        2
+        2,
+        2,
+        3
       ]
     },
     "Plus One": {
-      "easiness": 2.5,
+      "easiness": 2.3,
       "difficulty": "Easy",
       "topic": "Math & Geometry",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-12",
+      "last_review": "2026-11-09",
+      "recall_ratings": [
+        1,
+        3
+      ]
     },
     "Pow(x, n)": {
       "easiness": 2.5,
@@ -1539,15 +1571,16 @@
       "recall_ratings": []
     },
     "Single Number": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Bit Manipulation",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-11",
-      "last_review": "2026-10-08",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-07",
+      "last_review": "2026-10-31",
       "recall_ratings": [
         2,
+        3,
         3
       ]
     },
@@ -2408,20 +2441,20 @@
     "card_format_version": 2
   },
   "streak": 1,
-  "last_session": "2026-10-24",
+  "last_session": "2026-11-09",
   "today_list": [
-    100,
-    124,
-    17,
-    1,
-    125
+    18,
+    140,
+    112,
+    113,
+    134
   ],
-  "today_date": "2026-10-24",
+  "today_date": "2026-11-09",
   "today_done": [
-    100,
-    124,
-    17,
-    1,
-    125
+    18,
+    140,
+    112,
+    113,
+    134
   ]
 }
