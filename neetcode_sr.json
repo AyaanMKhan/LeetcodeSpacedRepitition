@@ -202,15 +202,16 @@
       ]
     },
     "Permutation in String": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "Sliding Window",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-10",
-      "last_review": "2026-11-09",
+      "next_review": "2026-11-11",
+      "last_review": "2026-11-10",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Minimum Window Substring": {
@@ -1059,14 +1060,15 @@
       "recall_ratings": []
     },
     "Climbing Stairs": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Easy",
       "topic": "1D DP",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-18",
-      "last_review": "2026-10-15",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-17",
+      "last_review": "2026-11-10",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -1083,14 +1085,16 @@
       ]
     },
     "House Robber": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "1D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-13",
+      "last_review": "2026-11-10",
+      "recall_ratings": [
+        3
+      ]
     },
     "House Robber II": {
       "easiness": 2.5,
@@ -1197,31 +1201,33 @@
       ]
     },
     "Longest Common Subsequence": {
-      "easiness": 1.65,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "2D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-10",
-      "last_review": "2026-11-09",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-13",
+      "last_review": "2026-11-10",
       "recall_ratings": [
         1,
         1,
-        2
+        2,
+        3
       ]
     },
     "Best Time to Buy Stock w/ Cooldown": {
-      "easiness": 1.45,
+      "easiness": 1.3,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-10",
-      "last_review": "2026-11-09",
+      "next_review": "2026-11-11",
+      "last_review": "2026-11-10",
       "recall_ratings": [
         1,
         1,
-        1
+        1,
+        2
       ]
     },
     "Coin Change II": {
@@ -2440,21 +2446,21 @@
     "selection_version": 4,
     "card_format_version": 2
   },
-  "streak": 1,
-  "last_session": "2026-11-09",
+  "streak": 2,
+  "last_session": "2026-11-10",
   "today_list": [
-    18,
-    140,
-    112,
+    101,
     113,
-    134
+    18,
+    112,
+    99
   ],
-  "today_date": "2026-11-09",
+  "today_date": "2026-11-10",
   "today_done": [
-    18,
-    140,
-    112,
+    101,
     113,
-    134
+    18,
+    112,
+    99
   ]
 }

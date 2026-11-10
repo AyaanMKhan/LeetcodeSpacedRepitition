@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-09 10:44_  
-_Current streak: 🔥 1 day(s)_
+_Last updated: 2026-11-10 10:44_  
+_Current streak: 🔥 2 day(s)_
 
 ## Overview
 
-- **Attempted:** 44 / 229 problems
-- **Mastered:** 43
+- **Attempted:** 46 / 229 problems
+- **Mastered:** 45
 - **Still struggling:** 1
-- **Not yet attempted:** 185
+- **Not yet attempted:** 183
 
 ## Progress by Topic
 
@@ -25,8 +25,8 @@ _Current streak: 🔥 1 day(s)_
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 0/18 | 0 | 18 |
 | Graphs | 3/20 | 3 | 20 |
-| 1D DP | 2/16 | 2 | 16 |
-| 2D DP | 1/11 | 1 | 11 |
+| 1D DP | 3/16 | 3 | 16 |
+| 2D DP | 2/11 | 2 | 11 |
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
 | Math & Geometry | 5/9 | 5 | 9 |
@@ -240,7 +240,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Climbing Stairs
 - [x] Min Cost Climbing Stairs
-- [ ] House Robber
+- [x] House Robber
 - [ ] House Robber II
 - [ ] Longest Palindromic Substring
 - [ ] Palindromic Substrings
@@ -258,7 +258,7 @@ _Current streak: 🔥 1 day(s)_
 ### 2D DP
 
 - [x] Unique Paths
-- [ ] Longest Common Subsequence
+- [x] Longest Common Subsequence
 - [ ] Best Time to Buy Stock w/ Cooldown
 - [ ] Coin Change II
 - [ ] Target Sum
