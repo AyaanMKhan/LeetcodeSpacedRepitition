@@ -202,15 +202,16 @@
       ]
     },
     "Permutation in String": {
-      "easiness": 2.0,
+      "easiness": 1.85,
       "difficulty": "Medium",
       "topic": "Sliding Window",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-11",
-      "last_review": "2026-11-10",
+      "next_review": "2026-11-13",
+      "last_review": "2026-11-12",
       "recall_ratings": [
         1,
+        2,
         2
       ]
     },
@@ -503,14 +504,16 @@
       ]
     },
     "Maximum Depth of Binary Tree": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Trees",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-15",
+      "last_review": "2026-11-12",
+      "recall_ratings": [
+        3
+      ]
     },
     "Diameter of Binary Tree": {
       "easiness": 2.5,
@@ -705,15 +708,16 @@
       ]
     },
     "Last Stone Weight": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-15",
-      "last_review": "2026-10-12",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-19",
+      "last_review": "2026-11-12",
       "recall_ratings": [
         2,
+        3,
         3
       ]
     },
@@ -770,14 +774,16 @@
       "recall_ratings": []
     },
     "Subsets": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Backtracking",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-15",
+      "last_review": "2026-11-12",
+      "recall_ratings": [
+        3
+      ]
     },
     "Combination Sum": {
       "easiness": 2.5,
@@ -1221,12 +1227,13 @@
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-11",
-      "last_review": "2026-11-10",
+      "next_review": "2026-11-13",
+      "last_review": "2026-11-12",
       "recall_ratings": [
         1,
         1,
         1,
+        2,
         2
       ]
     },
@@ -2446,21 +2453,21 @@
     "selection_version": 4,
     "card_format_version": 2
   },
-  "streak": 2,
-  "last_session": "2026-11-10",
+  "streak": 1,
+  "last_session": "2026-11-12",
   "today_list": [
-    101,
-    113,
+    71,
     18,
-    112,
-    99
+    113,
+    65,
+    46
   ],
-  "today_date": "2026-11-10",
+  "today_date": "2026-11-12",
   "today_done": [
-    101,
-    113,
+    71,
     18,
-    112,
-    99
+    113,
+    65,
+    46
   ]
 }

@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-10 10:44_  
-_Current streak: 🔥 2 day(s)_
+_Last updated: 2026-11-12 10:59_  
+_Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 46 / 229 problems
-- **Mastered:** 45
+- **Attempted:** 48 / 229 problems
+- **Mastered:** 47
 - **Still struggling:** 1
-- **Not yet attempted:** 183
+- **Not yet attempted:** 181
 
 ## Progress by Topic
 
@@ -20,10 +20,10 @@ _Current streak: 🔥 2 day(s)_
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
 | Linked List | 4/21 | 4 | 21 |
-| Trees | 1/29 | 1 | 29 |
+| Trees | 2/29 | 2 | 29 |
 | Tries | 2/7 | 2 | 7 |
 | Heap | 3/13 | 3 | 13 |
-| Backtracking | 0/18 | 0 | 18 |
+| Backtracking | 1/18 | 1 | 18 |
 | Graphs | 3/20 | 3 | 20 |
 | 1D DP | 3/16 | 3 | 16 |
 | 2D DP | 2/11 | 2 | 11 |
@@ -137,7 +137,7 @@ _Current streak: 🔥 2 day(s)_
 ### Trees
 
 - [x] Invert Binary Tree
-- [ ] Maximum Depth of Binary Tree
+- [x] Maximum Depth of Binary Tree
 - [ ] Diameter of Binary Tree
 - [ ] Balanced Binary Tree
 - [ ] Same Tree
@@ -194,7 +194,7 @@ _Current streak: 🔥 2 day(s)_
 
 ### Backtracking
 
-- [ ] Subsets
+- [x] Subsets
 - [ ] Combination Sum
 - [ ] Permutations
 - [ ] Subsets II
