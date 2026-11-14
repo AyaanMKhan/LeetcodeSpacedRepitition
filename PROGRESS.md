@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-12 10:59_  
+_Last updated: 2026-11-14 02:46_  
 _Current streak: 🔥 1 day(s)_
 
 ## Overview
 
-- **Attempted:** 48 / 229 problems
-- **Mastered:** 47
+- **Attempted:** 50 / 229 problems
+- **Mastered:** 49
 - **Still struggling:** 1
-- **Not yet attempted:** 181
+- **Not yet attempted:** 179
 
 ## Progress by Topic
 
@@ -16,17 +16,17 @@ _Current streak: 🔥 1 day(s)_
 |---|---|---|---|
 | Arrays & Hashing | 7/14 | 6 | 14 |
 | Two Pointers | 2/12 | 2 | 12 |
-| Sliding Window | 3/12 | 3 | 12 |
+| Sliding Window | 4/12 | 4 | 12 |
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 4/21 | 4 | 21 |
+| Linked List | 3/21 | 3 | 21 |
 | Trees | 2/29 | 2 | 29 |
 | Tries | 2/7 | 2 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
 | Graphs | 3/20 | 3 | 20 |
-| 1D DP | 3/16 | 3 | 16 |
-| 2D DP | 2/11 | 2 | 11 |
+| 1D DP | 4/16 | 4 | 16 |
+| 2D DP | 3/11 | 3 | 11 |
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
 | Math & Geometry | 5/9 | 5 | 9 |
@@ -71,7 +71,7 @@ _Current streak: 🔥 1 day(s)_
 - [x] Best Time to Buy and Sell Stock
 - [x] Longest Substring Without Repeating
 - [x] Longest Repeating Char Replacement
-- [ ] Permutation in String
+- [x] Permutation in String
 - [ ] Minimum Window Substring
 - [ ] Sliding Window Maximum
 - [ ] Substring with Concatenation of All Words
@@ -114,7 +114,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Reverse Linked List
 - [x] Merge Two Sorted Lists
-- [x] Reorder List
+- [ ] Reorder List
 - [x] Remove Nth Node From End
 - [ ] Copy List with Random Pointer
 - [ ] Add Two Numbers
@@ -241,7 +241,7 @@ _Current streak: 🔥 1 day(s)_
 - [x] Climbing Stairs
 - [x] Min Cost Climbing Stairs
 - [x] House Robber
-- [ ] House Robber II
+- [x] House Robber II
 - [ ] Longest Palindromic Substring
 - [ ] Palindromic Substrings
 - [ ] Decode Ways
@@ -259,7 +259,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Unique Paths
 - [x] Longest Common Subsequence
-- [ ] Best Time to Buy Stock w/ Cooldown
+- [x] Best Time to Buy Stock w/ Cooldown
 - [ ] Coin Change II
 - [ ] Target Sum
 - [ ] Interleaving String
