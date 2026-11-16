@@ -118,38 +118,42 @@
       ]
     },
     "Two Sum II": {
+      "easiness": 2.8,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-16",
+      "recall_ratings": [
+        3,
+        3
+      ]
+    },
+    "3Sum": {
+      "easiness": 2.2,
+      "difficulty": "Medium",
+      "topic": "Two Pointers",
+      "interval": 1,
+      "repetitions": 0,
+      "next_review": "2026-11-17",
+      "last_review": "2026-11-16",
+      "recall_ratings": [
+        2,
+        2
+      ]
+    },
+    "Container With Most Water": {
       "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Two Pointers",
       "interval": 3,
       "repetitions": 1,
-      "next_review": "2026-10-18",
-      "last_review": "2026-10-15",
+      "next_review": "2026-11-19",
+      "last_review": "2026-11-16",
       "recall_ratings": [
         3
       ]
-    },
-    "3Sum": {
-      "easiness": 2.35,
-      "difficulty": "Medium",
-      "topic": "Two Pointers",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-15",
-      "last_review": "2026-11-14",
-      "recall_ratings": [
-        2
-      ]
-    },
-    "Container With Most Water": {
-      "easiness": 2.5,
-      "difficulty": "Medium",
-      "topic": "Two Pointers",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
     },
     "Trapping Rain Water": {
       "easiness": 2.5,
@@ -418,16 +422,17 @@
       ]
     },
     "Reorder List": {
-      "easiness": 2.35,
+      "easiness": 2.2,
       "difficulty": "Medium",
       "topic": "Linked List",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-15",
-      "last_review": "2026-11-14",
+      "next_review": "2026-11-17",
+      "last_review": "2026-11-16",
       "recall_ratings": [
         2,
         3,
+        2,
         2
       ]
     },
@@ -1561,14 +1566,16 @@
       ]
     },
     "Pow(x, n)": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-17",
+      "last_review": "2026-11-16",
+      "recall_ratings": [
+        1
+      ]
     },
     "Multiply Strings": {
       "easiness": 2.5,
@@ -2458,23 +2465,18 @@
   "settings": {
     "problems_per_day": 5,
     "selection_version": 4,
-    "card_format_version": 2
+    "card_format_version": 2,
+    "review_per_day": 1
   },
   "streak": 1,
-  "last_session": "2026-11-14",
+  "last_session": "2026-11-16",
   "today_list": [
-    12,
-    18,
-    113,
-    38,
-    102
+    14,
+    17,
+    126,
+    67,
+    8
   ],
-  "today_date": "2026-11-14",
-  "today_done": [
-    12,
-    18,
-    113,
-    38,
-    102
-  ]
+  "today_date": "2026-11-16",
+  "today_done": []
 }
