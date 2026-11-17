@@ -25,14 +25,16 @@
       ]
     },
     "Two Sum": {
-      "easiness": 2.6,
+      "easiness": 2.75,
       "difficulty": "Easy",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 1,
-      "next_review": "2026-05-25",
-      "last_review": "2026-05-24",
-      "recall_ratings": []
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-24",
+      "last_review": "2026-11-17",
+      "recall_ratings": [
+        3
+      ]
     },
     "Group Anagrams": {
       "easiness": 2.33,
@@ -131,16 +133,17 @@
       ]
     },
     "3Sum": {
-      "easiness": 2.2,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Two Pointers",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-17",
-      "last_review": "2026-11-16",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-20",
+      "last_review": "2026-11-17",
       "recall_ratings": [
         2,
-        2
+        2,
+        3
       ]
     },
     "Container With Most Water": {
@@ -422,18 +425,19 @@
       ]
     },
     "Reorder List": {
-      "easiness": 2.2,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Linked List",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-17",
-      "last_review": "2026-11-16",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-20",
+      "last_review": "2026-11-17",
       "recall_ratings": [
         2,
         3,
         2,
-        2
+        2,
+        3
       ]
     },
     "Remove Nth Node From End": {
@@ -692,14 +696,16 @@
       ]
     },
     "Word Search II": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Hard",
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-18",
+      "last_review": "2026-11-17",
+      "recall_ratings": [
+        2
+      ]
     },
     "Kth Largest Element in a Stream": {
       "easiness": 2.5,
@@ -1566,14 +1572,15 @@
       ]
     },
     "Pow(x, n)": {
-      "easiness": 2.15,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-17",
-      "last_review": "2026-11-16",
+      "next_review": "2026-11-18",
+      "last_review": "2026-11-17",
       "recall_ratings": [
+        1,
         1
       ]
     },
@@ -2468,15 +2475,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 1,
-  "last_session": "2026-11-16",
+  "streak": 2,
+  "last_session": "2026-11-17",
   "today_list": [
-    14,
-    17,
-    126,
-    67,
-    8
+    63,
+    141,
+    38,
+    12,
+    3
   ],
-  "today_date": "2026-11-16",
-  "today_done": []
+  "today_date": "2026-11-17",
+  "today_done": [
+    63,
+    141,
+    38,
+    12,
+    3
+  ]
 }

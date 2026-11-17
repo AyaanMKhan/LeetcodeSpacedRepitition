@@ -1,25 +1,25 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-16 01:35_  
-_Current streak: 🔥 1 day(s)_
+_Last updated: 2026-11-17 10:52_  
+_Current streak: 🔥 2 day(s)_
 
 ## Overview
 
-- **Attempted:** 51 / 229 problems
-- **Mastered:** 50
-- **Still struggling:** 1
-- **Not yet attempted:** 178
+- **Attempted:** 53 / 229 problems
+- **Mastered:** 53
+- **Still struggling:** 0
+- **Not yet attempted:** 176
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 7/14 | 6 | 14 |
-| Two Pointers | 3/12 | 3 | 12 |
+| Arrays & Hashing | 7/14 | 7 | 14 |
+| Two Pointers | 4/12 | 4 | 12 |
 | Sliding Window | 4/12 | 4 | 12 |
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 0/14 | 0 | 14 |
-| Linked List | 3/21 | 3 | 21 |
+| Linked List | 4/21 | 4 | 21 |
 | Trees | 2/29 | 2 | 29 |
 | Tries | 2/7 | 2 | 7 |
 | Heap | 3/13 | 3 | 13 |
@@ -38,7 +38,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Contains Duplicate
 - [x] Valid Anagram
-- [ ] Two Sum
+- [x] Two Sum
 - [x] Group Anagrams
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
@@ -55,7 +55,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Valid Palindrome
 - [x] Two Sum II
-- [ ] 3Sum
+- [x] 3Sum
 - [x] Container With Most Water
 - [ ] Trapping Rain Water
 - [ ] 3Sum Closest
@@ -114,7 +114,7 @@ _Current streak: 🔥 1 day(s)_
 
 - [x] Reverse Linked List
 - [x] Merge Two Sorted Lists
-- [ ] Reorder List
+- [x] Reorder List
 - [x] Remove Nth Node From End
 - [ ] Copy List with Random Pointer
 - [ ] Add Two Numbers
