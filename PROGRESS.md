@@ -1,7 +1,7 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-17 10:52_  
-_Current streak: 🔥 2 day(s)_
+_Last updated: 2026-11-18 18:44_  
+_Current streak: 🔥 3 day(s)_
 
 ## Overview
 
@@ -18,10 +18,10 @@ _Current streak: 🔥 2 day(s)_
 | Two Pointers | 4/12 | 4 | 12 |
 | Sliding Window | 4/12 | 4 | 12 |
 | Stack | 1/9 | 1 | 9 |
-| Binary Search | 0/14 | 0 | 14 |
+| Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
 | Trees | 2/29 | 2 | 29 |
-| Tries | 2/7 | 2 | 7 |
+| Tries | 1/7 | 1 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
 | Graphs | 3/20 | 3 | 20 |
@@ -95,7 +95,7 @@ _Current streak: 🔥 2 day(s)_
 
 ### Binary Search
 
-- [ ] Binary Search
+- [x] Binary Search
 - [ ] Search a 2D Matrix
 - [ ] Koko Eating Bananas
 - [ ] Find Min in Rotated Sorted Array
@@ -169,7 +169,7 @@ _Current streak: 🔥 2 day(s)_
 ### Tries
 
 - [x] Implement Trie (Prefix Tree)
-- [x] Design Add and Search Words
+- [ ] Design Add and Search Words
 - [ ] Word Search II
 - [ ] Design Search Autocomplete System
 - [ ] Longest Word in Dictionary
