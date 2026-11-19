@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-18 18:44_  
-_Current streak: 🔥 3 day(s)_
+_Last updated: 2026-11-19 12:19_  
+_Current streak: 🔥 4 day(s)_
 
 ## Overview
 
-- **Attempted:** 53 / 229 problems
-- **Mastered:** 53
+- **Attempted:** 54 / 229 problems
+- **Mastered:** 54
 - **Still struggling:** 0
-- **Not yet attempted:** 176
+- **Not yet attempted:** 175
 
 ## Progress by Topic
 
@@ -21,7 +21,7 @@ _Current streak: 🔥 3 day(s)_
 | Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
 | Trees | 2/29 | 2 | 29 |
-| Tries | 1/7 | 1 | 7 |
+| Tries | 2/7 | 2 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
 | Graphs | 3/20 | 3 | 20 |
@@ -170,7 +170,7 @@ _Current streak: 🔥 3 day(s)_
 
 - [x] Implement Trie (Prefix Tree)
 - [ ] Design Add and Search Words
-- [ ] Word Search II
+- [x] Word Search II
 - [ ] Design Search Autocomplete System
 - [ ] Longest Word in Dictionary
 - [ ] Prefix and Suffix Search

@@ -533,14 +533,16 @@
       ]
     },
     "Diameter of Binary Tree": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Easy",
       "topic": "Trees",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-20",
+      "last_review": "2026-11-19",
+      "recall_ratings": [
+        1
+      ]
     },
     "Balanced Binary Tree": {
       "easiness": 2.5,
@@ -701,29 +703,31 @@
       ]
     },
     "Word Search II": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Hard",
       "topic": "Tries",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-18",
-      "last_review": "2026-11-17",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-22",
+      "last_review": "2026-11-19",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Kth Largest Element in a Stream": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-22",
-      "last_review": "2026-10-19",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-26",
+      "last_review": "2026-11-19",
       "recall_ratings": [
         2,
         3,
         2,
+        3,
         3
       ]
     },
@@ -926,14 +930,16 @@
       ]
     },
     "Walls and Gates": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Graphs",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-20",
+      "last_review": "2026-11-19",
+      "recall_ratings": [
+        1
+      ]
     },
     "Rotting Oranges": {
       "easiness": 2.5,
@@ -1577,16 +1583,17 @@
       ]
     },
     "Pow(x, n)": {
-      "easiness": 1.65,
+      "easiness": 1.5,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-19",
-      "last_review": "2026-11-18",
+      "next_review": "2026-11-20",
+      "last_review": "2026-11-19",
       "recall_ratings": [
         1,
         1,
+        2,
         2
       ]
     },
@@ -2481,21 +2488,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 3,
-  "last_session": "2026-11-18",
+  "streak": 4,
+  "last_session": "2026-11-19",
   "today_list": [
-    29,
+    83,
     141,
-    38,
-    12,
-    62
+    63,
+    64,
+    47
   ],
-  "today_date": "2026-11-18",
+  "today_date": "2026-11-19",
   "today_done": [
-    29,
+    83,
     141,
-    38,
-    12,
-    62
+    63,
+    64,
+    47
   ]
 }
