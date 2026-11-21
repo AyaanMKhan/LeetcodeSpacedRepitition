@@ -533,15 +533,16 @@
       ]
     },
     "Diameter of Binary Tree": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Easy",
       "topic": "Trees",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-20",
-      "last_review": "2026-11-19",
+      "next_review": "2026-11-21",
+      "last_review": "2026-11-20",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Balanced Binary Tree": {
@@ -688,18 +689,19 @@
       ]
     },
     "Design Add and Search Words": {
-      "easiness": 2.2,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Tries",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-19",
-      "last_review": "2026-11-18",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-20",
       "recall_ratings": [
         2,
         2,
         3,
-        2
+        2,
+        3
       ]
     },
     "Word Search II": {
@@ -930,15 +932,16 @@
       ]
     },
     "Walls and Gates": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "Graphs",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-20",
-      "last_review": "2026-11-19",
+      "next_review": "2026-11-21",
+      "last_review": "2026-11-20",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Rotting Oranges": {
@@ -1267,14 +1270,16 @@
       ]
     },
     "Coin Change II": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-21",
+      "last_review": "2026-11-20",
+      "recall_ratings": [
+        1
+      ]
     },
     "Target Sum": {
       "easiness": 2.5,
@@ -1583,18 +1588,19 @@
       ]
     },
     "Pow(x, n)": {
-      "easiness": 1.5,
+      "easiness": 1.65,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-20",
-      "last_review": "2026-11-19",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-20",
       "recall_ratings": [
         1,
         1,
         2,
-        2
+        2,
+        3
       ]
     },
     "Multiply Strings": {
@@ -2488,21 +2494,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 4,
-  "last_session": "2026-11-19",
+  "streak": 5,
+  "last_session": "2026-11-20",
   "today_list": [
+    114,
+    47,
     83,
     141,
-    63,
-    64,
-    47
+    62
   ],
-  "today_date": "2026-11-19",
+  "today_date": "2026-11-20",
   "today_done": [
+    114,
+    47,
     83,
     141,
-    63,
-    64,
-    47
+    62
   ]
 }

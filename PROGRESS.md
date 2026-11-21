@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-19 12:19_  
-_Current streak: 🔥 4 day(s)_
+_Last updated: 2026-11-20 22:18_  
+_Current streak: 🔥 5 day(s)_
 
 ## Overview
 
-- **Attempted:** 54 / 229 problems
-- **Mastered:** 54
+- **Attempted:** 56 / 229 problems
+- **Mastered:** 56
 - **Still struggling:** 0
-- **Not yet attempted:** 175
+- **Not yet attempted:** 173
 
 ## Progress by Topic
 
@@ -21,7 +21,7 @@ _Current streak: 🔥 4 day(s)_
 | Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
 | Trees | 2/29 | 2 | 29 |
-| Tries | 2/7 | 2 | 7 |
+| Tries | 3/7 | 3 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
 | Graphs | 3/20 | 3 | 20 |
@@ -29,7 +29,7 @@ _Current streak: 🔥 4 day(s)_
 | 2D DP | 3/11 | 3 | 11 |
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
-| Math & Geometry | 5/9 | 5 | 9 |
+| Math & Geometry | 6/9 | 6 | 9 |
 | Bit Manipulation | 1/7 | 1 | 7 |
 
 ## Checklist
@@ -169,7 +169,7 @@ _Current streak: 🔥 4 day(s)_
 ### Tries
 
 - [x] Implement Trie (Prefix Tree)
-- [ ] Design Add and Search Words
+- [x] Design Add and Search Words
 - [x] Word Search II
 - [ ] Design Search Autocomplete System
 - [ ] Longest Word in Dictionary
@@ -299,7 +299,7 @@ _Current streak: 🔥 4 day(s)_
 - [x] Set Matrix Zeroes
 - [x] Happy Number
 - [x] Plus One
-- [ ] Pow(x, n)
+- [x] Pow(x, n)
 - [ ] Multiply Strings
 - [ ] Detect Squares
 - [ ] Convert 1D Array Into 2D Array
