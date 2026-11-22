@@ -86,14 +86,16 @@
       ]
     },
     "Encode and Decode Strings": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-22",
+      "recall_ratings": [
+        2
+      ]
     },
     "Longest Consecutive Sequence": {
       "easiness": 2.5,
@@ -735,15 +737,16 @@
       ]
     },
     "Last Stone Weight": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Easy",
       "topic": "Heap",
-      "interval": 7,
-      "repetitions": 2,
-      "next_review": "2026-11-19",
-      "last_review": "2026-11-12",
+      "interval": 19,
+      "repetitions": 3,
+      "next_review": "2026-12-11",
+      "last_review": "2026-11-22",
       "recall_ratings": [
         2,
+        3,
         3,
         3
       ]
@@ -1273,16 +1276,17 @@
       ]
     },
     "Coin Change II": {
-      "easiness": 1.8,
+      "easiness": 1.65,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-22",
-      "last_review": "2026-11-21",
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-22",
       "recall_ratings": [
         1,
-        1
+        1,
+        2
       ]
     },
     "Target Sum": {
@@ -1642,14 +1646,16 @@
       ]
     },
     "Number of 1 Bits": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Bit Manipulation",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-25",
+      "last_review": "2026-11-22",
+      "recall_ratings": [
+        3
+      ]
     },
     "Counting Bits": {
       "easiness": 2.5,
@@ -2212,14 +2218,15 @@
       "recall_ratings": []
     },
     "Design Search Autocomplete System": {
-      "easiness": 2.15,
+      "easiness": 1.8,
       "difficulty": "Hard",
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-22",
-      "last_review": "2026-11-21",
+      "next_review": "2026-11-23",
+      "last_review": "2026-11-22",
       "recall_ratings": [
+        1,
         1
       ]
     },
@@ -2500,21 +2507,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 6,
-  "last_session": "2026-11-21",
+  "streak": 7,
+  "last_session": "2026-11-22",
   "today_list": [
+    145,
     202,
     114,
-    83,
-    47,
-    66
+    65,
+    8
   ],
-  "today_date": "2026-11-21",
+  "today_date": "2026-11-22",
   "today_done": [
+    145,
     202,
     114,
-    83,
-    47,
-    66
+    65,
+    8
   ]
 }

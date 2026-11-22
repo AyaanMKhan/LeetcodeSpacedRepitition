@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-21 23:18_  
-_Current streak: 🔥 6 day(s)_
+_Last updated: 2026-11-22 13:16_  
+_Current streak: 🔥 7 day(s)_
 
 ## Overview
 
-- **Attempted:** 58 / 229 problems
-- **Mastered:** 58
+- **Attempted:** 59 / 229 problems
+- **Mastered:** 59
 - **Still struggling:** 0
-- **Not yet attempted:** 171
+- **Not yet attempted:** 170
 
 ## Progress by Topic
 
@@ -30,7 +30,7 @@ _Current streak: 🔥 6 day(s)_
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
 | Math & Geometry | 6/9 | 6 | 9 |
-| Bit Manipulation | 1/7 | 1 | 7 |
+| Bit Manipulation | 2/7 | 2 | 7 |
 
 ## Checklist
 
@@ -307,7 +307,7 @@ _Current streak: 🔥 6 day(s)_
 ### Bit Manipulation
 
 - [x] Single Number
-- [ ] Number of 1 Bits
+- [x] Number of 1 Bits
 - [ ] Counting Bits
 - [ ] Reverse Bits
 - [ ] Missing Number
