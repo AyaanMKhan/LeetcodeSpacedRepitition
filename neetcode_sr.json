@@ -533,16 +533,17 @@
       ]
     },
     "Diameter of Binary Tree": {
-      "easiness": 2.0,
+      "easiness": 2.15,
       "difficulty": "Easy",
       "topic": "Trees",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-21",
-      "last_review": "2026-11-20",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-24",
+      "last_review": "2026-11-21",
       "recall_ratings": [
         1,
-        2
+        2,
+        3
       ]
     },
     "Balanced Binary Tree": {
@@ -748,14 +749,15 @@
       ]
     },
     "K Closest Points to Origin": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Heap",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-11-02",
-      "last_review": "2026-10-30",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-28",
+      "last_review": "2026-11-21",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -932,16 +934,17 @@
       ]
     },
     "Walls and Gates": {
-      "easiness": 2.0,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Graphs",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-21",
-      "last_review": "2026-11-20",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-24",
+      "last_review": "2026-11-21",
       "recall_ratings": [
         1,
-        2
+        2,
+        3
       ]
     },
     "Rotting Oranges": {
@@ -1270,14 +1273,15 @@
       ]
     },
     "Coin Change II": {
-      "easiness": 2.15,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-21",
-      "last_review": "2026-11-20",
+      "next_review": "2026-11-22",
+      "last_review": "2026-11-21",
       "recall_ratings": [
+        1,
         1
       ]
     },
@@ -2208,14 +2212,16 @@
       "recall_ratings": []
     },
     "Design Search Autocomplete System": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Hard",
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-09-22",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-22",
+      "last_review": "2026-11-21",
+      "recall_ratings": [
+        1
+      ]
     },
     "Longest Word in Dictionary": {
       "easiness": 2.5,
@@ -2494,21 +2500,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 5,
-  "last_session": "2026-11-20",
+  "streak": 6,
+  "last_session": "2026-11-21",
   "today_list": [
+    202,
     114,
-    47,
     83,
-    141,
-    62
+    47,
+    66
   ],
-  "today_date": "2026-11-20",
+  "today_date": "2026-11-21",
   "today_done": [
+    202,
     114,
-    47,
     83,
-    141,
-    62
+    47,
+    66
   ]
 }

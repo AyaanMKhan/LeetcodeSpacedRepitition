@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-20 22:18_  
-_Current streak: 🔥 5 day(s)_
+_Last updated: 2026-11-21 23:18_  
+_Current streak: 🔥 6 day(s)_
 
 ## Overview
 
-- **Attempted:** 56 / 229 problems
-- **Mastered:** 56
+- **Attempted:** 58 / 229 problems
+- **Mastered:** 58
 - **Still struggling:** 0
-- **Not yet attempted:** 173
+- **Not yet attempted:** 171
 
 ## Progress by Topic
 
@@ -20,11 +20,11 @@ _Current streak: 🔥 5 day(s)_
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
-| Trees | 2/29 | 2 | 29 |
+| Trees | 3/29 | 3 | 29 |
 | Tries | 3/7 | 3 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
-| Graphs | 3/20 | 3 | 20 |
+| Graphs | 4/20 | 4 | 20 |
 | 1D DP | 4/16 | 4 | 16 |
 | 2D DP | 3/11 | 3 | 11 |
 | Greedy | 4/8 | 4 | 8 |
@@ -138,7 +138,7 @@ _Current streak: 🔥 5 day(s)_
 
 - [x] Invert Binary Tree
 - [x] Maximum Depth of Binary Tree
-- [ ] Diameter of Binary Tree
+- [x] Diameter of Binary Tree
 - [ ] Balanced Binary Tree
 - [ ] Same Tree
 - [ ] Subtree of Another Tree
@@ -218,7 +218,7 @@ _Current streak: 🔥 5 day(s)_
 - [x] Number of Islands
 - [x] Max Area of Island
 - [x] Clone Graph
-- [ ] Walls and Gates
+- [x] Walls and Gates
 - [ ] Rotting Oranges
 - [ ] Pacific Atlantic Water Flow
 - [ ] Surrounded Regions
