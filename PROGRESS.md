@@ -1,20 +1,20 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-22 13:16_  
-_Current streak: 🔥 7 day(s)_
+_Last updated: 2026-11-23 14:18_  
+_Current streak: 🔥 8 day(s)_
 
 ## Overview
 
-- **Attempted:** 59 / 229 problems
-- **Mastered:** 59
+- **Attempted:** 61 / 229 problems
+- **Mastered:** 61
 - **Still struggling:** 0
-- **Not yet attempted:** 170
+- **Not yet attempted:** 168
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 7/14 | 7 | 14 |
+| Arrays & Hashing | 8/14 | 8 | 14 |
 | Two Pointers | 4/12 | 4 | 12 |
 | Sliding Window | 4/12 | 4 | 12 |
 | Stack | 1/9 | 1 | 9 |
@@ -26,7 +26,7 @@ _Current streak: 🔥 7 day(s)_
 | Backtracking | 1/18 | 1 | 18 |
 | Graphs | 4/20 | 4 | 20 |
 | 1D DP | 4/16 | 4 | 16 |
-| 2D DP | 3/11 | 3 | 11 |
+| 2D DP | 4/11 | 4 | 11 |
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
 | Math & Geometry | 6/9 | 6 | 9 |
@@ -43,7 +43,7 @@ _Current streak: 🔥 7 day(s)_
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
 - [x] Valid Sudoku
-- [ ] Encode and Decode Strings
+- [x] Encode and Decode Strings
 - [ ] Longest Consecutive Sequence
 - [ ] First Missing Positive
 - [ ] Majority Element
@@ -260,7 +260,7 @@ _Current streak: 🔥 7 day(s)_
 - [x] Unique Paths
 - [x] Longest Common Subsequence
 - [x] Best Time to Buy Stock w/ Cooldown
-- [ ] Coin Change II
+- [x] Coin Change II
 - [ ] Target Sum
 - [ ] Interleaving String
 - [ ] Longest Increasing Path in Matrix

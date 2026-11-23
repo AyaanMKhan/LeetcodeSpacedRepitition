@@ -86,15 +86,16 @@
       ]
     },
     "Encode and Decode Strings": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-23",
-      "last_review": "2026-11-22",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-26",
+      "last_review": "2026-11-23",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Longest Consecutive Sequence": {
@@ -805,14 +806,15 @@
       "recall_ratings": []
     },
     "Subsets": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Backtracking",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-11-15",
-      "last_review": "2026-11-12",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-11-30",
+      "last_review": "2026-11-23",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -951,14 +953,16 @@
       ]
     },
     "Rotting Oranges": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Graphs",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-24",
+      "last_review": "2026-11-23",
+      "recall_ratings": [
+        2
+      ]
     },
     "Pacific Atlantic Water Flow": {
       "easiness": 2.5,
@@ -1276,17 +1280,18 @@
       ]
     },
     "Coin Change II": {
-      "easiness": 1.65,
+      "easiness": 1.8,
       "difficulty": "Medium",
       "topic": "2D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-23",
-      "last_review": "2026-11-22",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-26",
+      "last_review": "2026-11-23",
       "recall_ratings": [
         1,
         1,
-        2
+        2,
+        3
       ]
     },
     "Target Sum": {
@@ -2218,14 +2223,15 @@
       "recall_ratings": []
     },
     "Design Search Autocomplete System": {
-      "easiness": 1.8,
+      "easiness": 1.45,
       "difficulty": "Hard",
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-23",
-      "last_review": "2026-11-22",
+      "next_review": "2026-11-24",
+      "last_review": "2026-11-23",
       "recall_ratings": [
+        1,
         1,
         1
       ]
@@ -2507,21 +2513,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 7,
-  "last_session": "2026-11-22",
+  "streak": 8,
+  "last_session": "2026-11-23",
   "today_list": [
-    145,
+    84,
     202,
+    8,
     114,
-    65,
-    8
+    71
   ],
-  "today_date": "2026-11-22",
+  "today_date": "2026-11-23",
   "today_done": [
-    145,
+    84,
     202,
+    8,
     114,
-    65,
-    8
+    71
   ]
 }
