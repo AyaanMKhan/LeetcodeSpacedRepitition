@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-23 14:18_  
-_Current streak: 🔥 8 day(s)_
+_Last updated: 2026-11-24 13:38_  
+_Current streak: 🔥 9 day(s)_
 
 ## Overview
 
-- **Attempted:** 61 / 229 problems
-- **Mastered:** 61
+- **Attempted:** 62 / 229 problems
+- **Mastered:** 62
 - **Still struggling:** 0
-- **Not yet attempted:** 168
+- **Not yet attempted:** 167
 
 ## Progress by Topic
 
@@ -24,7 +24,7 @@ _Current streak: 🔥 8 day(s)_
 | Tries | 3/7 | 3 | 7 |
 | Heap | 3/13 | 3 | 13 |
 | Backtracking | 1/18 | 1 | 18 |
-| Graphs | 4/20 | 4 | 20 |
+| Graphs | 5/20 | 5 | 20 |
 | 1D DP | 4/16 | 4 | 16 |
 | 2D DP | 4/11 | 4 | 11 |
 | Greedy | 4/8 | 4 | 8 |
@@ -219,7 +219,7 @@ _Current streak: 🔥 8 day(s)_
 - [x] Max Area of Island
 - [x] Clone Graph
 - [x] Walls and Gates
-- [ ] Rotting Oranges
+- [x] Rotting Oranges
 - [ ] Pacific Atlantic Water Flow
 - [ ] Surrounded Regions
 - [ ] Course Schedule
