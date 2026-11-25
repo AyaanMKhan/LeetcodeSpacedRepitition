@@ -321,7 +321,8 @@ PROBLEMS = [
     Problem(200, "Maximum Width of Binary Tree", "Trees", "Medium", 662, ("Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
     Problem(201, "All Nodes Distance K in Binary Tree", "Trees", "Medium", 863, ("Hash Table", "Tree", "Depth-First Search", "Breadth-First Search", "Binary Tree")),
     # Tries
-    Problem(202, "Design Search Autocomplete System", "Tries", "Hard", 642, ("Depth-First Search", "Design", "Trie", "Sorting", "Heap (Priority Queue)", "Data Stream")),
+    # Disabled: LeetCode Premium only (642).
+    # Problem(202, "Design Search Autocomplete System", "Tries", "Hard", 642, ("Depth-First Search", "Design", "Trie", "Sorting", "Heap (Priority Queue)", "Data Stream")),
     Problem(203, "Longest Word in Dictionary", "Tries", "Medium", 720, ("Hash Table", "Trie", "Sorting")),
     Problem(204, "Prefix and Suffix Search", "Tries", "Hard", 745, ("Hash Table", "Design", "Trie")),
     Problem(205, "Index Pairs of a String", "Tries", "Easy", 1065, ("Trie", "Sorting", "Aho–Corasick Algorithm")),
