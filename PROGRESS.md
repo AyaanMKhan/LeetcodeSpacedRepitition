@@ -1,22 +1,22 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-24 13:38_  
-_Current streak: 🔥 9 day(s)_
+_Last updated: 2026-11-25 15:04_  
+_Current streak: 🔥 10 day(s)_
 
 ## Overview
 
-- **Attempted:** 62 / 229 problems
-- **Mastered:** 62
+- **Attempted:** 64 / 229 problems
+- **Mastered:** 64
 - **Still struggling:** 0
-- **Not yet attempted:** 167
+- **Not yet attempted:** 165
 
 ## Progress by Topic
 
 | Topic | Attempted | Mastered | Total |
 |---|---|---|---|
-| Arrays & Hashing | 8/14 | 8 | 14 |
+| Arrays & Hashing | 9/14 | 9 | 14 |
 | Two Pointers | 4/12 | 4 | 12 |
-| Sliding Window | 4/12 | 4 | 12 |
+| Sliding Window | 5/12 | 5 | 12 |
 | Stack | 1/9 | 1 | 9 |
 | Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
@@ -44,7 +44,7 @@ _Current streak: 🔥 9 day(s)_
 - [x] Product of Array Except Self
 - [x] Valid Sudoku
 - [x] Encode and Decode Strings
-- [ ] Longest Consecutive Sequence
+- [x] Longest Consecutive Sequence
 - [ ] First Missing Positive
 - [ ] Majority Element
 - [ ] Range Sum Query - Immutable
@@ -72,7 +72,7 @@ _Current streak: 🔥 9 day(s)_
 - [x] Longest Substring Without Repeating
 - [x] Longest Repeating Char Replacement
 - [x] Permutation in String
-- [ ] Minimum Window Substring
+- [x] Minimum Window Substring
 - [ ] Sliding Window Maximum
 - [ ] Substring with Concatenation of All Words
 - [ ] Minimum Size Subarray Sum

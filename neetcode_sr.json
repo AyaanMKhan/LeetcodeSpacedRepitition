@@ -99,15 +99,16 @@
       ]
     },
     "Longest Consecutive Sequence": {
-      "easiness": 2.35,
+      "easiness": 2.5,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-25",
-      "last_review": "2026-11-24",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-28",
+      "last_review": "2026-11-25",
       "recall_ratings": [
-        2
+        2,
+        3
       ]
     },
     "Valid Palindrome": {
@@ -232,15 +233,16 @@
       ]
     },
     "Minimum Window Substring": {
-      "easiness": 2.15,
+      "easiness": 2.3,
       "difficulty": "Hard",
       "topic": "Sliding Window",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-11-25",
-      "last_review": "2026-11-24",
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-28",
+      "last_review": "2026-11-25",
       "recall_ratings": [
-        1
+        1,
+        3
       ]
     },
     "Sliding Window Maximum": {
@@ -713,15 +715,16 @@
       ]
     },
     "Word Search II": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Hard",
       "topic": "Tries",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-11-22",
-      "last_review": "2026-11-19",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-12-02",
+      "last_review": "2026-11-25",
       "recall_ratings": [
         2,
+        3,
         3
       ]
     },
@@ -1623,14 +1626,16 @@
       ]
     },
     "Multiply Strings": {
-      "easiness": 2.5,
+      "easiness": 2.15,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-26",
+      "last_review": "2026-11-25",
+      "recall_ratings": [
+        1
+      ]
     },
     "Detect Squares": {
       "easiness": 2.5,
@@ -2234,9 +2239,10 @@
       "topic": "Tries",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-25",
-      "last_review": "2026-11-24",
+      "next_review": "2026-11-26",
+      "last_review": "2026-11-25",
       "recall_ratings": [
+        1,
         1,
         1,
         1,
@@ -2520,21 +2526,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 9,
-  "last_session": "2026-11-24",
+  "streak": 10,
+  "last_session": "2026-11-25",
   "today_list": [
-    19,
+    142,
     202,
-    84,
-    136,
-    9
+    19,
+    9,
+    63
   ],
-  "today_date": "2026-11-24",
+  "today_date": "2026-11-25",
   "today_done": [
-    19,
+    142,
     202,
-    84,
-    136,
-    9
+    19,
+    9,
+    63
   ]
 }
