@@ -1,14 +1,14 @@
 # Neetcode 150 — Progress Report
 
-_Last updated: 2026-11-25 15:04_  
-_Current streak: 🔥 10 day(s)_
+_Last updated: 2026-11-28 13:28_  
+_Current streak: 🔥 13 day(s)_
 
 ## Overview
 
-- **Attempted:** 64 / 229 problems
-- **Mastered:** 64
+- **Attempted:** 68 / 228 problems
+- **Mastered:** 68
 - **Still struggling:** 0
-- **Not yet attempted:** 165
+- **Not yet attempted:** 160
 
 ## Progress by Topic
 
@@ -21,16 +21,16 @@ _Current streak: 🔥 10 day(s)_
 | Binary Search | 1/14 | 1 | 14 |
 | Linked List | 4/21 | 4 | 21 |
 | Trees | 3/29 | 3 | 29 |
-| Tries | 3/7 | 3 | 7 |
-| Heap | 3/13 | 3 | 13 |
-| Backtracking | 1/18 | 1 | 18 |
+| Tries | 3/6 | 3 | 6 |
+| Heap | 4/13 | 4 | 13 |
+| Backtracking | 2/18 | 2 | 18 |
 | Graphs | 5/20 | 5 | 20 |
-| 1D DP | 4/16 | 4 | 16 |
+| 1D DP | 5/16 | 5 | 16 |
 | 2D DP | 4/11 | 4 | 11 |
 | Greedy | 4/8 | 4 | 8 |
 | Intervals | 5/9 | 5 | 9 |
 | Math & Geometry | 6/9 | 6 | 9 |
-| Bit Manipulation | 2/7 | 2 | 7 |
+| Bit Manipulation | 3/7 | 3 | 7 |
 
 ## Checklist
 
@@ -171,7 +171,6 @@ _Current streak: 🔥 10 day(s)_
 - [x] Implement Trie (Prefix Tree)
 - [x] Design Add and Search Words
 - [x] Word Search II
-- [ ] Design Search Autocomplete System
 - [ ] Longest Word in Dictionary
 - [ ] Prefix and Suffix Search
 - [ ] Index Pairs of a String
@@ -181,7 +180,7 @@ _Current streak: 🔥 10 day(s)_
 - [x] Kth Largest Element in a Stream
 - [x] Last Stone Weight
 - [x] K Closest Points to Origin
-- [ ] Kth Largest Element in an Array
+- [x] Kth Largest Element in an Array
 - [ ] Task Scheduler
 - [ ] Design Twitter
 - [ ] Find Median from Data Stream
@@ -195,7 +194,7 @@ _Current streak: 🔥 10 day(s)_
 ### Backtracking
 
 - [x] Subsets
-- [ ] Combination Sum
+- [x] Combination Sum
 - [ ] Permutations
 - [ ] Subsets II
 - [ ] Combination Sum II
@@ -242,7 +241,7 @@ _Current streak: 🔥 10 day(s)_
 - [x] Min Cost Climbing Stairs
 - [x] House Robber
 - [x] House Robber II
-- [ ] Longest Palindromic Substring
+- [x] Longest Palindromic Substring
 - [ ] Palindromic Substrings
 - [ ] Decode Ways
 - [ ] Coin Change
@@ -308,7 +307,7 @@ _Current streak: 🔥 10 day(s)_
 
 - [x] Single Number
 - [x] Number of 1 Bits
-- [ ] Counting Bits
+- [x] Counting Bits
 - [ ] Reverse Bits
 - [ ] Missing Number
 - [ ] Sum of Two Integers

@@ -37,14 +37,15 @@
       ]
     },
     "Group Anagrams": {
-      "easiness": 2.33,
+      "easiness": 2.48,
       "difficulty": "Medium",
       "topic": "Arrays & Hashing",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-09-25",
-      "last_review": "2026-09-22",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-12-04",
+      "last_review": "2026-11-27",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -556,14 +557,17 @@
       ]
     },
     "Balanced Binary Tree": {
-      "easiness": 2.5,
+      "easiness": 2.2,
       "difficulty": "Easy",
       "topic": "Trees",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-28",
+      "last_review": "2026-11-27",
+      "recall_ratings": [
+        2,
+        2
+      ]
     },
     "Same Tree": {
       "easiness": 2.5,
@@ -773,14 +777,16 @@
       ]
     },
     "Kth Largest Element in an Array": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "Heap",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-29",
+      "last_review": "2026-11-26",
+      "recall_ratings": [
+        3
+      ]
     },
     "Task Scheduler": {
       "easiness": 2.5,
@@ -826,14 +832,18 @@
       ]
     },
     "Combination Sum": {
-      "easiness": 2.5,
+      "easiness": 2.35,
       "difficulty": "Medium",
       "topic": "Backtracking",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-12-01",
+      "last_review": "2026-11-28",
+      "recall_ratings": [
+        2,
+        2,
+        3
+      ]
     },
     "Permutations": {
       "easiness": 2.5,
@@ -1162,14 +1172,16 @@
       ]
     },
     "Longest Palindromic Substring": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Medium",
       "topic": "1D DP",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-12-01",
+      "last_review": "2026-11-28",
+      "recall_ratings": [
+        3
+      ]
     },
     "Palindromic Substrings": {
       "easiness": 2.5,
@@ -1303,14 +1315,17 @@
       ]
     },
     "Target Sum": {
-      "easiness": 2.5,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "2D DP",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "next_review": "2026-11-29",
+      "last_review": "2026-11-28",
+      "recall_ratings": [
+        1,
+        2
+      ]
     },
     "Interleaving String": {
       "easiness": 2.5,
@@ -1373,14 +1388,15 @@
       "recall_ratings": []
     },
     "Maximum Subarray": {
-      "easiness": 2.65,
+      "easiness": 2.8,
       "difficulty": "Medium",
       "topic": "Greedy",
-      "interval": 3,
-      "repetitions": 1,
-      "next_review": "2026-10-03",
-      "last_review": "2026-09-30",
+      "interval": 7,
+      "repetitions": 2,
+      "next_review": "2026-12-05",
+      "last_review": "2026-11-28",
       "recall_ratings": [
+        3,
         3
       ]
     },
@@ -1563,9 +1579,11 @@
       "topic": "Math & Geometry",
       "interval": 3,
       "repetitions": 1,
-      "next_review": "2026-10-12",
-      "last_review": "2026-10-09",
+      "next_review": "2026-12-01",
+      "last_review": "2026-11-28",
       "recall_ratings": [
+        3,
+        2,
         3
       ]
     },
@@ -1626,15 +1644,16 @@
       ]
     },
     "Multiply Strings": {
-      "easiness": 2.15,
+      "easiness": 2.0,
       "difficulty": "Medium",
       "topic": "Math & Geometry",
       "interval": 1,
       "repetitions": 0,
-      "next_review": "2026-11-26",
-      "last_review": "2026-11-25",
+      "next_review": "2026-11-27",
+      "last_review": "2026-11-26",
       "recall_ratings": [
-        1
+        1,
+        2
       ]
     },
     "Detect Squares": {
@@ -1674,14 +1693,16 @@
       ]
     },
     "Counting Bits": {
-      "easiness": 2.5,
+      "easiness": 2.65,
       "difficulty": "Easy",
       "topic": "Bit Manipulation",
-      "interval": 1,
-      "repetitions": 0,
-      "next_review": "2026-05-24",
-      "last_review": null,
-      "recall_ratings": []
+      "interval": 3,
+      "repetitions": 1,
+      "next_review": "2026-11-30",
+      "last_review": "2026-11-27",
+      "recall_ratings": [
+        3
+      ]
     },
     "Reverse Bits": {
       "easiness": 2.5,
@@ -2526,21 +2547,21 @@
     "card_format_version": 2,
     "review_per_day": 1
   },
-  "streak": 10,
-  "last_session": "2026-11-25",
+  "streak": 13,
+  "last_session": "2026-11-28",
   "today_list": [
-    142,
-    202,
-    19,
-    9,
-    63
+    103,
+    115,
+    72,
+    137,
+    122
   ],
-  "today_date": "2026-11-25",
+  "today_date": "2026-11-28",
   "today_done": [
-    142,
-    202,
-    19,
-    9,
-    63
+    103,
+    115,
+    72,
+    137,
+    122
   ]
 }
